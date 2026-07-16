@@ -5,14 +5,6 @@ import { useEffect, useRef } from 'react'
 const EDGE_COLOR  = '59,130,246'   // brand blue
 const BG_COLOR    = '#021C35'      // dark navy
 
-const TYPE_RGB: Record<string, [number, number, number]> = {
-  human:    [124, 58,  237],
-  brain:    [59,  130, 246],
-  agent:    [16,  185, 129],
-  hitl:     [217, 119,  6],
-  subswarm: [61,  63,  175],
-}
-
 const PULSE_COLORS: Record<string, string> = {
   request:  '#06B6D4',
   inform:   '#10B981',

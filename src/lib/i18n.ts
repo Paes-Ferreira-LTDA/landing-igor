@@ -25,7 +25,7 @@ export const t = {
     },
     projects: {
       eyebrow: "AI Systems · Production",
-      title: "Shipped eXmesh — Multi Agent System running in production on GCP.",
+      title: "eXmesh — Multi-Agent System, a mesh of coordinated agents running in production on GCP.",
       subtitle: "MUTHUR orchestrates. Bishop strategizes. Walter executes. 4 Synthetics monitor. Human-in-the-loop preserved.",
       diagramTitle: "Architecture · eXmesh Platform",
       diagramDesc:
@@ -68,7 +68,7 @@ export const t = {
     ],
     platforms: [
       {
-        desc: "Multi-Agent System for real-time swarm orchestration with HITL and Governance. Brings an agentic intelligence layer with agents curated by Fohat.",
+        desc: "eXmesh — Multi-Agent System, a mesh of coordinated agents. Real-time swarm orchestration with HITL and Governance.",
       },
       {
         desc: "CRM for pipeline management and energy migration processes in Brazil's free energy market, built for energy commercializers.",
@@ -140,7 +140,7 @@ export const t = {
     },
     projects: {
       eyebrow: "Sistemas de AI · Produção",
-      title: "eXmesh em produção — Sistema Multi-Agente rodando no GCP.",
+      title: "eXmesh — Sistema Multi-Agentes, uma malha de agentes coordenados rodando no GCP.",
       subtitle: "MUTHUR orquestra. Bishop planeja. Walter executa. 4 Synthetics monitoram. HITL preservado.",
       diagramTitle: "Arquitetura · Plataforma eXmesh",
       diagramDesc:
@@ -183,7 +183,7 @@ export const t = {
     ],
     platforms: [
       {
-        desc: "Sistema Multi-Agente para orquestração de swarms em tempo real com HITL e Governança. Traz uma camada de inteligência agêntica com agentes curados pela Fohat.",
+        desc: "eXmesh — Sistema Multi-Agentes, uma malha de agentes coordenados. Orquestração de swarms em tempo real com HITL e Governança.",
       },
       {
         desc: "CRM para gestão de pipeline e de processos de migração do Mercado Livre de Energia voltada para Comercializadoras de Energia.",
