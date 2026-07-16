@@ -1,15 +1,22 @@
+import { LanguageProvider } from "@/contexts/LanguageContext";
+import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { Features } from "@/components/Features";
+import { Timeline } from "@/components/Timeline";
+import { AIProjects } from "@/components/AIProjects";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <Features />
-      <ContactForm />
-      <Footer />
-    </main>
+    <LanguageProvider>
+      <main>
+        <Navbar />
+        <Hero />
+        <Timeline />
+        <AIProjects />
+        <ContactForm />
+        <Footer />
+      </main>
+    </LanguageProvider>
   );
 }

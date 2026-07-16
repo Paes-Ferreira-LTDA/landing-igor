@@ -1,27 +1,53 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #0b0f19;
-  --color-brand: #4f46e5;
-  --color-brand-600: #4338ca;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif;
+  /* ── Paes Ferreira Design System ──────────────────────── */
+
+  /* Brand — extraído do wordmark */
+  --color-navy:        #021C35;   /* fundo dark do wordmark       */
+  --color-navy-800:    #162040;   /* surface card                 */
+  --color-navy-700:    #1E2D5A;   /* surface hover                */
+  --color-brand:       #3B82F6;   /* tulipa / azul elétrico       */
+  --color-brand-600:   #2563EB;   /* hover                        */
+  --color-brand-400:   #60A5FA;   /* accent em dark               */
+  --color-brand-100:   #DBEAFE;   /* tint suave                   */
+  --color-gold:        #C9A227;   /* separador IGOR / PAES        */
+  --color-gold-muted:  #A07A18;   /* gold escurecido              */
+
+  /* Ink / neutrals */
+  --color-ink:         #0D1B3E;   /* alias para navy (body dark)  */
+  --color-surface:     #111827;   /* bg secondary sections        */
+  --color-muted:       #94A3B8;   /* texto secundário             */
+  --color-border:      rgba(255, 255, 255, 0.08);
+
+  /* Typography */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+
+/* ── Base ──────────────────────────────────────────────── */
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
-  background-color: #ffffff;
-  color: var(--color-ink);
+  background-color: var(--color-navy);
+  color: #e6e8ef;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--color-ink);
-    color: #e6e8ef;
-  }
+/* ── Seleção de texto com brand ────────────────────────── */
+::selection {
+  background-color: var(--color-brand);
+  color: #ffffff;
 }
+
+/* ── Scrollbar sutil ───────────────────────────────────── */
+::-webkit-scrollbar        { width: 6px; }
+::-webkit-scrollbar-track  { background: var(--color-navy); }
+::-webkit-scrollbar-thumb  { background: var(--color-navy-700); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-brand-600); }

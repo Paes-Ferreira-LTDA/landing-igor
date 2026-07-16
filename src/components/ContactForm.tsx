@@ -1,10 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { t } from "@/lib/i18n";
 
 type Status = "idle" | "loading" | "success" | "error";
 
 export function ContactForm() {
+  const { lang } = useLanguage();
+  const tx = t[lang].contact;
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
 
@@ -41,12 +45,12 @@ export function ContactForm() {
   }
 
   return (
-    <section id="contato" className="mx-auto max-w-xl px-6 py-20">
-      <h2 className="text-center text-3xl font-bold tracking-tight">
-        Vamos conversar
+    <section id="contact" className="mx-auto max-w-xl px-6 py-24">
+      <h2 className="text-center text-3xl font-bold tracking-tight text-white">
+        {tx.title}
       </h2>
-      <p className="mt-3 text-center text-black/70 dark:text-white/70">
-        Preencha o formulário e eu retorno em breve.
+      <p className="mt-3 text-center text-sm leading-relaxed text-white/50">
+        {tx.subtitle}
       </p>
 
       <form onSubmit={handleSubmit} className="mt-10 flex flex-col gap-4">
@@ -55,38 +59,36 @@ export function ContactForm() {
           type="text"
           required
           minLength={2}
-          placeholder="Seu nome"
-          className="rounded-lg border border-black/15 bg-transparent px-4 py-3 outline-none focus:border-[var(--color-brand)] dark:border-white/20"
+          placeholder={tx.namePlaceholder}
+          className="rounded-lg border border-white/10 bg-white/4 px-4 py-3 text-white outline-none placeholder:text-white/30 focus:border-[var(--color-brand)]"
         />
         <input
           name="email"
           type="email"
           required
-          placeholder="Seu e-mail"
-          className="rounded-lg border border-black/15 bg-transparent px-4 py-3 outline-none focus:border-[var(--color-brand)] dark:border-white/20"
+          placeholder={tx.emailPlaceholder}
+          className="rounded-lg border border-white/10 bg-white/4 px-4 py-3 text-white outline-none placeholder:text-white/30 focus:border-[var(--color-brand)]"
         />
         <textarea
           name="message"
           rows={4}
-          placeholder="Conte sobre seu projeto (opcional)"
-          className="rounded-lg border border-black/15 bg-transparent px-4 py-3 outline-none focus:border-[var(--color-brand)] dark:border-white/20"
+          placeholder={tx.messagePlaceholder}
+          className="rounded-lg border border-white/10 bg-white/4 px-4 py-3 text-white outline-none placeholder:text-white/30 focus:border-[var(--color-brand)]"
         />
 
         <button
           type="submit"
           disabled={status === "loading"}
-          className="rounded-lg bg-[var(--color-brand)] px-6 py-3 font-medium text-white transition hover:bg-[var(--color-brand-600)] disabled:opacity-60"
+          className="rounded-lg bg-[var(--color-brand)] px-6 py-3 font-semibold text-white transition hover:bg-[var(--color-brand-600)] disabled:opacity-60"
         >
-          {status === "loading" ? "Enviando..." : "Enviar"}
+          {status === "loading" ? tx.sending : tx.submit}
         </button>
 
         {status === "success" && (
-          <p className="text-center text-green-600 dark:text-green-400">
-            Recebido! Obrigado pelo contato. ✅
-          </p>
+          <p className="text-center text-green-400">{tx.success}</p>
         )}
         {status === "error" && (
-          <p className="text-center text-red-600 dark:text-red-400">{error}</p>
+          <p className="text-center text-red-400">{error}</p>
         )}
       </form>
     </section>
