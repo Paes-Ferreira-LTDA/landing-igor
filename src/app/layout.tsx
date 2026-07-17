@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Igor Paes Ferreira — Head of AI · Founding AI Engineer",
+        alt: "Igor Ferreira — Head of AI · Founding AI Engineer",
       },
     ],
   },
