@@ -9,11 +9,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Igor Paes Ferreira — AI · Engineering · Strategy",
+  title: "Igor Ferreira — AI · Engineering · Strategy",
   description:
     "Technical founder and AI systems builder. Available for Head of AI and Founding AI Engineer roles. Built Bishop, Walter, MUTHUR and production AI agents on GCP.",
   openGraph: {
-    title: "Igor Paes Ferreira — AI · Engineering · Strategy",
+    title: "Igor Ferreira — AI · Engineering · Strategy",
     description:
       "Technical founder who ships AI to production. LangGraph, Claude, Vertex AI, Kubernetes.",
     type: "website",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Igor Paes Ferreira — AI · Engineering · Strategy",
+    title: "Igor Ferreira — AI · Engineering · Strategy",
     description: "Technical founder who ships AI to production.",
   },
   keywords: [

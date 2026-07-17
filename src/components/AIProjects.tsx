@@ -143,7 +143,7 @@ export function AIProjects() {
                   {/* Expand hint */}
                   <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition duration-300 group-hover:bg-black/20">
                     <span className="scale-0 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-sm transition duration-300 group-hover:scale-100">
-                      ⤢ Expandir
+                      {tx.expandHint}
                     </span>
                   </div>
                 </div>

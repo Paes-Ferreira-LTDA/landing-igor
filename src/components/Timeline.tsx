@@ -13,7 +13,7 @@ const eventsBase = [
   { year: "2017",      flag: "🇺🇸", company: "Silicon Valley",              role: "The turning point",                 photos: ["/igor-san-francisco.jpeg", "/igor-stanford.jpeg"], highlight: true  },
   { year: "2018",      flag: "🚀",  company: "Fohat Corporation",            role: "Founded",                           photos: ["/fohat-igor.jpeg", "/fohat-holding.png"],         highlight: false },
   { year: "2018–2023", flag: "⚡",  company: "Beenx · eTradeflow · eFlowing", role: "Platform Builder",                photos: ["/beenx-team.jpeg"],                               highlight: false },
-  { year: "2024–2025", flag: "🤖",  company: "AI Agents · Production",      role: "AI Systems Builder",                photos: ["/igor-head-ai.jpeg"],                             highlight: true  },
+  { year: "2024–2025", flag: "🤖",  company: "Fohat eTech · eXmesh",        role: "AI Systems Builder",                photos: ["/igor-head-ai.jpeg"],                             highlight: true  },
   { year: "2026",      flag: "🟢",  company: "Available",                   role: "Head of AI · Founding AI Engineer", photos: [],                                                 highlight: true  },
 ];
 
@@ -71,7 +71,7 @@ export function Timeline() {
                 <div className="relative flex-shrink-0 pt-5">
                   <div
                     className={`h-3 w-3 rounded-full ring-2 ring-offset-2 ring-offset-[var(--color-navy)] transition-colors duration-300 ${
-                      isOpen || event.highlight
+                      isOpen
                         ? "bg-[var(--color-brand)] ring-[var(--color-brand)]"
                         : "bg-[var(--color-navy-700)] ring-white/20"
                     }`}
@@ -102,33 +102,46 @@ export function Timeline() {
                   </button>
 
                   {/* Expandable */}
-                  <div className={`grid transition-[grid-template-rows] duration-500 ease-in-out ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
-                    <div className="overflow-hidden">
+                  <div
+                    className="overflow-hidden transition-[max-height] duration-500 ease-in-out"
+                    style={{ maxHeight: isOpen ? "600px" : "0px" }}
+                  >
+                    <div>
                       <div className="mt-2 rounded-xl border border-white/5 bg-white/2 p-5">
-                        <p className="text-sm leading-relaxed text-white/60 italic">
-                          &ldquo;{event.context}&rdquo;
-                        </p>
-                        {event.photos.length > 0 && (
-                          <div className={`mt-5 grid gap-3 ${event.photos.length > 1 ? "grid-cols-2" : "grid-cols-1"}`}>
-                            {event.photos.map((src) => {
-                              const isHolding = src.includes("fohat-holding");
-                              return (
-                                <div
-                                  key={src}
-                                  className={`relative overflow-hidden rounded-lg ${isHolding ? "bg-white p-3" : ""}`}
-                                  style={{ aspectRatio: event.photos.length > 1 ? "4/3" : "16/9" }}
-                                >
-                                  <Image
-                                    src={src}
-                                    alt={event.company}
-                                    fill
-                                    className={isHolding ? "object-contain p-2" : "object-cover"}
-                                    sizes="(max-width: 768px) 100vw, 600px"
-                                  />
-                                </div>
-                              );
-                            })}
+                        {event.photos.length > 0 ? (
+                          /* 2 colunas: fotos | texto */
+                          <div className="flex flex-col gap-4 md:flex-row md:items-start md:gap-6">
+                            {/* Coluna fotos */}
+                            <div className={`flex-shrink-0 ${event.photos.length > 1 ? "grid grid-cols-2 gap-2 md:w-64" : "md:w-64"}`}>
+                              {event.photos.map((src) => {
+                                const isHolding = src.includes("fohat-holding");
+                                return (
+                                  <div
+                                    key={src}
+                                    className={`relative overflow-hidden rounded-lg ${isHolding ? "bg-white p-2" : ""}`}
+                                    style={{ aspectRatio: "4/3" }}
+                                  >
+                                    <Image
+                                      src={src}
+                                      alt={event.company}
+                                      fill
+                                      className={isHolding ? "object-contain p-1" : "object-cover"}
+                                      sizes="(max-width: 768px) 100vw, 256px"
+                                    />
+                                  </div>
+                                );
+                              })}
+                            </div>
+                            {/* Coluna texto */}
+                            <p className="flex-1 text-sm leading-relaxed text-white/60 italic">
+                              &ldquo;{event.context}&rdquo;
+                            </p>
                           </div>
+                        ) : (
+                          /* Sem foto — texto full width */
+                          <p className="text-sm leading-relaxed text-white/60 italic">
+                            &ldquo;{event.context}&rdquo;
+                          </p>
                         )}
                       </div>
                     </div>

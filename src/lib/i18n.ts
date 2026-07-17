@@ -8,7 +8,7 @@ export const t = {
       cta: "Let's talk",
     },
     hero: {
-      badge: "Open to AI roles · Remote-first",
+      badge: "Open to AI roles · Remote · Hybrid",
       h1a: "I build AI systems",
       h1b: "that work in production.",
       desc: "Technical founder. Electrical engineer. 7 years at Volvo. 8 years building B2B platforms. Shipped",
@@ -32,6 +32,8 @@ export const t = {
         "Real control flow — from human to GCP substrate. Governance Gateway ensures every dispatch respects OKRs and Mandates before reaching agents.",
       platformsTitle: "Platforms Built",
       platformsSubtitle: "Production software used by real companies.",
+      expandHint: "⤢ Expand",
+      footerBuilt: "Built with Next.js · Deployed on Vercel",
     },
     contact: {
       title: "Let's build something.",
@@ -108,7 +110,7 @@ export const t = {
       },
       {
         desc: "Shipped MUTHUR, Bishop, Walter and 4 Synthetic Workers running autonomously on GCP.",
-        context: "Not demos — real agents making real decisions in production. Walter autonomously merged the first AI-authored PR. Bishop reads our architectural specs and flags drift. MUTHUR orchestrates everything via chat. This wasn't an experiment; it was infrastructure.",
+        context: "Not demos — real agents making real decisions in production. Walter autonomously merged the first AI-authored PR. Bishop reads our architectural specs and detects drift. MUTHUR orchestrates everything via chat, coordinating OKRs and Mandates. This wasn't an experiment; it was infrastructure.",
       },
       {
         desc: "Bringing this rare combination — product thinking, technical execution, AI at scale — to your company.",
@@ -123,7 +125,7 @@ export const t = {
       cta: "Vamos conversar",
     },
     hero: {
-      badge: "Disponível para vagas em AI · Remoto",
+      badge: "Disponível para vagas em AI · Remoto · Híbrido",
       h1a: "Construo sistemas de AI",
       h1b: "que funcionam em produção.",
       desc: "Founder técnico. Engenheiro eletricista. 7 anos na Volvo. 8 anos construindo plataformas B2B. Coloquei em produção",
@@ -147,6 +149,8 @@ export const t = {
         "Fluxo real de controle — do humano ao substrato GCP. O Governance Gateway garante que todo dispatch respeita OKRs e Mandates antes de chegar aos agentes.",
       platformsTitle: "Plataformas Construídas",
       platformsSubtitle: "Software em produção usado por empresas reais.",
+      expandHint: "⤢ Ampliar",
+      footerBuilt: "Desenvolvido com Next.js · Deploy no Vercel",
     },
     contact: {
       title: "Vamos construir algo.",
@@ -223,7 +227,7 @@ export const t = {
       },
       {
         desc: "Entregou MUTHUR, Bishop, Walter e 4 Synthetic Workers rodando autonomamente no GCP.",
-        context: "Não são demos — agentes reais tomando decisões reais em produção. Walter fez o merge autônomo do primeiro PR gerado por IA. Bishop lê nossas specs arquiteturais e detecta drift. MUTHUR orquestra tudo via chat. Isso não foi um experimento; foi infraestrutura.",
+        context: "Não são demos — são agentes tomando decisões reais em produção. Walter fez o merge autônomo do primeiro PR gerado por IA. Bishop lê nossas specs arquiteturais e detecta drift. MUTHUR orquestra tudo via chat coordenando OKRs e Mandatos. Isso não foi um experimento; foi infraestrutura.",
       },
       {
         desc: "Trazendo essa combinação rara — visão de produto, execução técnica, AI em escala — para a sua empresa.",

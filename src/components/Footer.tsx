@@ -35,7 +35,7 @@ export function Footer() {
           </a>
         </div>
         <p className="text-xs text-white/20">
-          Built with Next.js · Deployed on Vercel
+          {tx.projects.footerBuilt}
         </p>
       </div>
     </footer>
