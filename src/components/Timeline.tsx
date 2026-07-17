@@ -119,7 +119,7 @@ export function Timeline() {
                           /* 2 colunas: fotos | texto */
                           <div className="flex flex-col gap-4 md:flex-row md:items-start md:gap-6">
                             {/* Coluna fotos */}
-                            <div className={`flex-shrink-0 ${event.photos.length > 1 ? "grid grid-cols-2 gap-2 md:w-64" : "md:w-64"}`}>
+                            <div className={`flex-shrink-0 w-full ${event.photos.length > 1 ? "grid grid-cols-2 gap-2 md:w-64" : "md:w-64"}`}>
                               {event.photos.map((src) => {
                                 const isHolding = src.includes("fohat-holding");
                                 return (
