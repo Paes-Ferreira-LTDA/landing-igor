@@ -4,7 +4,7 @@
  */
 
 export const shared = {
-  name: "Igor Paes Ferreira",
+  name: "Igor Ferreira",
   email: "igor.ferreira@fohat.com.br",
   linkedin: "linkedin.com/in/figor",
   site: "paesferreira.com.br",
