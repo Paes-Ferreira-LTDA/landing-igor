@@ -115,6 +115,10 @@ export const t = {
         context: "Five years of building complex B2B products in regulated industries. Every feature we shipped had to survive ANEEL regulation, CCEE compliance, and the scrutiny of traders who measure money in megawatts. The team grew, the products grew, and so did my conviction that AI was the next layer.",
       },
       {
+        desc: "Board of Advisors seat. Corporate governance and management advisory, certified by Gonew.co.",
+        context: "I got certified as an Innovation Board Member by Gonew.co — 100 hours, 40 of them in Board Real Practice — and served three consecutive terms on OSINOVA's Board of Advisors. I brought both lenses to the table: the traditional corporate world and the startup builder's.",
+      },
+      {
         desc: "Shipped MUTHUR, Bishop, Walter and 4 Synthetic Workers running autonomously on GCP.",
         context: "Not demos — real agents making real decisions in production. Walter autonomously merged the first AI-authored PR. Bishop reads our architectural specs and detects drift. MUTHUR orchestrates everything via chat, coordinating OKRs and Mandates. This wasn't an experiment; it was infrastructure.",
       },
@@ -236,6 +240,10 @@ export const t = {
       {
         desc: "Marketplace de energia, terminal de trading, CRM, liquidação blockchain — do zero à produção.",
         context: "Cinco anos construindo produtos B2B complexos em indústrias reguladas. Cada feature que entregamos teve que sobreviver à regulação da ANEEL, conformidade da CCEE e ao escrutínio de traders que medem dinheiro em megawatts. O time cresceu, os produtos cresceram, e cresceu minha convicção de que AI era a próxima camada.",
+      },
+      {
+        desc: "Assento no Board of Advisors. Consultoria de governança corporativa e de gestão, com certificação da Gonew.co.",
+        context: "Me certifiquei como Conselheiro de Inovação pela Gonew.co — 100 horas, 40 delas em Board Real Practice — e servi por três mandatos consecutivos no Board of Advisors da OSINOVA. Levei para a mesa as duas lentes: a do mundo corporativo tradicional e a de quem constrói startups.",
       },
       {
         desc: "Entreguei MUTHUR, Bishop, Walter e 4 Synthetic Workers rodando autonomamente no GCP.",
