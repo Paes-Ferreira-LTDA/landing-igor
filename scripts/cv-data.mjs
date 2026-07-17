@@ -82,6 +82,7 @@ export const cv = {
     education: [
       "B.Sc. Industrial Electrical Engineering, Electrotechnics — UTFPR (Federal University of Technology – Paraná), 2011",
       "Postgraduate Specialization in Renewable Energy (360h) — UTFPR, 2016–2017 · Capstone: microgrids as integration of distributed photovoltaic generation",
+      "MBA, Brazilian Electric Sector — ISAE/FGV (FGV Management), started 2016 · coursework and capstone (TCC) completed; program not concluded",
     ],
     languagesTitle: "Languages",
     languages: "Portuguese (native) · English (fluent)",
@@ -153,6 +154,7 @@ export const cv = {
     education: [
       "Engenharia Industrial Elétrica, ênfase Eletrotécnica — UTFPR (Universidade Tecnológica Federal do Paraná), 2011",
       "Especialização em Energias Renováveis, pós-graduação lato sensu (360h) — UTFPR, 2016–2017 · TCC: Microgrids como forma de integração da geração distribuída fotovoltaica",
+      "MBA do Setor Elétrico — ISAE/FGV (FGV Management), iniciado em 2016 · disciplinas e TCC concluídos; curso não finalizado",
     ],
     languagesTitle: "Idiomas",
     languages: "Português (nativo) · Inglês (fluente)",
