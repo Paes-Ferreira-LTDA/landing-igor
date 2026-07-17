@@ -38,6 +38,7 @@ export const t = {
       platformsTitle: "Platforms Built",
       platformsSubtitle: "Production software used by real companies.",
       expandHint: "⤢ Expand",
+      diagramScrollHint: "← swipe to see the full diagram →",
       footerBuilt: "Built with Next.js · Deployed on Vercel",
     },
     contact: {
@@ -160,6 +161,7 @@ export const t = {
       platformsTitle: "Plataformas Construídas",
       platformsSubtitle: "Software em produção usado por empresas reais.",
       expandHint: "⤢ Ampliar",
+      diagramScrollHint: "← deslize para ver o diagrama completo →",
       footerBuilt: "Desenvolvido com Next.js · Deploy no Vercel",
     },
     contact: {
