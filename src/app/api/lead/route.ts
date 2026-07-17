@@ -5,7 +5,6 @@ import { Resend } from "resend";
 export const runtime = "nodejs";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   let body: unknown;
@@ -57,6 +56,7 @@ export async function POST(request: Request) {
 
   // 2. Notificação por e-mail
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: "onboarding@resend.dev",
       to: "igor.ferreira@fohat.com.br",
