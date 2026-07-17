@@ -109,13 +109,16 @@ export function SwarmCanvas({ height = 420 }: { height?: number }) {
       return { px: W/2 + x1*sc*ps, py: H/2 + y1*sc*ps, d: z2 }
     }
 
+    // Em telas estreitas os nós ficam próximos: ícones/labels menores e sem subtítulo
+    const isNarrow = () => W < 480
+
     const drawAgentNode = (
       p: { px: number; py: number; d: number },
       agent: typeof REAL_AGENTS[0]
     ) => {
       const depth = Math.max(0, Math.min(1, (1 - p.d) * 0.5 + 0.5))
       const al = 0.6 + depth * 0.4
-      const fontSize = Math.round(18 + depth * 14)
+      const fontSize = isNarrow() ? Math.round(13 + depth * 8) : Math.round(18 + depth * 14)
       // Halo
       ctx.fillStyle = `rgba(${agent.color},${(al * 0.15).toFixed(3)})`
       ctx.beginPath(); ctx.arc(p.px, p.py, fontSize * 0.9, 0, Math.PI * 2); ctx.fill()
@@ -172,20 +175,23 @@ export function SwarmCanvas({ height = 420 }: { height?: number }) {
 
       // Labels sobre agentes reais
       ctx.textBaseline = 'top'
+      const narrow = isNarrow()
       REAL_AGENTS.forEach(agent => {
         const p = P[agent.node]
         if (!p) return
         const depth = Math.max(0, Math.min(1, (1 - p.d) * 0.5 + 0.5))
         const al = 0.6 + depth * 0.4
-        const fontSize = Math.round(18 + depth * 14)
+        const fontSize = narrow ? Math.round(13 + depth * 8) : Math.round(18 + depth * 14)
         const offset = fontSize * 1.1
         ctx.fillStyle = `rgba(255,255,255,${(al * 0.85).toFixed(2)})`
-        ctx.font = `600 10px ui-monospace,monospace`
+        ctx.font = `600 ${narrow ? 9 : 10}px ui-monospace,monospace`
         ctx.textAlign = 'center'
         ctx.fillText(agent.label, p.px, p.py + offset)
-        ctx.fillStyle = `rgba(255,255,255,${(al * 0.35).toFixed(2)})`
-        ctx.font = `8.5px ui-monospace,monospace`
-        ctx.fillText(agent.sub, p.px, p.py + offset + 12)
+        if (!narrow) {
+          ctx.fillStyle = `rgba(255,255,255,${(al * 0.35).toFixed(2)})`
+          ctx.font = `8.5px ui-monospace,monospace`
+          ctx.fillText(agent.sub, p.px, p.py + offset + 12)
+        }
       })
 
       // Spawn pulses a partir dos agentes reais

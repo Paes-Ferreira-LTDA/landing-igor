@@ -38,6 +38,7 @@ export const t = {
       platformsTitle: "Platforms Built",
       platformsSubtitle: "Production software used by real companies.",
       expandHint: "⤢ Expand",
+      diagramScrollHint: "← swipe to see the full diagram →",
       footerBuilt: "Built with Next.js · Deployed on Vercel",
     },
     contact: {
@@ -87,7 +88,7 @@ export const t = {
     events: [
       {
         desc: "Industrial automation at scale. First exposure to global manufacturing systems.",
-        context: "Living and working in China at 21 — immersed in a completely different culture while engineering production automation systems alongside Chinese teams. The scale of everything was humbling. It planted the seed for thinking beyond borders.",
+        context: "Living and working in China at 21 — immersed in a completely different culture while engineering production automation systems alongside Chinese teams. The scale of everything was humbling. The seed of thinking beyond borders was planted.",
       },
       {
         desc: "Systems engineering at the source. Built the mindset for precision and process.",
@@ -160,6 +161,7 @@ export const t = {
       platformsTitle: "Plataformas Construídas",
       platformsSubtitle: "Software em produção usado por empresas reais.",
       expandHint: "⤢ Ampliar",
+      diagramScrollHint: "← deslize para ver o diagrama completo →",
       footerBuilt: "Desenvolvido com Next.js · Deploy no Vercel",
     },
     contact: {
@@ -209,7 +211,7 @@ export const t = {
     events: [
       {
         desc: "Automação industrial em escala. Primeira exposição a sistemas globais de manufatura.",
-        context: "Vivendo e trabalhando na China aos 21 anos — imerso em uma cultura completamente diferente enquanto desenvolvia sistemas de automação de produção ao lado de equipes chinesas. A escala de tudo era impressionante. Plantou a semente de pensar além das fronteiras.",
+        context: "Vivendo e trabalhando na China aos 21 anos — imerso em uma cultura completamente diferente enquanto desenvolvia sistemas de automação de produção ao lado de equipes chinesas. A escala de tudo era impressionante. Plantada a semente de pensar além das fronteiras.",
       },
       {
         desc: "Engenharia de sistemas na fonte. Construí a mentalidade de precisão e processo.",
@@ -228,7 +230,7 @@ export const t = {
         context: "Dezembro de 2017. Stanford, Google, YC — conhecendo founders que estavam realmente entregando produtos que mudam o mundo. Voltei ao Brasil com um pensamento claro: vou construir algo. Essa viagem não me inspirou — ela me decidiu.",
       },
       {
-        desc: "Construiu uma holding para operar plataformas B2B em mercados regulados: energia, fintech, blockchain.",
+        desc: "Construí uma holding para operar plataformas B2B em mercados regulados: energia, fintech, blockchain.",
         context: "O primeiro escritório era uma sala. Só uma mesa, um laptop e muita incerteza. O logo FOHAT naquela parede preta era a única coisa que parecia real, uma holding em construção.",
       },
       {
@@ -236,7 +238,7 @@ export const t = {
         context: "Cinco anos construindo produtos B2B complexos em indústrias reguladas. Cada feature que entregamos teve que sobreviver à regulação da ANEEL, conformidade da CCEE e ao escrutínio de traders que medem dinheiro em megawatts. O time cresceu, os produtos cresceram, e cresceu minha convicção de que AI era a próxima camada.",
       },
       {
-        desc: "Entregou MUTHUR, Bishop, Walter e 4 Synthetic Workers rodando autonomamente no GCP.",
+        desc: "Entreguei MUTHUR, Bishop, Walter e 4 Synthetic Workers rodando autonomamente no GCP.",
         context: "Não são demos — são agentes tomando decisões reais em produção. Walter fez o merge autônomo do primeiro PR gerado por IA. Bishop lê nossas specs arquiteturais e detecta drift. MUTHUR orquestra tudo via chat coordenando OKRs e Mandatos. Isso não foi um experimento; foi infraestrutura.",
       },
       {

@@ -112,6 +112,7 @@ export function AIProjects() {
           </h3>
           <p className="mb-8 text-sm text-white/50 max-w-2xl mx-auto">{tx.diagramDesc}</p>
           <AISystemsDiagram />
+          <p className="mt-3 text-xs text-white/30 md:hidden">{tx.diagramScrollHint}</p>
         </div>
 
         {/* Platforms */}

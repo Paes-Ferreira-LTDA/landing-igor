@@ -102,7 +102,7 @@ export const cv = {
         title: "AI Systems Builder",
         org: "Fohat eTech · eXmesh",
         bullets: [
-          "Projetou e entregou o eXmesh, malha multi-agentes de AI em produção no GCP: MUTHUR (orquestradora ativada por chat), Bishop (strategy-ops: lê ADRs/BRS/SPECs, detecta drift arquitetural), Walter (executor cirúrgico) e 4 Synthetic Workers (monitores de infra headless, um por squad).",
+          "Projetei e entreguei o eXmesh, malha multi-agentes de AI em produção no GCP: MUTHUR (orquestradora ativada por chat), Bishop (strategy-ops: lê ADRs/BRS/SPECs, detecta drift arquitetural), Walter (executor cirúrgico) e 4 Synthetic Workers (monitores de infra headless, um por squad).",
           "Walter fez o primeiro merge de PR totalmente autônomo da empresa em produção — recebe task openers, roda testes, abre PRs e se declara pronto para merge.",
           "Governance Gateway garantindo OKRs e Mandates em cada dispatch de agente, com human-in-the-loop preservado; observabilidade com Langfuse; 6 MCP servers como interface de ferramentas in-cluster.",
         ],
@@ -120,7 +120,7 @@ export const cv = {
         title: "Founder · Platform Builder",
         org: "Beenx · eTradeflow · eFlowing (grupo Fohat)",
         bullets: [
-          "Construiu marketplace de energia, terminal ETRM de trading (eTradeflow), CRM agêntico para migração ao Mercado Livre de Energia (eFlowing) e liquidação blockchain — do zero à produção, usados por comercializadoras reais.",
+          "Construí marketplace de energia, terminal ETRM de trading (eTradeflow), CRM agêntico para migração ao Mercado Livre de Energia (eFlowing) e liquidação blockchain — do zero à produção, usados por comercializadoras reais.",
           "Cada feature entregue sob regulação da ANEEL e conformidade CCEE, atendendo traders do Mercado Livre de Energia.",
         ],
       },
@@ -129,7 +129,7 @@ export const cv = {
         title: "Founder",
         org: "Fohat Corporation",
         bullets: [
-          "Fundou uma holding para operar plataformas B2B em mercados regulados: energia, fintech, blockchain.",
+          "Fundei uma holding para operar plataformas B2B em mercados regulados: energia, fintech, blockchain.",
         ],
       },
       {

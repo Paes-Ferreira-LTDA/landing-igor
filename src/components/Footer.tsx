@@ -24,25 +24,25 @@ export function Footer() {
             © 2026 Paes Ferreira LTDA · {tx.footer.rights}
           </span>
         </div>
-        <div className="flex items-center gap-6 text-sm text-white/30">
-          <a href="#journey" className="transition hover:text-white/60">
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-sm text-white/30">
+          <a href="#journey" className="py-2 transition hover:text-white/60">
             {tx.nav.journey}
           </a>
-          <a href="#projects" className="transition hover:text-white/60">
+          <a href="#projects" className="py-2 transition hover:text-white/60">
             {tx.nav.projects}
           </a>
-          <a href="#contact" className="transition hover:text-white/60">
+          <a href="#contact" className="py-2 transition hover:text-white/60">
             {tx.nav.cta}
           </a>
           <a
             href={links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="transition hover:text-white/60"
+            className="py-2 transition hover:text-white/60"
           >
             LinkedIn
           </a>
-          <a href={`mailto:${links.email}`} className="transition hover:text-white/60">
+          <a href={`mailto:${links.email}`} className="py-2 transition hover:text-white/60">
             E-mail
           </a>
         </div>

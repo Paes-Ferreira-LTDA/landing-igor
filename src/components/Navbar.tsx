@@ -33,7 +33,7 @@ export function Navbar() {
           <div className="flex flex-shrink-0 items-center overflow-hidden rounded-md border border-white/10 text-xs font-semibold">
             <button
               onClick={() => setLang("en")}
-              className={`px-2.5 py-1.5 transition ${
+              className={`px-3.5 py-2.5 transition sm:px-2.5 sm:py-1.5 ${
                 lang === "en"
                   ? "bg-[var(--color-brand)] text-white"
                   : "text-white/40 hover:text-white/70"
@@ -43,7 +43,7 @@ export function Navbar() {
             </button>
             <button
               onClick={() => setLang("pt")}
-              className={`px-2.5 py-1.5 transition ${
+              className={`px-3.5 py-2.5 transition sm:px-2.5 sm:py-1.5 ${
                 lang === "pt"
                   ? "bg-[var(--color-brand)] text-white"
                   : "text-white/40 hover:text-white/70"
@@ -55,7 +55,7 @@ export function Navbar() {
 
           <a
             href="#contact"
-            className="flex-shrink-0 whitespace-nowrap rounded-md border border-[var(--color-brand)]/40 px-3 py-1.5 text-[var(--color-brand-400)] transition hover:border-[var(--color-brand)] hover:text-[var(--color-brand)] sm:px-4"
+            className="flex-shrink-0 whitespace-nowrap rounded-md border border-[var(--color-brand)]/40 px-3 py-2.5 text-[var(--color-brand-400)] transition hover:border-[var(--color-brand)] hover:text-[var(--color-brand)] sm:px-4 sm:py-1.5"
           >
             {tx.cta}
           </a>
