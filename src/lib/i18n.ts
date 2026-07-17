@@ -16,6 +16,7 @@ export const t = {
       descEnd: "",
       ctaPrimary: "Let's talk",
       ctaSecondary: "See my journey",
+      ctaCv: "Download CV",
     },
     timeline: {
       eyebrow: "The Journey",
@@ -134,6 +135,7 @@ export const t = {
       descEnd: "",
       ctaPrimary: "Vamos conversar",
       ctaSecondary: "Ver minha jornada",
+      ctaCv: "Baixar CV",
     },
     timeline: {
       eyebrow: "A Jornada",

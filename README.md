@@ -27,6 +27,18 @@ cp .env.example .env.local   # preencha com os valores do seu projeto Supabase
 npm run dev                  # http://localhost:3000
 ```
 
+## CV (PDF)
+
+Os PDFs do CV (`public/cv-igor-paes-ferreira-{en,pt}.pdf`) são gerados a partir
+de `scripts/cv-data.mjs` — edite os dados lá e rode:
+
+```bash
+npm run cv   # requer Chromium local; use PW_CHROMIUM=/caminho/chrome se necessário
+```
+
+Os PDFs ficam commitados no repo (o build na Vercel não os regenera).
+O botão "Download CV" do Hero aponta para o PDF do idioma ativo.
+
 ## Configurar o Supabase
 
 1. Crie um projeto em [supabase.com](https://supabase.com).
