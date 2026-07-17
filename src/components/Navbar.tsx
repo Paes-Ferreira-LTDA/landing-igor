@@ -10,18 +10,18 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[#021C35]">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="/" className="flex items-center">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4">
+        <a href="/" className="flex flex-shrink-0 items-center">
           <Image
             src="/logo-full.png"
             alt="Igor Paes Ferreira"
             width={200}
             height={360}
-            className="h-28 w-auto"
+            className="h-14 w-auto md:h-28"
           />
         </a>
 
-        <div className="flex items-center gap-4 text-sm text-white/60">
+        <div className="flex items-center gap-2 text-sm text-white/60 sm:gap-4">
           <a href="#journey" className="transition hover:text-white hidden sm:block">
             {tx.journey}
           </a>
@@ -30,7 +30,7 @@ export function Navbar() {
           </a>
 
           {/* Language toggle */}
-          <div className="flex items-center overflow-hidden rounded-md border border-white/10 text-xs font-semibold">
+          <div className="flex flex-shrink-0 items-center overflow-hidden rounded-md border border-white/10 text-xs font-semibold">
             <button
               onClick={() => setLang("en")}
               className={`px-2.5 py-1.5 transition ${
@@ -55,7 +55,7 @@ export function Navbar() {
 
           <a
             href="#contact"
-            className="rounded-md border border-[var(--color-brand)]/40 px-4 py-1.5 text-[var(--color-brand-400)] transition hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]"
+            className="flex-shrink-0 whitespace-nowrap rounded-md border border-[var(--color-brand)]/40 px-3 py-1.5 text-[var(--color-brand-400)] transition hover:border-[var(--color-brand)] hover:text-[var(--color-brand)] sm:px-4"
           >
             {tx.cta}
           </a>

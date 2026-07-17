@@ -22,6 +22,7 @@ export const t = {
       title: "From Bosch China to AI in production",
       subtitle: "19 years of building. 3 countries. One consistent thread.",
       hint: "Click any card to expand",
+      lightboxClose: "Close",
     },
     projects: {
       eyebrow: "AI Systems · Production",
@@ -38,7 +39,7 @@ export const t = {
     contact: {
       title: "Let's build something.",
       subtitle:
-        "Available for Head of AI, AI Product Manager, or Chief AI Product Officer roles. Remote/Hybrid. Brazil and international.",
+        "Available for Head of AI and Founding AI Engineer roles. Remote/Hybrid. Brazil and international.",
       namePlaceholder: "Your name",
       emailPlaceholder: "Your email",
       messagePlaceholder: "Tell me about the role or project (optional)",
@@ -139,6 +140,7 @@ export const t = {
       title: "Da Bosch China à AI em produção",
       subtitle: "19 anos construindo. 3 países. Um fio condutor.",
       hint: "Clique em qualquer card para expandir",
+      lightboxClose: "Fechar",
     },
     projects: {
       eyebrow: "Sistemas de AI · Produção",
@@ -155,7 +157,7 @@ export const t = {
     contact: {
       title: "Vamos construir algo.",
       subtitle:
-        "Disponível para vagas de Head of AI, Product Manager AI ou Chief Product Officer AI. Remoto/Híbrido. Brasil e mercado internacional.",
+        "Disponível para vagas de Head of AI e Founding AI Engineer. Remoto/Híbrido. Brasil e mercado internacional.",
       namePlaceholder: "Seu nome",
       emailPlaceholder: "Seu e-mail",
       messagePlaceholder: "Conte sobre a vaga ou projeto (opcional)",

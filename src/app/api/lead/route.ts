@@ -6,7 +6,29 @@ export const runtime = "nodejs";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+// Rate limit simples por IP (melhor esforço: o Map é por instância serverless,
+// mas já barra rajadas de spam no mesmo worker).
+const RATE_WINDOW_MS = 60_000;
+const RATE_MAX = 5;
+const hits = new Map<string, number[]>();
+
+function rateLimited(ip: string): boolean {
+  const now = Date.now();
+  const recent = (hits.get(ip) ?? []).filter((t) => now - t < RATE_WINDOW_MS);
+  recent.push(now);
+  hits.set(ip, recent);
+  return recent.length > RATE_MAX;
+}
+
 export async function POST(request: Request) {
+  const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
+  if (rateLimited(ip)) {
+    return NextResponse.json(
+      { error: "Muitas tentativas. Aguarde um minuto." },
+      { status: 429 },
+    );
+  }
+
   let body: unknown;
   try {
     body = await request.json();
@@ -14,7 +36,13 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "JSON inválido." }, { status: 400 });
   }
 
-  const { name, email, message } = (body ?? {}) as Record<string, unknown>;
+  const { name, email, message, website } = (body ?? {}) as Record<string, unknown>;
+
+  // Honeypot: humanos não veem o campo "website"; se veio preenchido, é bot.
+  // Responde 201 para o bot não perceber que foi filtrado.
+  if (typeof website === "string" && website.trim() !== "") {
+    return NextResponse.json({ ok: true }, { status: 201 });
+  }
 
   if (typeof name !== "string" || name.trim().length < 2) {
     return NextResponse.json({ error: "Nome inválido." }, { status: 400 });
