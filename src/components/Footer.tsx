@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/i18n";
+import { links } from "@/lib/links";
 
 export function Footer() {
   const { lang } = useLanguage();
@@ -32,6 +33,17 @@ export function Footer() {
           </a>
           <a href="#contact" className="transition hover:text-white/60">
             {tx.nav.cta}
+          </a>
+          <a
+            href={links.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-white/60"
+          >
+            LinkedIn
+          </a>
+          <a href={`mailto:${links.email}`} className="transition hover:text-white/60">
+            E-mail
           </a>
         </div>
         <p className="text-xs text-white/20">

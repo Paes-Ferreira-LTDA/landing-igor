@@ -111,7 +111,7 @@ export function Timeline() {
                   {/* Expandable */}
                   <div
                     className="overflow-hidden transition-[max-height] duration-500 ease-in-out"
-                    style={{ maxHeight: isOpen ? "600px" : "0px" }}
+                    style={{ maxHeight: isOpen ? "1200px" : "0px" }}
                   >
                     <div>
                       <div className="mt-2 rounded-xl border border-white/5 bg-white/2 p-5">
@@ -177,7 +177,7 @@ export function Timeline() {
               onClick={() => setLightbox(null)}
               className="absolute -top-10 right-0 text-white/60 hover:text-white text-sm"
             >
-              ✕ Fechar
+              ✕ {tx.lightboxClose}
             </button>
             <div className={`relative w-full overflow-hidden rounded-2xl ${lightbox.includes("fohat-holding") ? "bg-white p-6" : "bg-black"}`}
               style={{ aspectRatio: "4/3" }}>

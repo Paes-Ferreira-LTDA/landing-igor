@@ -28,6 +28,7 @@ export function ContactForm() {
           name: data.get("name"),
           email: data.get("email"),
           message: data.get("message"),
+          website: data.get("website"),
         }),
       });
 
@@ -54,6 +55,15 @@ export function ContactForm() {
       </p>
 
       <form onSubmit={handleSubmit} className="mt-10 flex flex-col gap-4">
+        {/* Honeypot anti-spam: invisível para humanos, bots preenchem */}
+        <input
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+          className="absolute -left-[9999px] h-0 w-0 opacity-0"
+        />
         <input
           name="name"
           type="text"
