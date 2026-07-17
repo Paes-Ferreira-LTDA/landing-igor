@@ -79,10 +79,10 @@ export const t = {
         desc: "eXmesh — Multi-Agent System, a mesh of coordinated agents. Real-time swarm orchestration with HITL and Governance.",
       },
       {
-        desc: "CRM for pipeline management and energy migration processes in Brazil's free energy market, built for energy commercializers.",
+        desc: "Beenx's commercial engine: opportunity pipeline, onboarding and step-by-step tracking of each client's migration to Brazil's free energy market.",
       },
       {
-        desc: "ETRM (Energy Trading and Risk Management) platform for energy commercializers to close contracts with other commercializers.",
+        desc: "Beenx's trading environment: Broker and Home Broker terminals, real-time pricing, contracts and compliance integrated for energy commercializers.",
       },
     ],
     events: [
@@ -111,16 +111,16 @@ export const t = {
         context: "The first office was a single room. Just a desk, a laptop, and a lot of uncertainty. The FOHAT logo on that black wall was the only thing that felt real — a holding under construction.",
       },
       {
-        desc: "Energy marketplace, trading terminal, CRM, blockchain settlement — from zero to production.",
-        context: "Five years of building complex B2B products in regulated industries. Every feature we shipped had to survive ANEEL regulation, CCEE compliance, and the scrutiny of traders who measure money in megawatts. The team grew, the products grew, and so did my conviction that AI was the next layer.",
+        desc: "Beenx: energy marketplace with two products — eTradeflow (trading) and eFlowing (commercial engine) — plus blockchain settlement. eXmesh agents now operate on top of both.",
+        context: "Five years of building complex B2B products in regulated industries. Every feature we shipped had to survive ANEEL regulation, CCEE compliance, and the scrutiny of traders who measure money in megawatts. Today eXmesh agents monitor the migration pipeline end-to-end, detecting bottlenecks before they become delays — without taking humans out of the decisions that matter.",
       },
       {
         desc: "Board of Advisors seat. Corporate governance and management advisory, certified by Gonew.co.",
         context: "I got certified as an Innovation Board Member by Gonew.co — 100 hours, 40 of them in Board Real Practice — and served three consecutive terms on OSINOVA's Board of Advisors. I brought both lenses to the table: the traditional corporate world and the startup builder's.",
       },
       {
-        desc: "Shipped MUTHUR, Bishop, Walter and 4 Synthetic Workers running autonomously on GCP.",
-        context: "Not demos — real agents making real decisions in production. Walter autonomously merged the first AI-authored PR. Bishop reads our architectural specs and detects drift. MUTHUR orchestrates everything via chat, coordinating OKRs and Mandates. This wasn't an experiment; it was infrastructure.",
+        desc: "I lead eXmesh: a mesh of AI agents running autonomously and coordinated in production on GCP. I specify, architect and govern; the agents execute.",
+        context: "MUTHUR receives any demand and distributes work with no human intermediary. Bishop holds the organizational memory — it reads our documentation and historical decisions and detects drift before it becomes a problem. Walter runs engineering end-to-end and was the first to autonomously merge code into production. Each area has its own specialized sub-swarm, coordinated through the central mesh — and every action passes a Governance Gateway that validates OKRs, mandates and decisions, human in the loop. What we built internally is being shaped into a product.",
       },
       {
         desc: "Bringing this rare combination — product passion, innovation, analytical depth and business sense, with AI at scale — to your company.",
@@ -206,10 +206,10 @@ export const t = {
         desc: "eXmesh — Sistema Multi-Agentes, uma malha de agentes coordenados. Orquestração de swarms em tempo real com HITL e Governança.",
       },
       {
-        desc: "CRM para gestão de pipeline e de processos de migração do Mercado Livre de Energia voltada para Comercializadoras de Energia.",
+        desc: "Motor comercial da Beenx: pipeline de oportunidades, onboarding e acompanhamento de cada etapa da migração dos clientes ao Mercado Livre de Energia.",
       },
       {
-        desc: "Plataforma ETRM (Energy Trading and Risk Management) para Comercializadoras de Energia poderem fechar seus contratos com outras Comercializadoras de Energia.",
+        desc: "Ambiente de trading da Beenx: Terminal Broker e Home Broker, precificação em tempo real, contratos e compliance integrados para Comercializadoras.",
       },
     ],
     events: [
@@ -238,16 +238,16 @@ export const t = {
         context: "O primeiro escritório era uma sala. Só uma mesa, um laptop e muita incerteza. O logo FOHAT naquela parede preta era a única coisa que parecia real, uma holding em construção.",
       },
       {
-        desc: "Marketplace de energia, terminal de trading, CRM, liquidação blockchain — do zero à produção.",
-        context: "Cinco anos construindo produtos B2B complexos em indústrias reguladas. Cada feature que entregamos teve que sobreviver à regulação da ANEEL, conformidade da CCEE e ao escrutínio de traders que medem dinheiro em megawatts. O time cresceu, os produtos cresceram, e cresceu minha convicção de que AI era a próxima camada.",
+        desc: "Beenx: marketplace de energia com dois produtos — eTradeflow (trading) e eFlowing (motor comercial) — e liquidação blockchain. Os agentes do eXmesh hoje operam sobre os dois.",
+        context: "Cinco anos construindo produtos B2B complexos em indústrias reguladas. Cada feature que entregamos teve que sobreviver à regulação da ANEEL, conformidade da CCEE e ao escrutínio de traders que medem dinheiro em megawatts. Hoje os agentes do eXmesh monitoram o pipeline de migração de ponta a ponta, detectando gargalos antes que virem atrasos — sem tirar o humano das decisões que importam.",
       },
       {
         desc: "Assento no Board of Advisors. Consultoria de governança corporativa e de gestão, com certificação da Gonew.co.",
         context: "Me certifiquei como Conselheiro de Inovação pela Gonew.co — 100 horas, 40 delas em Board Real Practice — e servi por três mandatos consecutivos no Board of Advisors da OSINOVA. Levei para a mesa as duas lentes: a do mundo corporativo tradicional e a de quem constrói startups.",
       },
       {
-        desc: "Entreguei MUTHUR, Bishop, Walter e 4 Synthetic Workers rodando autonomamente no GCP.",
-        context: "Não são demos — são agentes tomando decisões reais em produção. Walter fez o merge autônomo do primeiro PR gerado por IA. Bishop lê nossas specs arquiteturais e detecta drift. MUTHUR orquestra tudo via chat coordenando OKRs e Mandatos. Isso não foi um experimento; foi infraestrutura.",
+        desc: "Lidero o eXmesh: malha de agentes de IA rodando de forma autônoma e coordenada em produção no GCP. Eu especifico, arquiteto e governo; os agentes executam.",
+        context: "A MUTHUR recebe qualquer demanda e distribui o trabalho sem intermediário humano. O Bishop guarda a memória organizacional — lê nossa documentação e decisões históricas e detecta desvios antes que virem problema. O Walter realiza engenharia de ponta a ponta e foi o primeiro a fazer merge autônomo de código em produção. Cada área tem seu sub-swarm especializado, coordenado pela malha central — e cada ação passa por um Governance Gateway que valida OKRs, mandatos e decisões, com humano no circuito. O que construímos internamente está sendo formatado como produto.",
       },
       {
         desc: "Trazendo essa combinação rara — paixão por produto, inovação, capacidade analítica e visão de negócios, com AI em escala — para a sua empresa.",

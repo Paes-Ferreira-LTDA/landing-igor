@@ -14,7 +14,7 @@ const eventsBase = [
   { year: "2018",      flag: "🚀",  company: "Fohat Corporation",            role: "Founded",                           photos: ["/fohat-igor.jpeg", "/fohat-holding.png"],         highlight: false },
   { year: "2018–2023", flag: "⚡",  company: "Beenx · eTradeflow · eFlowing", role: "Platform Builder",                photos: ["/beenx-team.jpeg"],                               highlight: false },
   { year: "2022–2024", flag: "🧭",  company: "OSINOVA",                     role: "Innovation Board Advisor",          photos: ["/certificado-conselheiro-inovacao.jpeg"],         highlight: false },
-  { year: "2024–2025", flag: "🤖",  company: "Fohat eTech · eXmesh",        role: "AI Systems Builder",                photos: ["/igor-head-ai.jpeg"],                             highlight: true  },
+  { year: "2024–2026", flag: "🤖",  company: "Fohat Corporation · eXmesh",  role: "AI Product Manager · Tech Lead",    photos: ["/igor-head-ai.jpeg"],                             highlight: true  },
   { year: "2026",      flag: "🟢",  company: "Available",                   role: "AI Product Manager · Technical PM", photos: [],                                                 highlight: true  },
 ];
 
