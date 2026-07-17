@@ -81,6 +81,16 @@ export function Hero() {
               {tx.ctaSecondary}
             </a>
             <a
+              href={`/cv-igor-paes-ferreira-${lang}.pdf`}
+              download
+              className="flex items-center gap-2 rounded-lg border border-[var(--color-gold)]/40 px-5 py-3 font-medium text-[var(--color-gold)] transition hover:border-[var(--color-gold)] hover:text-[#e0be4a]"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4" aria-hidden="true">
+                <path d="M12 3v12m0 0 -4-4m4 4 4-4M4 19h16" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              {tx.ctaCv}
+            </a>
+            <a
               href={links.linkedin}
               target="_blank"
               rel="noopener noreferrer"
