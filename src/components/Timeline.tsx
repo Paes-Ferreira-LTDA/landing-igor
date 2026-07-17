@@ -126,7 +126,7 @@ export function Timeline() {
                                   <button
                                     key={src}
                                     onClick={() => setLightbox(src)}
-                                    className={`group relative overflow-hidden rounded-lg ${isHolding ? "bg-white p-2" : ""}`}
+                                    className={`group block w-full relative overflow-hidden rounded-lg ${isHolding ? "bg-white p-2" : ""}`}
                                     style={{ aspectRatio: "4/3" }}
                                   >
                                     <Image
