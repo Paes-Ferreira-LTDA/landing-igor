@@ -34,9 +34,9 @@ export async function POST(request: Request) {
   try {
     const supabase = createServiceClient();
     const { error } = await supabase.from("leads").insert({
-      name: cleanName,
+      nome: cleanName,
       email: cleanEmail,
-      message: cleanMessage,
+      mensagem: cleanMessage ?? "",
     });
 
     if (error) {
