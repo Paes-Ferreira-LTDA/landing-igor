@@ -62,10 +62,18 @@ export function Hero() {
           <div className="mt-4 h-px w-12 bg-[var(--color-gold)]" />
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/60">
-            {tx.desc}{" "}
-            <span className="text-white/90">{tx.descHighlight}</span>{" "}
-            {tx.descEnd}
+            {tx.desc}
           </p>
+
+          <ul className="mt-6 flex flex-col gap-2">
+            {tx.products.map((p) => (
+              <li key={p.name} className="flex items-baseline gap-2 text-sm">
+                <span aria-hidden="true" className="text-[var(--color-brand)]">▸</span>
+                <span className="font-semibold text-white/90">{p.name}</span>
+                <span className="text-white/50">— {p.tagline}</span>
+              </li>
+            ))}
+          </ul>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
