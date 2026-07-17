@@ -40,7 +40,7 @@ export const t = {
     contact: {
       title: "Let's build something.",
       subtitle:
-        "Available for Head of AI and Founding AI Engineer roles. Remote/Hybrid. Brazil and international.",
+        "Available for AI Product Manager and Technical Product Manager roles. Remote/Hybrid. Brazil and international.",
       namePlaceholder: "Your name",
       emailPlaceholder: "Your email",
       messagePlaceholder: "Tell me about the role or project (optional)",
@@ -159,7 +159,7 @@ export const t = {
     contact: {
       title: "Vamos construir algo.",
       subtitle:
-        "Disponível para vagas de Head of AI e Founding AI Engineer. Remoto/Híbrido. Brasil e mercado internacional.",
+        "Disponível para vagas de AI Product Manager e Technical Product Manager. Remoto/Híbrido. Brasil e mercado internacional.",
       namePlaceholder: "Seu nome",
       emailPlaceholder: "Seu e-mail",
       messagePlaceholder: "Conte sobre a vaga ou projeto (opcional)",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Igor Ferreira — AI · Engineering · Strategy",
   description:
-    "Technical founder and AI systems builder. Available for Head of AI and Founding AI Engineer roles. Built Bishop, Walter, MUTHUR and production AI agents on GCP.",
+    "Technical founder and AI product builder. Available for AI Product Manager and Technical Product Manager roles. Built Bishop, Walter, MUTHUR and production AI agents on GCP.",
   openGraph: {
     title: "Igor Ferreira — AI · Engineering · Strategy",
     description:
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Igor Ferreira — Head of AI · Founding AI Engineer",
+        alt: "Igor Ferreira — AI Product Manager · Technical Product Manager",
       },
     ],
   },
@@ -41,9 +41,10 @@ export const metadata: Metadata = {
     images: ["/og.png"],
   },
   keywords: [
-    "Head of AI",
-    "AI Engineer",
-    "Founding AI Engineer",
+    "AI Product Manager",
+    "Technical Product Manager",
+    "Product Manager AI",
+    "Tech Lead",
     "LangGraph",
     "Claude",
     "Vertex AI",
