@@ -22,7 +22,7 @@ export const cv = {
     location: "Brazil · Remote / Hybrid · Open to international",
     summaryTitle: "Summary",
     summary:
-      "Product builder end-to-end: technical founder and electrical engineer with 19 years developing products across heavy industry and B2B software. 7 years at Volvo growing from engineer to product leader; 8 years founding and building B2B platforms in Brazil's regulated energy market; now shipping multi-agent AI products that run autonomously in production on GCP — from discovery and strategy to production code.",
+      "Passionate about product development and innovation, with an engineer's analytical depth and a founder's business sense. 19 years building products end-to-end across heavy industry and B2B software: 7 years at Volvo growing from engineer to product leader; 8 years founding and building B2B platforms in Brazil's regulated energy market; now shipping multi-agent AI products that run autonomously in production on GCP — from discovery and strategy to production code.",
     experienceTitle: "Experience",
     experience: [
       {
@@ -94,7 +94,7 @@ export const cv = {
     location: "Brasil · Remoto / Híbrido · Aberto a internacional",
     summaryTitle: "Resumo",
     summary:
-      "Construtor de produtos de ponta a ponta: founder técnico e engenheiro eletricista com 19 anos desenvolvendo produtos entre indústria pesada e software B2B. 7 anos na Volvo, de engenheiro a liderança de produto; 8 anos fundando e construindo plataformas B2B no mercado regulado de energia do Brasil; hoje colocando em produção produtos multi-agentes de AI rodando autonomamente no GCP — da descoberta e estratégia ao código em produção.",
+      "Apaixonado por desenvolvimento de produtos e inovação, com a capacidade analítica de engenheiro e a visão de negócios de founder. 19 anos construindo produtos de ponta a ponta entre indústria pesada e software B2B: 7 anos na Volvo, de engenheiro a liderança de produto; 8 anos fundando e construindo plataformas B2B no mercado regulado de energia do Brasil; hoje colocando em produção produtos multi-agentes de AI rodando autonomamente no GCP — da descoberta e estratégia ao código em produção.",
     experienceTitle: "Experiência",
     experience: [
       {
