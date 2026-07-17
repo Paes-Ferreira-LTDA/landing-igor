@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/i18n";
@@ -22,6 +22,13 @@ export function Timeline() {
   const tx = t[lang].timeline;
   const eventTexts = t[lang].events;
   const [openSet, setOpenSet] = useState<Set<number>>(new Set());
+  const [lightbox, setLightbox] = useState<string | null>(null);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setLightbox(null); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   const events = eventsBase.map((base, i) => ({
     ...base,
@@ -116,19 +123,25 @@ export function Timeline() {
                               {event.photos.map((src) => {
                                 const isHolding = src.includes("fohat-holding");
                                 return (
-                                  <div
+                                  <button
                                     key={src}
-                                    className={`relative overflow-hidden rounded-lg ${isHolding ? "bg-white p-2" : ""}`}
+                                    onClick={() => setLightbox(src)}
+                                    className={`group relative overflow-hidden rounded-lg ${isHolding ? "bg-white p-2" : ""}`}
                                     style={{ aspectRatio: "4/3" }}
                                   >
                                     <Image
                                       src={src}
                                       alt={event.company}
                                       fill
-                                      className={isHolding ? "object-contain p-1" : "object-cover"}
+                                      className={`transition duration-300 group-hover:scale-105 ${isHolding ? "object-contain p-1" : "object-cover"}`}
                                       sizes="(max-width: 768px) 100vw, 256px"
                                     />
-                                  </div>
+                                    <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition duration-300 group-hover:bg-black/25">
+                                      <span className="scale-0 rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm transition duration-300 group-hover:scale-100">
+                                        ⤢
+                                      </span>
+                                    </div>
+                                  </button>
                                 );
                               })}
                             </div>
@@ -152,6 +165,34 @@ export function Timeline() {
           })}
         </div>
       </div>
+      {/* Photo lightbox */}
+      {lightbox && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-12"
+          onClick={() => setLightbox(null)}
+        >
+          <div className="absolute inset-0 bg-black/85 backdrop-blur-md" />
+          <div className="relative z-10 max-w-4xl w-full" onClick={e => e.stopPropagation()}>
+            <button
+              onClick={() => setLightbox(null)}
+              className="absolute -top-10 right-0 text-white/60 hover:text-white text-sm"
+            >
+              ✕ Fechar
+            </button>
+            <div className={`relative w-full overflow-hidden rounded-2xl ${lightbox.includes("fohat-holding") ? "bg-white p-6" : "bg-black"}`}
+              style={{ aspectRatio: "4/3" }}>
+              <Image
+                src={lightbox}
+                alt="Foto expandida"
+                fill
+                className={lightbox.includes("fohat-holding") ? "object-contain" : "object-cover"}
+                sizes="100vw"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
