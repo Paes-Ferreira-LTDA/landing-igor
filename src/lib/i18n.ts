@@ -9,11 +9,14 @@ export const t = {
     },
     hero: {
       badge: "Open to AI roles · Remote · Hybrid",
-      h1a: "I build AI systems",
+      h1a: "I build AI products",
       h1b: "that work in production.",
-      desc: "Technical founder. Electrical engineer. 7 years at Volvo. 8 years building B2B platforms. Shipped",
-      descHighlight: "eXmesh — Multi-Agent AI System, eTradeflow — ETRM platform for bilateral energy contracts, eFlowing — Agentic CRM for energy migration management.",
-      descEnd: "",
+      desc: "From discovery to deploy: I combine product vision, analytical depth and business sense to turn complex problems into software that delivers value. Electrical engineer, 7 years at Volvo, 8 as a founder in the energy sector.",
+      products: [
+        { name: "eXmesh", tagline: "multi-agent AI system" },
+        { name: "eTradeflow", tagline: "ETRM for bilateral energy contracts" },
+        { name: "eFlowing", tagline: "agentic CRM for Brazil's free energy market" },
+      ],
       ctaPrimary: "Let's talk",
       ctaSecondary: "See my journey",
       ctaCv: "Download CV",
@@ -40,7 +43,7 @@ export const t = {
     contact: {
       title: "Let's build something.",
       subtitle:
-        "Available for Head of AI and Founding AI Engineer roles. Remote/Hybrid. Brazil and international.",
+        "Available for AI Product Manager and Technical Product Manager roles. Remote/Hybrid. Brazil and international.",
       namePlaceholder: "Your name",
       emailPlaceholder: "Your email",
       messagePlaceholder: "Tell me about the role or project (optional)",
@@ -115,7 +118,7 @@ export const t = {
         context: "Not demos — real agents making real decisions in production. Walter autonomously merged the first AI-authored PR. Bishop reads our architectural specs and detects drift. MUTHUR orchestrates everything via chat, coordinating OKRs and Mandates. This wasn't an experiment; it was infrastructure.",
       },
       {
-        desc: "Bringing this rare combination — product thinking, technical execution, AI at scale — to your company.",
+        desc: "Bringing this rare combination — product passion, innovation, analytical depth and business sense, with AI at scale — to your company.",
         context: "The companies I founded are in GTM and being prepared to become AI First. I'm now open to channeling everything I've built — the AI systems, the product sense, the execution discipline — into a role where I can make an immediate, measurable impact. Remote. Hybrid. Brazil and international.",
       },
     ],
@@ -128,11 +131,14 @@ export const t = {
     },
     hero: {
       badge: "Disponível para vagas em AI · Remoto · Híbrido",
-      h1a: "Construo sistemas de AI",
+      h1a: "Construo produtos de AI",
       h1b: "que funcionam em produção.",
-      desc: "Founder técnico. Engenheiro eletricista. 7 anos na Volvo. 8 anos construindo plataformas B2B. Coloquei em produção",
-      descHighlight: "eXmesh — Sistema Multi-Agentes de AI, eTradeflow — Sistema ETRM para contratos bilaterais de energia, eFlowing — CRM agêntico para gestão da migração de clientes para o Mercado Livre de Energia.",
-      descEnd: "",
+      desc: "Da descoberta ao deploy: uno visão de produto, capacidade analítica e negócios para transformar problemas complexos em software que gera valor. Engenheiro eletricista, 7 anos na Volvo, 8 como founder no setor de energia.",
+      products: [
+        { name: "eXmesh", tagline: "sistema multi-agentes de AI" },
+        { name: "eTradeflow", tagline: "ETRM para contratos bilaterais de energia" },
+        { name: "eFlowing", tagline: "CRM agêntico para o Mercado Livre de Energia" },
+      ],
       ctaPrimary: "Vamos conversar",
       ctaSecondary: "Ver minha jornada",
       ctaCv: "Baixar CV",
@@ -159,7 +165,7 @@ export const t = {
     contact: {
       title: "Vamos construir algo.",
       subtitle:
-        "Disponível para vagas de Head of AI e Founding AI Engineer. Remoto/Híbrido. Brasil e mercado internacional.",
+        "Disponível para vagas de AI Product Manager e Technical Product Manager. Remoto/Híbrido. Brasil e mercado internacional.",
       namePlaceholder: "Seu nome",
       emailPlaceholder: "Seu e-mail",
       messagePlaceholder: "Conte sobre a vaga ou projeto (opcional)",
@@ -234,7 +240,7 @@ export const t = {
         context: "Não são demos — são agentes tomando decisões reais em produção. Walter fez o merge autônomo do primeiro PR gerado por IA. Bishop lê nossas specs arquiteturais e detecta drift. MUTHUR orquestra tudo via chat coordenando OKRs e Mandatos. Isso não foi um experimento; foi infraestrutura.",
       },
       {
-        desc: "Trazendo essa combinação rara — visão de produto, execução técnica, AI em escala — para a sua empresa.",
+        desc: "Trazendo essa combinação rara — paixão por produto, inovação, capacidade analítica e visão de negócios, com AI em escala — para a sua empresa.",
         context: "As empresas que fundei estão em GTM e sendo preparadas para serem \"AI First\". Agora estou aberto a canalizar tudo que construí — os sistemas de AI, o senso de produto, a disciplina de execução — em um papel onde posso ter impacto imediato e mensurável. Remoto. Híbrido. Brasil e mercado internacional.",
       },
     ],
