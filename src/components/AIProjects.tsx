@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { AISystemsDiagram } from "./AISystemsDiagram";
+import { LogoSwarm } from "./LogoSwarm";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/i18n";
 
@@ -19,9 +20,15 @@ const agentsBase = [
   { name: "Synthetic Workers ×4", tags: ["Claude Agent SDK", "Cloud Run", "GCS", "GKE"],                    icon: "◇" },
 ];
 
-const platformsBase = [
+const platformsBase: {
+  name: string;
+  stack: string;
+  screenshot: string;
+  logo: string;
+  swarmLogo?: string;
+}[] = [
   { name: "eXmesh",       stack: "Claude SDK · LangGraph · GKE · Redis Streams", screenshot: "/eXmesh.png",     logo: "/exmesh-logo-tagline-800.png"  },
-  { name: "eFlowing CRM", stack: "NestJS · Next.js · GraphQL · Cloud SQL (GCP)",   screenshot: "/eFlowing.png",   logo: "/eflowing-logo-tagline.png"    },
+  { name: "eFlowing CRM", stack: "NestJS · Next.js · GraphQL · Cloud SQL (GCP)",   screenshot: "/eFlowing.png",   logo: "/eflowing-logo-tagline.png",   swarmLogo: "/eflowing-logo-tagline-1200.png" },
   { name: "eTradeflow",   stack: "React · WebSockets · Ant Design · Django",       screenshot: "/eTradeflow.png", logo: "/etradeflow-logo-tagline.png"  },
 ];
 
@@ -148,17 +155,17 @@ export function AIProjects() {
                     </span>
                   </div>
                 </div>
-                {/* Logo strip */}
+                {/* Logo strip — swarm de partículas forma a logo ao entrar em viewport */}
                 <div className="flex items-center border-y border-white/5 bg-white px-5 py-4">
-                  <div className="relative h-10 w-64">
-                    <Image
-                      src={p.logo}
-                      alt={`${p.name} logo`}
-                      fill
-                      className="object-contain object-left"
-                      sizes="256px"
-                    />
-                  </div>
+                  <LogoSwarm
+                    src={p.swarmLogo ?? p.logo}
+                    className="h-10 w-full"
+                    fit="fill"
+                    align="left"
+                    density={420}
+                    duration={4}
+                    ariaLabel={`${p.name} logo`}
+                  />
                 </div>
                 {/* Info */}
                 <div className="p-5">
