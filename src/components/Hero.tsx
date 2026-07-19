@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/i18n";
 import { links } from "@/lib/links";
-import { LogoSwarm } from "./LogoSwarm";
 
 export function Hero() {
   const { lang } = useLanguage();
@@ -23,12 +22,6 @@ export function Hero() {
       />
       {/* Glow blob */}
       <div className="pointer-events-none absolute -top-40 left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-[var(--color-brand)] opacity-[0.06] blur-3xl" />
-      {/* Escudo PF — swarm de partículas decorativo, assenta como marca d'água */}
-      <div className="pointer-events-none absolute inset-y-0 right-0 hidden lg:block" aria-hidden="true">
-        <div className="absolute -right-24 top-[54%] h-[560px] w-[560px] -translate-y-1/2 opacity-40">
-          <LogoSwarm src="/logo-pf.png" density={900} settle={0.55} />
-        </div>
-      </div>
 
       <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-16 px-6 py-24 md:flex-row md:items-center md:gap-20 md:py-32">
         {/* Photo */}
