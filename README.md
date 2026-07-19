@@ -69,3 +69,14 @@ select name, email, message, created_at
 from public.leads
 order by created_at desc;
 ```
+
+## Cover Letter (PDF)
+
+As cartas de apresentação (`public/cover-letter-igor-ferreira-en.pdf` e
+`public/carta-apresentacao-igor-ferreira-pt.pdf`) são geradas a partir de
+`scripts/cover-letter-data.mjs`. Para personalizar por vaga, preencha
+`company`/`role` no arquivo e rode:
+
+```bash
+npm run letter
+```
