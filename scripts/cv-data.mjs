@@ -22,17 +22,15 @@ export const cv = {
     location: "Brazil · Remote / Hybrid · Open to international",
     summaryTitle: "Summary",
     summary:
-      "Passionate about product development and innovation, with an engineer's analytical depth and a founder's business sense. 19 years building products end-to-end across heavy industry and B2B software: 7 years at Volvo growing from engineer to product leader; 8 years founding and building B2B platforms in Brazil's regulated energy market; now shipping multi-agent AI products that run autonomously in production on GCP — from discovery and strategy to production code. My focus: making companies AI First.",
+      "Passionate about product research, development and innovation, with an engineer's analytical depth and a founder's business sense. 15 years building products end-to-end across heavy industry and B2B software: 7 years at Volvo growing from engineer to product leader; 8 years developing products through ANEEL R&D (P&D) projects. My current focus: making companies AI First through research and development.",
     experienceTitle: "Experience",
     experience: [
       {
         period: "2024 — present",
         title: "AI Product Manager · Tech Lead",
-        org: "Fohat Corporation · eXmesh",
+        org: "Fohat · eXmesh",
         bullets: [
-          "I lead eXmesh, a multi-agent AI mesh in production on GCP — I specify, architect and govern; the agents execute: MUTHUR (orchestrator that distributes work with no human intermediary), Bishop (organizational memory: reads ADRs/BRS/SPECs, detects drift), Walter (end-to-end engineering executor) and specialized sub-swarms per business area.",
-          "Walter performed the company's first fully autonomous PR merge in production — receives task openers, runs tests, opens PRs and self-declares ready for merge.",
-          "Governance Gateway enforcing OKRs and Mandates on every agent dispatch, with human-in-the-loop preserved; observability with Langfuse; 6 MCP servers as in-cluster tool interface.",
+          "I lead eXmesh, a multi-agent AI mesh for the energy sector.",
         ],
       },
       {
@@ -44,20 +42,20 @@ export const cv = {
         ],
       },
       {
-        period: "2018 — present",
-        title: "Founder · Platform Builder",
-        org: "Beenx · eTradeflow · eFlowing (Fohat group)",
+        period: "2020 — 2022",
+        title: "Researcher · Platform Builder",
+        org: "Fohat · eTradeflow",
         bullets: [
-          "Built Beenx, Brazil's first digital one-stop-shop for the free energy market, with two products — eTradeflow (trading environment: Broker/Home Broker terminals, real-time pricing, integrated contracts and compliance) and eFlowing (commercial engine: pipeline, onboarding and migration tracking) — plus blockchain settlement; eXmesh agents now operate on top of both.",
-          "Every feature shipped under ANEEL regulation and CCEE compliance, serving traders in Brazil's free energy market.",
+          "Built eTradeflow, a trading environment with Broker and Home Broker terminals — real-time pricing, integrated contracts and compliance.",
+          "Led an ANEEL R&D (P&D) project for the Home Broker and a separate ANEEL R&D (P&D) project for the Terminal Broker.",
         ],
       },
       {
-        period: "2018",
+        period: "2018 — present",
         title: "Founder",
-        org: "Fohat Corporation",
+        org: "Fohat",
         bullets: [
-          "Founded a holding to operate B2B platforms in regulated markets: energy, fintech, blockchain.",
+          "Founded a product research and development company to operate B2B platforms in the energy market.",
         ],
       },
       {
@@ -95,17 +93,15 @@ export const cv = {
     location: "Brasil · Remoto / Híbrido · Aberto a internacional",
     summaryTitle: "Resumo",
     summary:
-      "Apaixonado por desenvolvimento de produtos e inovação, com a capacidade analítica de engenheiro e a visão de negócios de founder. 19 anos construindo produtos de ponta a ponta entre indústria pesada e software B2B: 7 anos na Volvo, de engenheiro a liderança de produto; 8 anos fundando e construindo plataformas B2B no mercado regulado de energia do Brasil; hoje colocando em produção produtos multi-agentes de AI rodando autonomamente no GCP — da descoberta e estratégia ao código em produção. Meu foco: tornar empresas AI First.",
+      "Apaixonado por pesquisa e desenvolvimento de produtos e inovação, com a capacidade analítica de engenheiro e a visão de negócios de fundador. 15 anos construindo produtos de ponta a ponta entre indústria pesada e software B2B: 7 anos na Volvo, de engenheiro a liderança de produto; 8 anos desenvolvendo produtos através de projetos de PeD ANEEL. Meu foco atual: tornar empresas AI First através de pesquisa e desenvolvimento.",
     experienceTitle: "Experiência",
     experience: [
       {
         period: "2024 — presente",
         title: "AI Product Manager · Tech Lead",
-        org: "Fohat Corporation · eXmesh",
+        org: "Fohat · eXmesh",
         bullets: [
-          "Lidero o eXmesh, malha multi-agentes de AI em produção no GCP — eu especifico, arquiteto e governo; os agentes executam: MUTHUR (orquestradora que distribui trabalho sem intermediário humano), Bishop (memória organizacional: lê ADRs/BRS/SPECs, detecta drift), Walter (executor de engenharia de ponta a ponta) e sub-swarms especializados por área de negócio.",
-          "Walter fez o primeiro merge de PR totalmente autônomo da empresa em produção — recebe task openers, roda testes, abre PRs e se declara pronto para merge.",
-          "Governance Gateway garantindo OKRs e Mandates em cada dispatch de agente, com human-in-the-loop preservado; observabilidade com Langfuse; 6 MCP servers como interface de ferramentas in-cluster.",
+          "Lidero o eXmesh, malha multi-agentes de AI para o setor de energia.",
         ],
       },
       {
@@ -117,20 +113,20 @@ export const cv = {
         ],
       },
       {
-        period: "2018 — presente",
-        title: "Founder · Platform Builder",
-        org: "Beenx · eTradeflow · eFlowing (grupo Fohat)",
+        period: "2020 — 2022",
+        title: "Pesquisador · Platform Builder",
+        org: "Fohat · eTradeflow",
         bullets: [
-          "Construí a Beenx, primeira one-stop-shop digital do Mercado Livre de Energia no Brasil, com dois produtos — eTradeflow (ambiente de trading: Terminal Broker/Home Broker, precificação em tempo real, contratos e compliance integrados) e eFlowing (motor comercial: pipeline, onboarding e acompanhamento da migração) — além de liquidação blockchain; os agentes do eXmesh hoje operam sobre os dois.",
-          "Cada feature entregue sob regulação da ANEEL e conformidade CCEE, atendendo traders do Mercado Livre de Energia.",
+          "Construí a eTradeflow, ambiente de trading com Terminal Broker e Home Broker — precificação em tempo real, contratos e compliance integrados.",
+          "Liderei um projeto de P&D ANEEL para o Home Broker e outro projeto de P&D ANEEL para o Terminal Broker.",
         ],
       },
       {
-        period: "2018",
-        title: "Founder",
-        org: "Fohat Corporation",
+        period: "2018 — presente",
+        title: "Fundador",
+        org: "Fohat",
         bullets: [
-          "Fundei uma holding para operar plataformas B2B em mercados regulados: energia, fintech, blockchain.",
+          "Fundei uma empresa de pesquisa e desenvolvimento de produtos para operar plataformas B2B no mercado de energia.",
         ],
       },
       {
