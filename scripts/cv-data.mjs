@@ -44,7 +44,7 @@ export const cv = {
       {
         period: "2020 — 2022",
         title: "Researcher · Platform Builder",
-        org: "eTradeflow",
+        org: "Fohat · eTradeflow",
         bullets: [
           "Built eTradeflow, a trading environment with Broker and Home Broker terminals — real-time pricing, integrated contracts and compliance.",
           "Led an ANEEL R&D (P&D) project for the Home Broker and a separate ANEEL R&D (P&D) project for the Terminal Broker.",
@@ -115,7 +115,7 @@ export const cv = {
       {
         period: "2020 — 2022",
         title: "Pesquisador · Platform Builder",
-        org: "eTradeflow",
+        org: "Fohat · eTradeflow",
         bullets: [
           "Construí a eTradeflow, ambiente de trading com Terminal Broker e Home Broker — precificação em tempo real, contratos e compliance integrados.",
           "Liderei um projeto de P&D ANEEL para o Home Broker e outro projeto de P&D ANEEL para o Terminal Broker.",
