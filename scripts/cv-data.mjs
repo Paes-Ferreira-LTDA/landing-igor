@@ -30,9 +30,7 @@ export const cv = {
         title: "AI Product Manager · Tech Lead",
         org: "Fohat Corporation · eXmesh",
         bullets: [
-          "I lead eXmesh, a multi-agent AI mesh in production on GCP — I specify, architect and govern; the agents execute: MUTHUR (orchestrator that distributes work with no human intermediary), Bishop (organizational memory: reads ADRs/BRS/SPECs, detects drift), Walter (end-to-end engineering executor) and specialized sub-swarms per business area.",
-          "Walter performed the company's first fully autonomous PR merge in production — receives task openers, runs tests, opens PRs and self-declares ready for merge.",
-          "Governance Gateway enforcing OKRs and Mandates on every agent dispatch, with human-in-the-loop preserved; observability with Langfuse; 6 MCP servers as in-cluster tool interface.",
+          "I lead eXmesh, a multi-agent AI mesh for the energy sector.",
         ],
       },
       {
@@ -41,15 +39,6 @@ export const cv = {
         org: "OSINOVA Participações",
         bullets: [
           "Member of the Board of Advisors: corporate governance and management advisory, bringing combined traditional-corporate and startup experience to guide company strategy.",
-        ],
-      },
-      {
-        period: "2018 — present",
-        title: "Founder · Platform Builder",
-        org: "Beenx · eTradeflow · eFlowing (Fohat group)",
-        bullets: [
-          "Built Beenx, Brazil's first digital one-stop-shop for the free energy market, with two products — eTradeflow (trading environment: Broker/Home Broker terminals, real-time pricing, integrated contracts and compliance) and eFlowing (commercial engine: pipeline, onboarding and migration tracking) — plus blockchain settlement; eXmesh agents now operate on top of both.",
-          "Every feature shipped under ANEEL regulation and CCEE compliance, serving traders in Brazil's free energy market.",
         ],
       },
       {
@@ -62,11 +51,11 @@ export const cv = {
         ],
       },
       {
-        period: "2018",
+        period: "2018 — present",
         title: "Founder",
-        org: "Fohat Corporation",
+        org: "Fohat",
         bullets: [
-          "Founded a holding to operate B2B platforms in regulated markets: energy, fintech, blockchain.",
+          "Founded a product research and development company to operate B2B platforms in the energy market.",
         ],
       },
       {
@@ -112,9 +101,7 @@ export const cv = {
         title: "AI Product Manager · Tech Lead",
         org: "Fohat Corporation · eXmesh",
         bullets: [
-          "Lidero o eXmesh, malha multi-agentes de AI em produção no GCP — eu especifico, arquiteto e governo; os agentes executam: MUTHUR (orquestradora que distribui trabalho sem intermediário humano), Bishop (memória organizacional: lê ADRs/BRS/SPECs, detecta drift), Walter (executor de engenharia de ponta a ponta) e sub-swarms especializados por área de negócio.",
-          "Walter fez o primeiro merge de PR totalmente autônomo da empresa em produção — recebe task openers, roda testes, abre PRs e se declara pronto para merge.",
-          "Governance Gateway garantindo OKRs e Mandates em cada dispatch de agente, com human-in-the-loop preservado; observabilidade com Langfuse; 6 MCP servers como interface de ferramentas in-cluster.",
+          "Lidero o eXmesh, malha multi-agentes de AI para o setor de energia.",
         ],
       },
       {
@@ -123,15 +110,6 @@ export const cv = {
         org: "OSINOVA Participações",
         bullets: [
           "Membro do Board of Advisors: consultoria de governança corporativa e de gestão, unindo vivência no mundo corporativo tradicional e na criação de startups para orientar a estratégia da empresa.",
-        ],
-      },
-      {
-        period: "2018 — presente",
-        title: "Founder · Platform Builder",
-        org: "Beenx · eTradeflow · eFlowing (grupo Fohat)",
-        bullets: [
-          "Construí a Beenx, primeira one-stop-shop digital do Mercado Livre de Energia no Brasil, com dois produtos — eTradeflow (ambiente de trading: Terminal Broker/Home Broker, precificação em tempo real, contratos e compliance integrados) e eFlowing (motor comercial: pipeline, onboarding e acompanhamento da migração) — além de liquidação blockchain; os agentes do eXmesh hoje operam sobre os dois.",
-          "Cada feature entregue sob regulação da ANEEL e conformidade CCEE, atendendo traders do Mercado Livre de Energia.",
         ],
       },
       {
@@ -144,11 +122,11 @@ export const cv = {
         ],
       },
       {
-        period: "2018",
-        title: "Founder",
-        org: "Fohat Corporation",
+        period: "2018 — presente",
+        title: "Fundador",
+        org: "Fohat",
         bullets: [
-          "Fundei uma holding para operar plataformas B2B em mercados regulados: energia, fintech, blockchain.",
+          "Fundei uma empresa de pesquisa e desenvolvimento de produtos para operar plataformas B2B no mercado de energia.",
         ],
       },
       {
