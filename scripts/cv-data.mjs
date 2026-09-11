@@ -28,7 +28,7 @@ export const cv = {
       {
         period: "2024 — present",
         title: "AI Product Manager · Tech Lead",
-        org: "Fohat Corporation · eXmesh",
+        org: "Fohat · eXmesh",
         bullets: [
           "I lead eXmesh, a multi-agent AI mesh for the energy sector.",
         ],
@@ -99,7 +99,7 @@ export const cv = {
       {
         period: "2024 — presente",
         title: "AI Product Manager · Tech Lead",
-        org: "Fohat Corporation · eXmesh",
+        org: "Fohat · eXmesh",
         bullets: [
           "Lidero o eXmesh, malha multi-agentes de AI para o setor de energia.",
         ],
