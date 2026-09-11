@@ -50,7 +50,15 @@ export const cv = {
         bullets: [
           "Built Beenx, Brazil's first digital one-stop-shop for the free energy market, with two products — eTradeflow (trading environment: Broker/Home Broker terminals, real-time pricing, integrated contracts and compliance) and eFlowing (commercial engine: pipeline, onboarding and migration tracking) — plus blockchain settlement; eXmesh agents now operate on top of both.",
           "Every feature shipped under ANEEL regulation and CCEE compliance, serving traders in Brazil's free energy market.",
-          "Since 2020, leading R&D projects under ANEEL and ARSESP innovation programs to create new products for the energy sector.",
+        ],
+      },
+      {
+        period: "2020 — 2022",
+        title: "Researcher · Platform Builder",
+        org: "eTradeflow",
+        bullets: [
+          "Built eTradeflow, a trading environment with Broker and Home Broker terminals — real-time pricing, integrated contracts and compliance.",
+          "Led an ANEEL R&D (P&D) project for the Home Broker and a separate ANEEL R&D (P&D) project for the Terminal Broker.",
         ],
       },
       {
@@ -124,7 +132,15 @@ export const cv = {
         bullets: [
           "Construí a Beenx, primeira one-stop-shop digital do Mercado Livre de Energia no Brasil, com dois produtos — eTradeflow (ambiente de trading: Terminal Broker/Home Broker, precificação em tempo real, contratos e compliance integrados) e eFlowing (motor comercial: pipeline, onboarding e acompanhamento da migração) — além de liquidação blockchain; os agentes do eXmesh hoje operam sobre os dois.",
           "Cada feature entregue sob regulação da ANEEL e conformidade CCEE, atendendo traders do Mercado Livre de Energia.",
-          "Desde 2020, conduzo projetos de P&D nos programas de inovação da ANEEL e da ARSESP para criação de novos produtos para o setor de energia.",
+        ],
+      },
+      {
+        period: "2020 — 2022",
+        title: "Pesquisador · Platform Builder",
+        org: "eTradeflow",
+        bullets: [
+          "Construí a eTradeflow, ambiente de trading com Terminal Broker e Home Broker — precificação em tempo real, contratos e compliance integrados.",
+          "Liderei um projeto de P&D ANEEL para o Home Broker e outro projeto de P&D ANEEL para o Terminal Broker.",
         ],
       },
       {
