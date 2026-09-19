@@ -96,7 +96,7 @@ function html(t) {
         .join("")}
 
       <h2>${esc(t.skillsTitle)}</h2>
-      ${shared.skills
+      ${t.skills
         .map(
           (s) => `<div class="skill-row">
             <div class="skill-group">${esc(s.group)}</div>
