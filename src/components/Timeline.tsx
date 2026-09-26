@@ -13,10 +13,15 @@ const eventsBase = [
   { year: "2017",      flag: "🇺🇸", company: "Silicon Valley",              role: "The turning point",                 photos: ["/igor-san-francisco.jpeg", "/igor-stanford.jpeg"], highlight: true  },
   { year: "2018",      flag: "🚀",  company: "Fohat Corporation",            role: "Founded",                           photos: ["/fohat-igor.jpeg", "/fohat-office.jpg"],          highlight: false },
   { year: "2018–2023", flag: "⚡",  company: "Beenx · eTradeflow · eFlowing", role: "Platform Builder",                photos: ["/beenx-team.jpeg"],                               highlight: false },
-  { year: "2022–2024", flag: "🧭",  company: "OSINOVA",                     role: "Innovation Board Advisor",          photos: ["/certificado-conselheiro-inovacao.jpeg"],         highlight: false },
+  { year: "2022–2024", flag: "🧭",  company: "OSINOVA",                     role: "Innovation Board Advisor",          photos: ["/certificado-conselheiro-inovacao.jpeg", "/osinova-board.webp"], highlight: false },
   { year: "2024–2026", flag: "🤖",  company: "Fohat Corporation · eXmesh",  role: "AI Product Manager · Tech Lead",    photos: ["/igor-head-ai.jpeg"],                             highlight: true  },
   { year: "2026",      flag: "🟢",  company: "Available",                   role: "AI Product Manager · Technical PM", photos: [],                                                 highlight: true  },
 ];
+
+// Portrait photos shown in 4:3 frames: keep the relevant part in view
+const photoPosition: Record<string, string> = {
+  "/osinova-board.webp": "center 25%",
+};
 
 export function Timeline() {
   const { lang } = useLanguage();
@@ -134,6 +139,7 @@ export function Timeline() {
                                       alt={event.company}
                                       fill
                                       className="object-cover transition duration-300 group-hover:scale-105"
+                                      style={{ objectPosition: photoPosition[src] }}
                                       sizes="(max-width: 768px) 100vw, 256px"
                                     />
                                     <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition duration-300 group-hover:bg-black/25">
@@ -186,6 +192,7 @@ export function Timeline() {
                 alt="Foto expandida"
                 fill
                 className="object-cover"
+                style={{ objectPosition: photoPosition[lightbox] }}
                 sizes="100vw"
                 priority
               />
