@@ -62,6 +62,7 @@ export const cv = {
         org: "Volvo do Brasil",
         bullets: [
           "7 years growing from engineering to product leadership in one of Brazil's most demanding industrial environments, within the brand's global industrial system.",
+          "Completed specialized technical training in electronic braking (EBS) and suspension (ECS) systems for heavy vehicles, deepening expertise in advanced vehicle engineering.",
         ],
       },
       {
@@ -144,6 +145,7 @@ export const cv = {
         org: "Volvo do Brasil",
         bullets: [
           "7 anos evoluindo de engenharia a liderança de produto em um dos ambientes industriais mais exigentes do Brasil, dentro do sistema industrial global da marca.",
+          "Formação técnica especializada em sistemas eletrônicos de freio (EBS) e suspensão (ECS) para veículos pesados, aprofundando o domínio em engenharia veicular avançada.",
         ],
       },
       {
