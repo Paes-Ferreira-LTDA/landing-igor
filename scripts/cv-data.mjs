@@ -61,6 +61,7 @@ export const cv = {
         title: "Quality Engineer · Q&CS",
         org: "Volvo Group Trucks Technology (GTT)",
         bullets: [
+          "Centralized critical field complaints, dealer reports (DQRs) and chronic failures in the ARGUS platform, opening and driving QJs (Quality Journey) — tracking each case from field containment through root-cause closure.",
           "Applied problem-solving methodologies (8D, Ishikawa, 5 Whys, FTA) to contain and root-cause field failures on the D7E, DH12E and D11R engine platforms.",
           "Used FMEA/DFMEA/PFMEA, SPC (statistical process control) and Weibull reliability analysis in SAS for failure prediction, within IATF 16949, APQP and PPAP processes for technical change management and component release.",
           "Monitored fleet operator and dealer complaints through Volvo's warranty systems, defining fleet containment actions (service campaigns and recalls) for safety or high-financial-impact failures, working with metallurgy, metrology and electronics labs.",
@@ -158,6 +159,7 @@ export const cv = {
         title: "Engenheiro de Qualidade · Q&CS",
         org: "Volvo Group Trucks Technology (GTT)",
         bullets: [
+          "Centralizei reclamações críticas de campo, relatórios de concessionárias (DQRs) e falhas crônicas na plataforma ARGUS, abrindo e conduzindo QJs (Quality Journey) — do rastreamento e contenção em campo até o encerramento do caso pela causa-raiz.",
           "Apliquei metodologias de solução de problemas (8D, Ishikawa, 5 Porquês, FTA) para conter e investigar a causa-raiz de falhas de campo nas plataformas de motores D7E, DH12E e D11R.",
           "Utilizei FMEA/DFMEA/PFMEA, CEP (controle estatístico de processo) e análise de Weibull em SAS para previsão de falhas, dentro dos processos de IATF 16949, APQP e PPAP para gestão de mudanças técnicas e liberação de componentes.",
           "Monitorei reclamações de frotistas e concessionárias via sistemas de garantia da Volvo, definindo ações de contenção de frota (campanhas de serviço e recalls) em falhas de segurança ou alto impacto financeiro, com apoio de laboratórios de metalurgia, metrologia e eletrônica.",
