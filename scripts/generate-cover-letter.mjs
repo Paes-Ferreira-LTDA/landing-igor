@@ -65,7 +65,7 @@ function html(t) {
     <div class="header">
       <h1>${esc(shared.name)}</h1>
       <div class="rule"></div>
-      <div class="role">AI Product Manager · Technical Product Manager</div>
+      <div class="role">${esc(t.headerRole)}</div>
       <div class="contacts">
         <span>${esc(shared.email)}</span>
         <span>${esc(shared.linkedin)}</span>

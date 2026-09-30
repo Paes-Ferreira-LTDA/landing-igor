@@ -87,7 +87,7 @@ export async function POST(request: Request) {
     const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "igor.ferreira@fohat.com.br",
+      to: "igor.ferreira@me.com",
       subject: `Novo contato: ${cleanName}`,
       html: `
         <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:24px">
