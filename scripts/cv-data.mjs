@@ -61,7 +61,10 @@ export const cv = {
         title: "Quality Engineer · Q&CS",
         org: "Volvo Group Trucks Technology (GTT)",
         bullets: [
-          "Worked in Q&CS (Quality & Customer Satisfaction), addressing quality issues on the D7E, DH12E and D11R engine platforms.",
+          "Applied problem-solving methodologies (8D, Ishikawa, 5 Whys, FTA) to contain and root-cause field failures on the D7E, DH12E and D11R engine platforms.",
+          "Used FMEA/DFMEA/PFMEA, SPC (statistical process control) and Weibull reliability analysis for failure prediction, within IATF 16949, APQP and PPAP processes for technical change management and component release.",
+          "Monitored fleet operator and dealer complaints through Volvo's warranty systems, defining fleet containment actions (service campaigns and recalls) for safety or high-financial-impact failures, working with metallurgy, metrology and electronics labs.",
+          "Acted as the technical focal point between Latin America aftersales and engineering centers in Sweden, France and the US, translating complex technical issues into executive reports for directors and VPs.",
         ],
       },
       {
@@ -153,7 +156,10 @@ export const cv = {
         title: "Engenheiro de Qualidade · Q&CS",
         org: "Volvo Group Trucks Technology (GTT)",
         bullets: [
-          "Atuei em Q&CS (Quality & Customer Satisfaction), tratando problemas de qualidade das plataformas de motores D7E, DH12E e D11R.",
+          "Apliquei metodologias de solução de problemas (8D, Ishikawa, 5 Porquês, FTA) para conter e investigar a causa-raiz de falhas de campo nas plataformas de motores D7E, DH12E e D11R.",
+          "Utilizei FMEA/DFMEA/PFMEA, CEP (controle estatístico de processo) e análise de Weibull para previsão de falhas, dentro dos processos de IATF 16949, APQP e PPAP para gestão de mudanças técnicas e liberação de componentes.",
+          "Monitorei reclamações de frotistas e concessionárias via sistemas de garantia da Volvo, definindo ações de contenção de frota (campanhas de serviço e recalls) em falhas de segurança ou alto impacto financeiro, com apoio de laboratórios de metalurgia, metrologia e eletrônica.",
+          "Atuei como ponto focal técnico entre o pós-vendas da América Latina e os centros de engenharia na Suécia, França e EUA, traduzindo problemas técnicos complexos em relatórios executivos para diretores e vice-presidentes.",
         ],
       },
       {
