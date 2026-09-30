@@ -20,18 +20,6 @@ export const cv = {
     experienceTitle: "Experience",
     experience: [
       {
-        period: "2024 — present",
-        title: "Product Manager · Tech Lead",
-        org: "eXmesh · Fohat",
-        bullets: [
-          "I lead product strategy and architecture for a generative multi-agent AI system in production for the energy sector, with autonomous agents orchestrated via LangGraph and interoperability through MCP (Model Context Protocol).",
-          "Built the RAG (Retrieval Augmented Generation) pipeline powering the agents' knowledge base, including context curation and prompt engineering for specialized tasks.",
-          "Implemented observability and monitoring for LLMs and agents (Langfuse), covering tracing and response quality, with a human-in-the-loop (HITL) layer in the system's governance.",
-          "Defined the product's governance model based on OKRs, with an orchestrator agent responsible for routing and prioritizing demands — one of the agents was the first in the operation to autonomously merge a PR in production.",
-          "End-to-end owner of prioritization, AI architecture decisions and infrastructure trade-offs (GCP: GKE, Vertex AI), with a consultative role presenting results to stakeholders and the company's advisory board.",
-        ],
-      },
-      {
         period: "2022 — 2024",
         title: "Innovation Board Advisor",
         org: "OSINOVA Participações",
@@ -40,20 +28,13 @@ export const cv = {
         ],
       },
       {
-        period: "2020 — 2022",
-        title: "Product Lead",
-        org: "eTradeflow · Fohat",
-        bullets: [
-          "Led the build of eTradeflow, a trading environment with Broker and Home Broker terminals: real-time pricing, integrated contracts and compliance.",
-          "Ran two ANEEL R&D (P&D) projects from kickoff to delivery — one for the Home Broker and one for the Terminal Broker — including regulatory scope management and reporting to the agency.",
-        ],
-      },
-      {
         period: "2018 — present",
-        title: "Product Manager",
+        title: "Product Manager · Tech Lead",
         org: "Fohat",
         bullets: [
-          "Owned product vision, roadmap and portfolio strategy for Fohat's B2B platforms in the energy market, since the company's founding.",
+          "(2018–present) Owned product vision, roadmap and portfolio strategy for Fohat's B2B platforms in the energy market, since the company's founding.",
+          "(2020–2022 · eTradeflow) Led the build of eTradeflow, a trading environment with Broker and Home Broker terminals — real-time pricing, integrated contracts and compliance — and ran two ANEEL R&D (P&D) projects from kickoff to delivery, one for the Home Broker and one for the Terminal Broker.",
+          "(2024–present · eXmesh) Lead product strategy and architecture for a generative multi-agent AI system in production for the energy sector — autonomous agents via LangGraph, MCP interoperability, a RAG pipeline and Langfuse observability with human-in-the-loop governance by OKRs — end-to-end owner of prioritization, AI architecture decisions and infrastructure trade-offs (GCP: GKE, Vertex AI).",
         ],
       },
       {
@@ -118,18 +99,6 @@ export const cv = {
     experienceTitle: "Experiência",
     experience: [
       {
-        period: "2024 — presente",
-        title: "Product Manager · Tech Lead",
-        org: "eXmesh · Fohat",
-        bullets: [
-          "Lidero a estratégia de produto e a arquitetura de um sistema multiagente de IA generativa em produção para o setor de energia, com agentes autônomos orquestrados via LangGraph e interoperabilidade via MCP (Model Context Protocol).",
-          "Estruturei o pipeline de RAG (Retrieval Augmented Generation) que sustenta a base de conhecimento dos agentes, incluindo curadoria de contexto e engenharia de prompt para tarefas especializadas.",
-          "Implementei observabilidade e monitoramento de LLMs e agentes (Langfuse), cobrindo tracing e qualidade de resposta, com camada de human-in-the-loop (HITL) na governança do sistema.",
-          "Defini o modelo de governança do produto baseado em OKRs, com um agente orquestrador responsável por rotear e priorizar demandas — um dos agentes foi o primeiro, na operação, a executar de forma autônoma o merge de um PR em produção.",
-          "Responsável end-to-end por priorização, decisões de arquitetura de IA e trade-offs de infraestrutura (GCP: GKE, Vertex AI), com atuação consultiva na apresentação de resultados a stakeholders e ao conselho consultivo da empresa.",
-        ],
-      },
-      {
         period: "2022 — 2024",
         title: "Conselheiro de Inovação",
         org: "OSINOVA Participações",
@@ -138,20 +107,13 @@ export const cv = {
         ],
       },
       {
-        period: "2020 — 2022",
-        title: "Product Lead",
-        org: "eTradeflow · Fohat",
-        bullets: [
-          "Liderei a construção da eTradeflow, ambiente de trading com Terminal Broker e Home Broker: precificação em tempo real, contratos e compliance integrados.",
-          "Conduzi dois projetos de P&D ANEEL do início à entrega — um para o Home Broker e outro para o Terminal Broker —, incluindo gestão de escopo regulatório e prestação de contas à agência.",
-        ],
-      },
-      {
         period: "2018 — presente",
-        title: "Product Manager",
+        title: "Product Manager · Tech Lead",
         org: "Fohat",
         bullets: [
-          "Responsável pela visão de produto, roadmap e estratégia de portfólio das plataformas B2B da Fohat no mercado de energia, desde a concepção da empresa.",
+          "(2018–presente) Responsável pela visão de produto, roadmap e estratégia de portfólio das plataformas B2B da Fohat no mercado de energia, desde a concepção da empresa.",
+          "(2020–2022 · eTradeflow) Liderei a construção da eTradeflow, ambiente de trading com Terminal Broker e Home Broker — precificação em tempo real, contratos e compliance integrados —, e conduzi dois projetos de P&D ANEEL do início à entrega, um para o Home Broker e outro para o Terminal Broker.",
+          "(2024–presente · eXmesh) Lidero a estratégia de produto e a arquitetura de um sistema multiagente de IA generativa em produção para o setor de energia — agentes autônomos via LangGraph, interoperabilidade via MCP, pipeline de RAG e observabilidade com Langfuse com governança por OKRs e human-in-the-loop —, responsável end-to-end por priorização, decisões de arquitetura de IA e trade-offs de infraestrutura (GCP: GKE, Vertex AI).",
         ],
       },
       {
