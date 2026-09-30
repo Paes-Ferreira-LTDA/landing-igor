@@ -16,7 +16,7 @@ export const cv = {
     location: "Curitiba, Brazil · Hybrid / On-site",
     summaryTitle: "Summary",
     summary:
-      "Product Manager with 19 years of experience building products end-to-end — from industrial engineering at Volvo to founding and leading my own technology company (Fohat). Consistent track record of driving products from strategy to production: I led the development of a regulated trading platform for the energy sector, ran two ANEEL R&D (P&D) projects from kickoff to delivery, and currently lead the strategy and roadmap for a multi-agent AI system in production. I combine business vision, engineering rigor and technical execution.",
+      "Product Manager and Tech Lead with 19 years of multidisciplinary experience, bridging engineering — electrical, automotive and quality — with software product development. I started as an engineer at Volvo: designing electrical wiring harnesses and vehicle systems at Volvo Bus, then leading quality engineering and field reliability on engine platforms at Volvo Group Trucks Technology. I carried that technical rigor into software by founding Fohat, where I built a regulated trading platform for the energy sector and ran two ANEEL R&D (P&D) projects from kickoff to delivery. Today I work as Product Manager and Tech Lead for a multi-agent AI system, combining technical architecture, product strategy and end-to-end execution.",
     experienceTitle: "Experience",
     experience: [
       {
@@ -95,7 +95,7 @@ export const cv = {
     location: "Curitiba, PR · Híbrido / Presencial",
     summaryTitle: "Resumo",
     summary:
-      "Product Manager com 19 anos de experiência na construção de produtos de ponta a ponta — da engenharia industrial na Volvo à fundação e liderança de uma empresa de tecnologia própria (Fohat). Histórico consistente de condução de produtos da estratégia à produção: liderei o desenvolvimento de uma plataforma de trading regulamentada para o setor de energia, conduzi dois projetos de P&D ANEEL do início à entrega e, atualmente, lidero a estratégia e o roadmap de um sistema multiagente de inteligência artificial em produção. Combino visão de negócio, rigor de engenharia e execução técnica.",
+      "Product Manager e Tech Lead com 19 anos de experiência multidisciplinar, unindo engenharia — elétrica, veicular e de qualidade — a desenvolvimento de produtos de software. Comecei como engenheiro na Volvo: projetei chicotes elétricos e sistemas veiculares na Volvo Bus, depois conduzi engenharia de qualidade e confiabilidade de campo em plataformas de motores na Volvo Group Trucks Technology. Levei esse rigor técnico para o software ao fundar a Fohat, onde construí uma plataforma de trading regulamentada para o setor de energia e conduzi dois projetos de P&D ANEEL do início à entrega. Hoje atuo como Product Manager e Tech Lead de um sistema multiagente de inteligência artificial, combinando arquitetura técnica, estratégia de produto e execução end-to-end.",
     experienceTitle: "Experiência",
     experience: [
       {
