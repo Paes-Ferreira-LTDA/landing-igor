@@ -57,11 +57,20 @@ export const cv = {
         ],
       },
       {
-        period: "2010 — 2017",
-        title: "Engineer → Product Leader",
-        org: "Volvo do Brasil",
+        period: "2014 — 2017",
+        title: "Quality Engineer · Q&CS",
+        org: "Volvo Group Trucks Technology (GTT)",
         bullets: [
-          "7 years growing from engineering to product leadership in one of Brazil's most demanding industrial environments, within the brand's global industrial system.",
+          "Worked in Q&CS (Quality & Customer Satisfaction), addressing quality issues on the D7E, DH12E and D11R engine platforms.",
+        ],
+      },
+      {
+        period: "2010 — 2014",
+        title: "Product Development Engineer",
+        org: "Volvo Bus",
+        bullets: [
+          "Designed electrical wiring harness projects for buses, including component specification, diagrams and validation with CANalyzer.",
+          "Ran electrical harness tests (functional and validation) for new product designs.",
           "Completed specialized technical training in electronic braking (EBS) and suspension (ECS) systems for heavy vehicles, deepening expertise in advanced vehicle engineering.",
         ],
       },
@@ -140,11 +149,20 @@ export const cv = {
         ],
       },
       {
-        period: "2010 — 2017",
-        title: "Engenheiro → Líder de Produto",
-        org: "Volvo do Brasil",
+        period: "2014 — 2017",
+        title: "Engenheiro de Qualidade · Q&CS",
+        org: "Volvo Group Trucks Technology (GTT)",
         bullets: [
-          "7 anos evoluindo de engenharia a liderança de produto em um dos ambientes industriais mais exigentes do Brasil, dentro do sistema industrial global da marca.",
+          "Atuei em Q&CS (Quality & Customer Satisfaction), tratando problemas de qualidade das plataformas de motores D7E, DH12E e D11R.",
+        ],
+      },
+      {
+        period: "2010 — 2014",
+        title: "Engenheiro de Desenvolvimento de Produto",
+        org: "Volvo Bus",
+        bullets: [
+          "Desenvolvi projetos de chicotes elétricos para ônibus, incluindo especificação de componentes, diagramas e validação com CANalyzer.",
+          "Conduzi testes de chicotes elétricos (funcionais e de validação) para novos projetos de produto.",
           "Formação técnica especializada em sistemas eletrônicos de freio (EBS) e suspensão (ECS) para veículos pesados, aprofundando o domínio em engenharia veicular avançada.",
         ],
       },
