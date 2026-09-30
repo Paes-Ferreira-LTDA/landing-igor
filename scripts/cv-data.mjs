@@ -24,7 +24,7 @@ export const cv = {
         title: "Innovation Board Advisor",
         org: "OSINOVA Participações",
         bullets: [
-          "Member of the Board of Advisors: corporate governance and product strategy advisory, combining traditional-corporate and startup market experience.",
+          "Member of the Board of Advisors of OSINOVA, a corporate venture capital fund focused on mobility, smart cities and ag-tech, combining traditional-corporate and startup market experience.",
         ],
       },
       {
@@ -103,7 +103,7 @@ export const cv = {
         title: "Conselheiro de Inovação",
         org: "OSINOVA Participações",
         bullets: [
-          "Membro do Board of Advisors: assessoria de governança corporativa e estratégia de produto, unindo experiência de mercado corporativo tradicional e de startups.",
+          "Membro do Board of Advisors da OSINOVA, fundo de venture capital corporativo focado em mobilidade, smart cities e ag-tech, unindo experiência de mercado corporativo tradicional e de startups.",
         ],
       },
       {
