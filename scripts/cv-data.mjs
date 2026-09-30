@@ -62,7 +62,7 @@ export const cv = {
         org: "Volvo Group Trucks Technology (GTT)",
         bullets: [
           "Applied problem-solving methodologies (8D, Ishikawa, 5 Whys, FTA) to contain and root-cause field failures on the D7E, DH12E and D11R engine platforms.",
-          "Used FMEA/DFMEA/PFMEA, SPC (statistical process control) and Weibull reliability analysis for failure prediction, within IATF 16949, APQP and PPAP processes for technical change management and component release.",
+          "Used FMEA/DFMEA/PFMEA, SPC (statistical process control) and Weibull reliability analysis in SAS for failure prediction, within IATF 16949, APQP and PPAP processes for technical change management and component release.",
           "Monitored fleet operator and dealer complaints through Volvo's warranty systems, defining fleet containment actions (service campaigns and recalls) for safety or high-financial-impact failures, working with metallurgy, metrology and electronics labs.",
           "Acted as the technical focal point between Latin America aftersales and engineering centers in Sweden, France and the US, translating complex technical issues into executive reports for directors and VPs.",
         ],
@@ -72,8 +72,10 @@ export const cv = {
         title: "Product Development Engineer",
         org: "Volvo Bus",
         bullets: [
-          "Designed electrical wiring harness projects for buses, including component specification, diagrams and validation with CANalyzer.",
-          "Ran electrical harness tests (functional and validation) for new product designs.",
+          "Managed variants and product structure in Volvo Kola — part numbers, engineering drawing release and electrical variant restriction rules — for Volvo Bus portfolio modularity.",
+          "Developed and validated functional circuit diagrams in Synopsys Saber (voltage drop, current capacity, wire-gauge-to-fuse/relay coordination) and ran electrical harness tests with CANalyzer.",
+          "Modeled 3D harness routing in Catia V5 (EHI module) along the chassis — bend radius, high-temperature zones and dynamic articulation areas — interfacing with structural and powertrain designers to ensure robustness against water ingress, chafing short-circuits and flex fatigue.",
+          "Adapted the multiplexed cabin/chassis electrical architecture across the full Volvo Bus portfolio (urban, coach, articulated and bi-articulated, front- or rear-engine) and took part in Design Reviews with the Sweden headquarters and build-to-print validation with global harness suppliers (APQP/PPAP) for new components and Wiring Standards.",
           "Completed specialized technical training in electronic braking (EBS) and suspension (ECS) systems for heavy vehicles, deepening expertise in advanced vehicle engineering.",
         ],
       },
@@ -157,7 +159,7 @@ export const cv = {
         org: "Volvo Group Trucks Technology (GTT)",
         bullets: [
           "Apliquei metodologias de solução de problemas (8D, Ishikawa, 5 Porquês, FTA) para conter e investigar a causa-raiz de falhas de campo nas plataformas de motores D7E, DH12E e D11R.",
-          "Utilizei FMEA/DFMEA/PFMEA, CEP (controle estatístico de processo) e análise de Weibull para previsão de falhas, dentro dos processos de IATF 16949, APQP e PPAP para gestão de mudanças técnicas e liberação de componentes.",
+          "Utilizei FMEA/DFMEA/PFMEA, CEP (controle estatístico de processo) e análise de Weibull em SAS para previsão de falhas, dentro dos processos de IATF 16949, APQP e PPAP para gestão de mudanças técnicas e liberação de componentes.",
           "Monitorei reclamações de frotistas e concessionárias via sistemas de garantia da Volvo, definindo ações de contenção de frota (campanhas de serviço e recalls) em falhas de segurança ou alto impacto financeiro, com apoio de laboratórios de metalurgia, metrologia e eletrônica.",
           "Atuei como ponto focal técnico entre o pós-vendas da América Latina e os centros de engenharia na Suécia, França e EUA, traduzindo problemas técnicos complexos em relatórios executivos para diretores e vice-presidentes.",
         ],
@@ -167,8 +169,10 @@ export const cv = {
         title: "Engenheiro de Desenvolvimento de Produto",
         org: "Volvo Bus",
         bullets: [
-          "Desenvolvi projetos de chicotes elétricos para ônibus, incluindo especificação de componentes, diagramas e validação com CANalyzer.",
-          "Conduzi testes de chicotes elétricos (funcionais e de validação) para novos projetos de produto.",
+          "Gerenciei variantes e estrutura de produto no Volvo Kola — part numbers, liberação de desenhos de engenharia e regras de restrição de variantes elétricas — para a modularidade do portfólio Volvo Bus.",
+          "Desenvolvi e validei diagramas funcionais de circuitos elétricos no Synopsys Saber (queda de tensão, capacidade de corrente, coordenação bitola de cabo x fusível/relé) e conduzi testes de chicotes elétricos com CANalyzer.",
+          "Modelei o roteamento 3D de chicotes no Catia V5 (módulo EHI) ao longo do chassi — raios de curvatura, zonas de alta temperatura e áreas de articulação dinâmica —, em interface com projetistas de estrutura e trem de força, garantindo robustez contra infiltração de água, curto por atrito e fadiga de flexão.",
+          "Adaptei a arquitetura elétrica multiplexada da cabine/chassi para toda a variedade do portfólio Volvo Bus (urbanos, rodoviários, articulados e biarticulados, motor dianteiro ou traseiro) e participei de Design Reviews com a matriz na Suécia e de validação build-to-print com fornecedores globais de chicotes (APQP/PPAP) para novos componentes e Wiring Standards.",
           "Formação técnica especializada em sistemas eletrônicos de freio (EBS) e suspensão (ECS) para veículos pesados, aprofundando o domínio em engenharia veicular avançada.",
         ],
       },
