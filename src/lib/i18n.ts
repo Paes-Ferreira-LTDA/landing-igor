@@ -95,8 +95,8 @@ export const t = {
         context: "Stuttgart, the birthplace of the automobile. Working inside Bosch's R&D labs taught me what it means to engineer for reliability — no shortcuts, no approximations. German precision became a personal standard I still hold.",
       },
       {
-        desc: "7 years in heavy industry. Grew from engineer to product leadership in one of Brazil's most demanding environments.",
-        context: "Seven years at Volvo shaped how I think about systems, reliability, and accountability. Starting as an engineer and ending as a product leader — I learned that great products are built by people who understand both the machine and the human using it.",
+        desc: "7 years in heavy industry: from electrical product development at Volvo Bus to field quality and reliability engineering on engine platforms.",
+        context: "I started at Volvo Bus on multiplexed electrical architecture, 3D harness routing in Catia, Saber circuit design and product variant management. In 2014 I moved to Volvo Group Trucks Technology, leading critical field-failure cases on D7E, DH12E and D11R engines. I used 8D, FMEA, Weibull and IATF 16949, defined service campaigns and recalls, and was the technical focal point between Latin America and engineering centers in Sweden, France and the US. Seven years that shaped how I think about systems, reliability and accountability.",
       },
       {
         desc: "Foundation in systems, control theory, and analytical thinking.",
@@ -107,12 +107,8 @@ export const t = {
         context: "December 2017. Stanford, Google, YC — meeting founders who were actually shipping world-changing products. I flew back to Brazil with one clear thought: I'm going to build something. That trip didn't inspire me — it decided me.",
       },
       {
-        desc: "Built a holding to operate B2B platforms in regulated markets: energy, fintech, blockchain.",
-        context: "The first office was a single room. Just a desk, a laptop, and a lot of uncertainty. The FOHAT logo on that black wall was the only thing that felt real — a holding under construction.",
-      },
-      {
-        desc: "Beenx: energy marketplace with two products — eTradeflow (trading) and eFlowing (commercial engine) — plus blockchain settlement. eXmesh agents now operate on top of both.",
-        context: "Five years of building complex B2B products in regulated industries. Every feature we shipped had to survive ANEEL regulation, CCEE compliance, and the scrutiny of traders who measure money in megawatts. Today eXmesh agents monitor the migration pipeline end-to-end, detecting bottlenecks before they become delays — without taking humans out of the decisions that matter.",
+        desc: "Product vision, roadmap and portfolio strategy for B2B platforms in Brazil's energy market — from day one.",
+        context: "Since 2018 I've owned the product vision, roadmap and portfolio strategy of Fohat's B2B platforms for the energy market. I led the build of eTradeflow — a trading environment with Terminal Broker and Home Broker, with integrated contracts and compliance — and ran two ANEEL R&D projects from kickoff to delivery, one for the Home Broker and one for the Terminal Broker. Every feature had to survive ANEEL regulation and CCEE compliance.",
       },
       {
         desc: "Board of Advisors seat. Corporate governance and management advisory, certified by Gonew.co.",
@@ -222,8 +218,8 @@ export const t = {
         context: "Stuttgart, o berço do automóvel. Trabalhar nos laboratórios de P&D da Bosch me ensinou o que significa engenheirar para confiabilidade — sem atalhos, sem aproximações. A precisão alemã virou um padrão pessoal que mantenho até hoje.",
       },
       {
-        desc: "7 anos na indústria pesada. Cresci de engenheiro a liderança de produto em um dos ambientes mais exigentes do Brasil.",
-        context: "Sete anos na Volvo moldaram como penso sobre sistemas, confiabilidade e responsabilidade. Começando como engenheiro e terminando como líder de produto — aprendi que grandes produtos são construídos por pessoas que entendem tanto a máquina quanto o humano que a usa.",
+        desc: "7 anos na indústria pesada: do desenvolvimento de produto elétrico no Volvo Bus à engenharia de qualidade e confiabilidade de campo em motores.",
+        context: "Comecei no Volvo Bus, com arquitetura elétrica multiplexada, chicotes em 3D no Catia, circuitos no Saber e gestão de variantes de produto. Em 2014 fui para a Volvo Group Trucks Technology, onde conduzi reclamações críticas de campo em motores D7E, DH12E e D11R. Usei 8D, FMEA, Weibull e IATF 16949, defini campanhas de serviço e recalls e fui o ponto focal entre a América Latina e os centros de engenharia na Suécia, França e EUA. Foram sete anos que moldaram como penso sobre sistemas, confiabilidade e responsabilidade.",
       },
       {
         desc: "Base em sistemas, teoria de controle e pensamento analítico.",
@@ -234,12 +230,8 @@ export const t = {
         context: "Dezembro de 2017. Stanford, Google, YC — conhecendo founders que estavam realmente entregando produtos que mudam o mundo. Voltei ao Brasil com um pensamento claro: vou construir algo. Essa viagem não me inspirou — ela me decidiu.",
       },
       {
-        desc: "Construí uma holding para operar plataformas B2B em mercados regulados: energia, fintech, blockchain.",
-        context: "O primeiro escritório era uma sala. Só uma mesa, um laptop e muita incerteza. O logo FOHAT naquela parede preta era a única coisa que parecia real, uma holding em construção.",
-      },
-      {
-        desc: "Beenx: marketplace de energia com dois produtos — eTradeflow (trading) e eFlowing (motor comercial) — e liquidação blockchain. Os agentes do eXmesh hoje operam sobre os dois.",
-        context: "Cinco anos construindo produtos B2B complexos em indústrias reguladas. Cada feature que entregamos teve que sobreviver à regulação da ANEEL, conformidade da CCEE e ao escrutínio de traders que medem dinheiro em megawatts. Hoje os agentes do eXmesh monitoram o pipeline de migração de ponta a ponta, detectando gargalos antes que virem atrasos — sem tirar o humano das decisões que importam.",
+        desc: "Visão de produto, roadmap e estratégia de portfólio das plataformas B2B no mercado de energia — desde o primeiro dia.",
+        context: "Desde 2018 sou responsável pela visão de produto, roadmap e estratégia de portfólio das plataformas B2B da Fohat para o mercado de energia. Liderei a construção da eTradeflow — ambiente de trading com Terminal Broker e Home Broker, com contratos e compliance integrados — e conduzi dois projetos de P&D ANEEL do início à entrega, um para o Home Broker e outro para o Terminal Broker. Cada feature teve que sobreviver à regulação da ANEEL e à conformidade da CCEE.",
       },
       {
         desc: "Assento no Board of Advisors. Consultoria de governança corporativa e de gestão, com certificação da Gonew.co.",

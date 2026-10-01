@@ -8,11 +8,10 @@ import { t } from "@/lib/i18n";
 const eventsBase = [
   { year: "2007",      flag: "🇨🇳", company: "Bosch · China",              role: "International Internship",          photos: ["/bosch-china.jpg"],                               highlight: false },
   { year: "2007",      flag: "🇩🇪", company: "Bosch · Germany",             role: "R&D Internship · Stuttgart",        photos: ["/bosch-alemanha.jpg"],                            highlight: false },
-  { year: "2010–2017", flag: "🇧🇷", company: "Volvo do Brasil",             role: "Engineer → Product Leader",         photos: ["/volvo-igor.jpeg"],                               highlight: false },
+  { year: "2010–2017", flag: "🇧🇷", company: "Volvo do Brasil",             role: "Product Engineer → Quality & Reliability", photos: ["/volvo-igor.jpeg"],                               highlight: false },
   { year: "2011",      flag: "🎓",  company: "Electrical Engineering",      role: "B.Sc. · Universidade",              photos: ["/graduacao.jpg"],                                 highlight: false },
   { year: "2017",      flag: "🇺🇸", company: "Silicon Valley",              role: "The turning point",                 photos: ["/igor-san-francisco.jpeg", "/igor-stanford.jpeg"], highlight: true  },
-  { year: "2018",      flag: "🚀",  company: "Fohat Corporation",            role: "Founded",                           photos: ["/fohat-igor.jpeg", "/fohat-holding.png"],         highlight: false },
-  { year: "2018–2023", flag: "⚡",  company: "Beenx · eTradeflow · eFlowing", role: "Platform Builder",                photos: ["/beenx-team.jpeg"],                               highlight: false },
+  { year: "2018",      flag: "🚀",  company: "Fohat Corporation",            role: "Founded",                           photos: ["/fohat-igor.jpeg", "/fohat-holding.png", "/beenx-team.jpeg", "/beenx-escritorio.jpg"], highlight: false },
   { year: "2022–2024", flag: "🧭",  company: "OSINOVA",                     role: "Innovation Board Advisor",          photos: ["/certificado-conselheiro-inovacao.jpeg"],         highlight: false },
   { year: "2024–2026", flag: "🤖",  company: "Fohat Corporation · eXmesh",  role: "AI Product Manager · Tech Lead",    photos: ["/igor-head-ai.jpeg"],                             highlight: true  },
   { year: "2026",      flag: "🟢",  company: "Available",                   role: "AI Product Manager · Technical PM", photos: [],                                                 highlight: true  },
