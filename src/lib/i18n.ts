@@ -111,8 +111,8 @@ export const t = {
         context: "Since 2018 I've owned the product vision, roadmap and portfolio strategy of Fohat's B2B platforms for the energy market. I led the build of eTradeflow — a trading environment with Terminal Broker and Home Broker, with integrated contracts and compliance — and ran two ANEEL R&D projects from kickoff to delivery, one for the Home Broker and one for the Terminal Broker. Every feature had to survive ANEEL regulation and CCEE compliance.",
       },
       {
-        desc: "Board of Advisors seat. Corporate governance and management advisory, certified by Gonew.co.",
-        context: "I got certified as an Innovation Board Member by Gonew.co — 100 hours, 40 of them in Board Real Practice — and served three consecutive terms on OSINOVA's Board of Advisors. I brought both lenses to the table: the traditional corporate world and the startup builder's.",
+        desc: "Board of Advisors member at OSINOVA, a corporate venture capital fund focused on mobility, smart cities and ag-tech.",
+        context: "I served on the Board of Advisors of OSINOVA, a corporate venture capital fund focused on mobility, smart cities and ag-tech, bringing together traditional corporate-market experience and the startup builder's view.",
       },
       {
         desc: "I lead eXmesh: a mesh of AI agents running autonomously and coordinated in production on GCP. I specify, architect and govern; the agents execute.",
@@ -234,8 +234,8 @@ export const t = {
         context: "Desde 2018 sou responsável pela visão de produto, roadmap e estratégia de portfólio das plataformas B2B da Fohat para o mercado de energia. Liderei a construção da eTradeflow — ambiente de trading com Terminal Broker e Home Broker, com contratos e compliance integrados — e conduzi dois projetos de P&D ANEEL do início à entrega, um para o Home Broker e outro para o Terminal Broker. Cada feature teve que sobreviver à regulação da ANEEL e à conformidade da CCEE.",
       },
       {
-        desc: "Assento no Board of Advisors. Consultoria de governança corporativa e de gestão, com certificação da Gonew.co.",
-        context: "Me certifiquei como Conselheiro de Inovação pela Gonew.co — 100 horas, 40 delas em Board Real Practice — e servi por três mandatos consecutivos no Board of Advisors da OSINOVA. Levei para a mesa as duas lentes: a do mundo corporativo tradicional e a de quem constrói startups.",
+        desc: "Membro do Board of Advisors da OSINOVA, fundo de venture capital corporativo focado em mobilidade, smart cities e ag-tech.",
+        context: "Fui membro do Board of Advisors da OSINOVA, fundo de venture capital corporativo focado em mobilidade, smart cities e ag-tech, unindo a experiência do mercado corporativo tradicional e a de startups.",
       },
       {
         desc: "Lidero o eXmesh: malha de agentes de IA rodando de forma autônoma e coordenada em produção no GCP. Eu especifico, arquiteto e governo; os agentes executam.",
