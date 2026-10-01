@@ -107,8 +107,8 @@ export const t = {
         context: "December 2017. Stanford, Google, YC — meeting founders who were actually shipping world-changing products. I flew back to Brazil with one clear thought: I'm going to build something. That trip didn't inspire me — it decided me.",
       },
       {
-        desc: "Product vision, roadmap and portfolio strategy for B2B platforms in Brazil's energy market — from day one.",
-        context: "Since 2018 I've owned the product vision, roadmap and portfolio strategy of Fohat's B2B platforms for the energy market. I led the build of eTradeflow — a trading environment with Terminal Broker and Home Broker, with integrated contracts and compliance — and ran two ANEEL R&D projects from kickoff to delivery, one for the Home Broker and one for the Terminal Broker. Every feature had to survive ANEEL regulation and CCEE compliance.",
+        desc: "Product Manager and Tech Lead since 2018: from B2B energy platforms to Fohat OS — energy processes completed end-to-end by teams of AI agents.",
+        context: "Since 2018 I've owned the product vision, roadmap and portfolio strategy of Fohat's B2B platforms for the energy market. I led the build of eTradeflow — a trading environment with Terminal Broker and Home Broker, with integrated contracts and compliance — and ran two ANEEL R&D projects from kickoff to delivery. Today I lead Fohat OS (eXmesh + eFlowing): the company defines the process and what counts as done; teams of AI agents execute it on top of the systems already in place, with human approval at critical points and a full audit trail, and an independent verifier confirms the result against the external source. The unit we bill is one completed, verified process — not a seat, a token or a conversation.",
       },
       {
         desc: "Board of Advisors member at OSINOVA, a corporate venture capital fund focused on mobility, smart cities and ag-tech.",
@@ -230,8 +230,8 @@ export const t = {
         context: "Dezembro de 2017. Stanford, Google, YC — conhecendo founders que estavam realmente entregando produtos que mudam o mundo. Voltei ao Brasil com um pensamento claro: vou construir algo. Essa viagem não me inspirou — ela me decidiu.",
       },
       {
-        desc: "Visão de produto, roadmap e estratégia de portfólio das plataformas B2B no mercado de energia — desde o primeiro dia.",
-        context: "Desde 2018 sou responsável pela visão de produto, roadmap e estratégia de portfólio das plataformas B2B da Fohat para o mercado de energia. Liderei a construção da eTradeflow — ambiente de trading com Terminal Broker e Home Broker, com contratos e compliance integrados — e conduzi dois projetos de P&D ANEEL do início à entrega, um para o Home Broker e outro para o Terminal Broker. Cada feature teve que sobreviver à regulação da ANEEL e à conformidade da CCEE.",
+        desc: "Product Manager e Tech Lead desde 2018: das plataformas B2B de energia ao Fohat OS — processos de energia concluídos ponta a ponta por times de agentes de IA.",
+        context: "Desde 2018 sou responsável pela visão de produto, roadmap e estratégia de portfólio das plataformas B2B da Fohat para o mercado de energia. Liderei a construção da eTradeflow — ambiente de trading com Terminal Broker e Home Broker, com contratos e compliance integrados — e conduzi dois projetos de P&D ANEEL do início à entrega. Hoje lidero o Fohat OS (eXmesh + eFlowing): a companhia define o processo e o que conta como concluído; times de agentes de IA executam sobre os sistemas que já existem, com aprovação humana nos pontos críticos e trilha auditável, e um verificador independente confirma o resultado contra a fonte externa. A unidade que se cobra é um processo concluído e verificado — não assento, token ou conversa.",
       },
       {
         desc: "Membro do Board of Advisors da OSINOVA, fundo de venture capital corporativo focado em mobilidade, smart cities e ag-tech.",
