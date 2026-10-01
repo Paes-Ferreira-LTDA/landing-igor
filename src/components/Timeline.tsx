@@ -12,7 +12,7 @@ const eventsBase = [
   { year: "2011",      flag: "🎓",  company: "Electrical Engineering",      role: "B.Sc. · Universidade",              photos: ["/graduacao.jpg"],                                 highlight: false },
   { year: "2017",      flag: "🇺🇸", company: "Silicon Valley",              role: "The turning point",                 photos: ["/igor-san-francisco.jpeg", "/igor-stanford.jpeg"], highlight: true  },
   { year: "2018",      flag: "🚀",  company: "Fohat Corporation",            role: "Founded",                           photos: ["/fohat-igor.jpeg", "/beenx-team.jpeg", "/fohat-evento.jpg"], highlight: false },
-  { year: "2022–2024", flag: "🧭",  company: "OSINOVA",                     role: "Innovation Board Advisor",          photos: ["/certificado-conselheiro-inovacao.jpeg"],         highlight: false },
+  { year: "2022–2024", flag: "🧭",  company: "OSINOVA",                     role: "Innovation Board Advisor",          photos: ["/osinova-board.jpg", "/certificado-conselheiro-inovacao.jpeg"],         highlight: false },
   { year: "2024–2026", flag: "🤖",  company: "Fohat Corporation · eXmesh",  role: "AI Product Manager · Tech Lead",    photos: ["/igor-head-ai.jpeg"],                             highlight: true  },
   { year: "2026",      flag: "🟢",  company: "Available",                   role: "AI Product Manager · Technical PM", photos: [],                                                 highlight: true  },
 ];
