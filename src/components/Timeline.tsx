@@ -12,8 +12,9 @@ const eventsBase = [
   { year: "2011",      flag: "🎓",  company: "Electrical Engineering",      role: "B.Sc. · Universidade",              photos: ["/graduacao.jpg"],                                 highlight: false },
   { year: "2017",      flag: "🇺🇸", company: "Silicon Valley",              role: "The turning point",                 photos: ["/igor-san-francisco.jpeg", "/igor-stanford.jpeg"], highlight: true  },
   { year: "2018",      flag: "🚀",  company: "Fohat Corporation",            role: "Founded",                           photos: ["/fohat-igor.jpeg", "/fohat-holding.png", "/beenx-team.jpeg", "/beenx-escritorio.jpg"], highlight: false },
-  { year: "2024–2025", flag: "🤖",  company: "Fohat eTech · eXmesh",        role: "AI Systems Builder",                photos: ["/igor-head-ai.jpeg"],                             highlight: true  },
-  { year: "2026",      flag: "🟢",  company: "Available",                   role: "Head of AI · Founding AI Engineer", photos: [],                                                 highlight: true  },
+  { year: "2022–2024", flag: "🧭",  company: "OSINOVA",                     role: "Innovation Board Advisor",          photos: ["/certificado-conselheiro-inovacao.jpeg"],         highlight: false },
+  { year: "2024–2026", flag: "🤖",  company: "Fohat Corporation · eXmesh",  role: "AI Product Manager · Tech Lead",    photos: ["/igor-head-ai.jpeg"],                             highlight: true  },
+  { year: "2026",      flag: "🟢",  company: "Available",                   role: "AI Product Manager · Technical PM", photos: [],                                                 highlight: true  },
 ];
 
 export function Timeline() {
@@ -110,7 +111,7 @@ export function Timeline() {
                   {/* Expandable */}
                   <div
                     className="overflow-hidden transition-[max-height] duration-500 ease-in-out"
-                    style={{ maxHeight: isOpen ? "600px" : "0px" }}
+                    style={{ maxHeight: isOpen ? "1200px" : "0px" }}
                   >
                     <div>
                       <div className="mt-2 rounded-xl border border-white/5 bg-white/2 p-5">
@@ -176,7 +177,7 @@ export function Timeline() {
               onClick={() => setLightbox(null)}
               className="absolute -top-10 right-0 text-white/60 hover:text-white text-sm"
             >
-              ✕ Fechar
+              ✕ {tx.lightboxClose}
             </button>
             <div className={`relative w-full overflow-hidden rounded-2xl ${lightbox.includes("fohat-holding") ? "bg-white p-6" : "bg-black"}`}
               style={{ aspectRatio: "4/3" }}>

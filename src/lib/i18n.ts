@@ -9,19 +9,24 @@ export const t = {
     },
     hero: {
       badge: "Open to AI roles · Remote · Hybrid",
-      h1a: "I build AI systems",
+      h1a: "I build AI products",
       h1b: "that work in production.",
-      desc: "Technical founder. Electrical engineer. 7 years at Volvo. 8 years building B2B platforms. Shipped",
-      descHighlight: "eXmesh — Multi-Agent AI System, eTradeflow — ETRM platform for bilateral energy contracts, eFlowing — Agentic CRM for energy migration management.",
-      descEnd: "",
+      desc: "From discovery to deploy: I combine product vision, analytical depth and business sense to turn complex problems into software that delivers value. Electrical engineer, 7 years at Volvo, 8 as a founder in the energy sector.",
+      products: [
+        { name: "eXmesh", tagline: "MAS · agentic intelligence layer" },
+        { name: "eTradeflow", tagline: "ETRM · agile energy contracts" },
+        { name: "eFlowing", tagline: "CRM · faster free-market migrations" },
+      ],
       ctaPrimary: "Let's talk",
       ctaSecondary: "See my journey",
+      ctaCv: "Download CV",
     },
     timeline: {
       eyebrow: "The Journey",
       title: "From Bosch China to AI in production",
       subtitle: "19 years of building. 3 countries. One consistent thread.",
       hint: "Click any card to expand",
+      lightboxClose: "Close",
     },
     projects: {
       eyebrow: "AI Systems · Production",
@@ -33,12 +38,13 @@ export const t = {
       platformsTitle: "Platforms Built",
       platformsSubtitle: "Production software used by real companies.",
       expandHint: "⤢ Expand",
+      diagramScrollHint: "← swipe to see the full diagram →",
       footerBuilt: "Built with Next.js · Deployed on Vercel",
     },
     contact: {
       title: "Let's build something.",
       subtitle:
-        "Available for Head of AI, AI Product Manager, or Chief AI Product Officer roles. Remote/Hybrid. Brazil and international.",
+        "Available for AI Product Manager and Technical Product Manager roles. Remote/Hybrid. Brazil and international.",
       namePlaceholder: "Your name",
       emailPlaceholder: "Your email",
       messagePlaceholder: "Tell me about the role or project (optional)",
@@ -73,16 +79,16 @@ export const t = {
         desc: "eXmesh — Multi-Agent System, a mesh of coordinated agents. Real-time swarm orchestration with HITL and Governance.",
       },
       {
-        desc: "CRM for pipeline management and energy migration processes in Brazil's free energy market, built for energy commercializers.",
+        desc: "Beenx's commercial engine: opportunity pipeline, onboarding and step-by-step tracking of each client's migration to Brazil's free energy market.",
       },
       {
-        desc: "ETRM (Energy Trading and Risk Management) platform for energy commercializers to close contracts with other commercializers.",
+        desc: "Beenx's trading environment: Broker and Home Broker terminals, real-time pricing, contracts and compliance integrated for energy commercializers.",
       },
     ],
     events: [
       {
         desc: "Industrial automation at scale. First exposure to global manufacturing systems.",
-        context: "Living and working in China at 21 — immersed in a completely different culture while engineering production automation systems alongside Chinese teams. The scale of everything was humbling. It planted the seed for thinking beyond borders.",
+        context: "Living and working in China at 21 — immersed in a completely different culture while engineering production automation systems alongside Chinese teams. The scale of everything was humbling. The seed of thinking beyond borders was planted.",
       },
       {
         desc: "Systems engineering at the source. Built the mindset for precision and process.",
@@ -105,11 +111,15 @@ export const t = {
         context: "Since 2018 I've owned the product vision, roadmap and portfolio strategy of Fohat's B2B platforms for the energy market. I led the build of eTradeflow — a trading environment with Terminal Broker and Home Broker, with integrated contracts and compliance — and ran two ANEEL R&D projects from kickoff to delivery, one for the Home Broker and one for the Terminal Broker. Every feature had to survive ANEEL regulation and CCEE compliance.",
       },
       {
-        desc: "Shipped MUTHUR, Bishop, Walter and 4 Synthetic Workers running autonomously on GCP.",
-        context: "Not demos — real agents making real decisions in production. Walter autonomously merged the first AI-authored PR. Bishop reads our architectural specs and detects drift. MUTHUR orchestrates everything via chat, coordinating OKRs and Mandates. This wasn't an experiment; it was infrastructure.",
+        desc: "Board of Advisors seat. Corporate governance and management advisory, certified by Gonew.co.",
+        context: "I got certified as an Innovation Board Member by Gonew.co — 100 hours, 40 of them in Board Real Practice — and served three consecutive terms on OSINOVA's Board of Advisors. I brought both lenses to the table: the traditional corporate world and the startup builder's.",
       },
       {
-        desc: "Bringing this rare combination — product thinking, technical execution, AI at scale — to your company.",
+        desc: "I lead eXmesh: a mesh of AI agents running autonomously and coordinated in production on GCP. I specify, architect and govern; the agents execute.",
+        context: "MUTHUR receives any demand and distributes work with no human intermediary. Bishop holds the organizational memory — it reads our documentation and historical decisions and detects drift before it becomes a problem. Walter runs engineering end-to-end and was the first to autonomously merge code into production. Each area has its own specialized sub-swarm, coordinated through the central mesh — and every action passes a Governance Gateway that validates OKRs, mandates and decisions, human in the loop. What we built internally is being shaped into a product.",
+      },
+      {
+        desc: "Bringing this rare combination — product passion, innovation, analytical depth and business sense, with AI at scale — to your company.",
         context: "The companies I founded are in GTM and being prepared to become AI First. I'm now open to channeling everything I've built — the AI systems, the product sense, the execution discipline — into a role where I can make an immediate, measurable impact. Remote. Hybrid. Brazil and international.",
       },
     ],
@@ -122,19 +132,24 @@ export const t = {
     },
     hero: {
       badge: "Disponível para vagas em AI · Remoto · Híbrido",
-      h1a: "Construo sistemas de AI",
+      h1a: "Construo produtos de AI",
       h1b: "que funcionam em produção.",
-      desc: "Founder técnico. Engenheiro eletricista. 7 anos na Volvo. 8 anos construindo plataformas B2B. Coloquei em produção",
-      descHighlight: "eXmesh — Sistema Multi-Agentes de AI, eTradeflow — Sistema ETRM para contratos bilaterais de energia, eFlowing — CRM agêntico para gestão da migração de clientes para o Mercado Livre de Energia.",
-      descEnd: "",
+      desc: "Da descoberta ao deploy: uno visão de produto, capacidade analítica e negócios para transformar problemas complexos em software que gera valor. Engenheiro eletricista, 7 anos na Volvo, 8 como founder no setor de energia.",
+      products: [
+        { name: "eXmesh", tagline: "SMA · camada de inteligência agêntica" },
+        { name: "eTradeflow", tagline: "ETRM · agilidade em contratos de energia" },
+        { name: "eFlowing", tagline: "CRM · migração acelerada ao Mercado Livre" },
+      ],
       ctaPrimary: "Vamos conversar",
       ctaSecondary: "Ver minha jornada",
+      ctaCv: "Baixar CV",
     },
     timeline: {
       eyebrow: "A Jornada",
       title: "Da Bosch China à AI em produção",
       subtitle: "19 anos construindo. 3 países. Um fio condutor.",
       hint: "Clique em qualquer card para expandir",
+      lightboxClose: "Fechar",
     },
     projects: {
       eyebrow: "Sistemas de AI · Produção",
@@ -146,12 +161,13 @@ export const t = {
       platformsTitle: "Plataformas Construídas",
       platformsSubtitle: "Software em produção usado por empresas reais.",
       expandHint: "⤢ Ampliar",
+      diagramScrollHint: "← deslize para ver o diagrama completo →",
       footerBuilt: "Desenvolvido com Next.js · Deploy no Vercel",
     },
     contact: {
       title: "Vamos construir algo.",
       subtitle:
-        "Disponível para vagas de Head of AI, Product Manager AI ou Chief Product Officer AI. Remoto/Híbrido. Brasil e mercado internacional.",
+        "Disponível para vagas de AI Product Manager e Technical Product Manager. Remoto/Híbrido. Brasil e mercado internacional.",
       namePlaceholder: "Seu nome",
       emailPlaceholder: "Seu e-mail",
       messagePlaceholder: "Conte sobre a vaga ou projeto (opcional)",
@@ -186,16 +202,16 @@ export const t = {
         desc: "eXmesh — Sistema Multi-Agentes, uma malha de agentes coordenados. Orquestração de swarms em tempo real com HITL e Governança.",
       },
       {
-        desc: "CRM para gestão de pipeline e de processos de migração do Mercado Livre de Energia voltada para Comercializadoras de Energia.",
+        desc: "Motor comercial da Beenx: pipeline de oportunidades, onboarding e acompanhamento de cada etapa da migração dos clientes ao Mercado Livre de Energia.",
       },
       {
-        desc: "Plataforma ETRM (Energy Trading and Risk Management) para Comercializadoras de Energia poderem fechar seus contratos com outras Comercializadoras de Energia.",
+        desc: "Ambiente de trading da Beenx: Terminal Broker e Home Broker, precificação em tempo real, contratos e compliance integrados para Comercializadoras.",
       },
     ],
     events: [
       {
         desc: "Automação industrial em escala. Primeira exposição a sistemas globais de manufatura.",
-        context: "Vivendo e trabalhando na China aos 21 anos — imerso em uma cultura completamente diferente enquanto desenvolvia sistemas de automação de produção ao lado de equipes chinesas. A escala de tudo era impressionante. Plantou a semente de pensar além das fronteiras.",
+        context: "Vivendo e trabalhando na China aos 21 anos — imerso em uma cultura completamente diferente enquanto desenvolvia sistemas de automação de produção ao lado de equipes chinesas. A escala de tudo era impressionante. Plantada a semente de pensar além das fronteiras.",
       },
       {
         desc: "Engenharia de sistemas na fonte. Construí a mentalidade de precisão e processo.",
@@ -218,11 +234,15 @@ export const t = {
         context: "Desde 2018 sou responsável pela visão de produto, roadmap e estratégia de portfólio das plataformas B2B da Fohat para o mercado de energia. Liderei a construção da eTradeflow — ambiente de trading com Terminal Broker e Home Broker, com contratos e compliance integrados — e conduzi dois projetos de P&D ANEEL do início à entrega, um para o Home Broker e outro para o Terminal Broker. Cada feature teve que sobreviver à regulação da ANEEL e à conformidade da CCEE.",
       },
       {
-        desc: "Entregou MUTHUR, Bishop, Walter e 4 Synthetic Workers rodando autonomamente no GCP.",
-        context: "Não são demos — são agentes tomando decisões reais em produção. Walter fez o merge autônomo do primeiro PR gerado por IA. Bishop lê nossas specs arquiteturais e detecta drift. MUTHUR orquestra tudo via chat coordenando OKRs e Mandatos. Isso não foi um experimento; foi infraestrutura.",
+        desc: "Assento no Board of Advisors. Consultoria de governança corporativa e de gestão, com certificação da Gonew.co.",
+        context: "Me certifiquei como Conselheiro de Inovação pela Gonew.co — 100 horas, 40 delas em Board Real Practice — e servi por três mandatos consecutivos no Board of Advisors da OSINOVA. Levei para a mesa as duas lentes: a do mundo corporativo tradicional e a de quem constrói startups.",
       },
       {
-        desc: "Trazendo essa combinação rara — visão de produto, execução técnica, AI em escala — para a sua empresa.",
+        desc: "Lidero o eXmesh: malha de agentes de IA rodando de forma autônoma e coordenada em produção no GCP. Eu especifico, arquiteto e governo; os agentes executam.",
+        context: "A MUTHUR recebe qualquer demanda e distribui o trabalho sem intermediário humano. O Bishop guarda a memória organizacional — lê nossa documentação e decisões históricas e detecta desvios antes que virem problema. O Walter realiza engenharia de ponta a ponta e foi o primeiro a fazer merge autônomo de código em produção. Cada área tem seu sub-swarm especializado, coordenado pela malha central — e cada ação passa por um Governance Gateway que valida OKRs, mandatos e decisões, com humano no circuito. O que construímos internamente está sendo formatado como produto.",
+      },
+      {
+        desc: "Trazendo essa combinação rara — paixão por produto, inovação, capacidade analítica e visão de negócios, com AI em escala — para a sua empresa.",
         context: "As empresas que fundei estão em GTM e sendo preparadas para serem \"AI First\". Agora estou aberto a canalizar tudo que construí — os sistemas de AI, o senso de produto, a disciplina de execução — em um papel onde posso ter impacto imediato e mensurável. Remoto. Híbrido. Brasil e mercado internacional.",
       },
     ],

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/i18n";
+import { links } from "@/lib/links";
 
 export function Hero() {
   const { lang } = useLanguage();
@@ -61,10 +62,18 @@ export function Hero() {
           <div className="mt-4 h-px w-12 bg-[var(--color-gold)]" />
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/60">
-            {tx.desc}{" "}
-            <span className="text-white/90">{tx.descHighlight}</span>{" "}
-            {tx.descEnd}
+            {tx.desc}
           </p>
+
+          <ul className="mt-6 flex flex-col gap-2">
+            {tx.products.map((p) => (
+              <li key={p.name} className="flex items-baseline gap-2 text-sm">
+                <span aria-hidden="true" className="text-[var(--color-brand)]">▸</span>
+                <span className="font-semibold text-white/90">{p.name}</span>
+                <span className="text-white/50">— {p.tagline}</span>
+              </li>
+            ))}
+          </ul>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
@@ -78,6 +87,37 @@ export function Hero() {
               className="rounded-lg border border-white/15 px-7 py-3 font-medium text-white/80 transition hover:border-white/30 hover:text-white"
             >
               {tx.ctaSecondary}
+            </a>
+            <a
+              href={`/cv-igor-paes-ferreira-${lang}.pdf`}
+              download
+              className="flex items-center gap-2 rounded-lg border border-[var(--color-gold)]/40 px-5 py-3 font-medium text-[var(--color-gold)] transition hover:border-[var(--color-gold)] hover:text-[#e0be4a]"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4" aria-hidden="true">
+                <path d="M12 3v12m0 0 -4-4m4 4 4-4M4 19h16" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              {tx.ctaCv}
+            </a>
+            <a
+              href={links.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="rounded-lg border border-white/15 p-3 text-white/70 transition hover:border-white/30 hover:text-white"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5" aria-hidden="true">
+                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z" />
+              </svg>
+            </a>
+            <a
+              href={`mailto:${links.email}`}
+              aria-label="E-mail"
+              className="rounded-lg border border-white/15 p-3 text-white/70 transition hover:border-white/30 hover:text-white"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m3 7 9 6 9-6" />
+              </svg>
             </a>
           </div>
 
