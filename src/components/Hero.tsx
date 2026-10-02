@@ -5,21 +5,68 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/i18n";
 import { links } from "@/lib/links";
 
+/* Cores = faixas do grafo da Jornada: corporativo (azul), investimentos (verde), inovação (dourado) */
+const PILLAR_COLORS = ["#60A5FA", "#34D399", "#C9A227"];
+
+function PillarsBlueprint({
+  pillars,
+  label,
+  result,
+  figure,
+}: {
+  pillars: readonly { name: string; tagline: string }[];
+  label: string;
+  result: string;
+  figure: string;
+}) {
+  return (
+    <figure className="mt-8 w-full max-w-xl text-left">
+      <div className="grid grid-cols-3 gap-2">
+        {pillars.map((p, i) => (
+          <div
+            key={p.name}
+            className="relative rounded-md border border-dashed bg-[#0a1930]/70 p-3 backdrop-blur-sm"
+            style={{ borderColor: `${PILLAR_COLORS[i]}66` }}
+          >
+            <span className="absolute -top-[3px] -left-[3px] h-1.5 w-1.5 rounded-full" style={{ background: PILLAR_COLORS[i] }} />
+            <span className="absolute -top-[3px] -right-[3px] h-1.5 w-1.5 rounded-full" style={{ background: PILLAR_COLORS[i] }} />
+            <span className="font-mono text-[9px] tracking-widest" style={{ color: PILLAR_COLORS[i] }}>
+              {label} 0{i + 1}
+            </span>
+            <div className="mt-1 text-sm font-semibold text-white">{p.name}</div>
+            <div className="mt-0.5 text-[11px] leading-snug text-white/50">{p.tagline}</div>
+          </div>
+        ))}
+      </div>
+
+      {/* Conectores convergindo no resultado */}
+      <svg viewBox="0 0 300 48" className="h-12 w-full" fill="none" aria-hidden="true">
+        {[50, 150, 250].map((x, i) => {
+          const d = x === 150 ? "M 150 0 V 38" : `M ${x} 0 V 14 H 150 V 38`;
+          return (
+            <g key={x}>
+              <path d={d} stroke={PILLAR_COLORS[i]} strokeOpacity="0.5" strokeWidth="1.5" />
+              <path d={d} className="bp-flow" stroke={PILLAR_COLORS[i]} strokeWidth="2" strokeDasharray="4 30" strokeLinecap="round" />
+            </g>
+          );
+        })}
+        <circle cx="150" cy="40" r="4" fill="#0a1930" stroke="#60A5FA" strokeWidth="1.5" />
+      </svg>
+
+      <div className="mx-auto w-fit rounded-md border border-[var(--color-brand)]/40 bg-[var(--color-brand)]/10 px-4 py-2 text-center">
+        <span className="font-mono text-xs tracking-wide text-[var(--color-brand-400)]">{result}</span>
+      </div>
+      <figcaption className="mt-3 text-center font-mono text-[9px] tracking-[0.2em] text-white/30">{figure}</figcaption>
+    </figure>
+  );
+}
+
 export function Hero() {
   const { lang } = useLanguage();
   const tx = t[lang].hero;
 
   return (
     <section className="relative min-h-screen overflow-hidden pt-24">
-      {/* Background grid */}
-      <div
-        className="pointer-events-none absolute inset-0 opacity-20"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(59,130,246,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.15) 1px, transparent 1px)",
-          backgroundSize: "64px 64px",
-        }}
-      />
       {/* Glow blob */}
       <div className="pointer-events-none absolute -top-40 left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-[var(--color-brand)] opacity-[0.06] blur-3xl" />
 
@@ -48,11 +95,6 @@ export function Hero() {
 
         {/* Copy */}
         <div className="flex flex-col items-center text-center md:items-start md:text-left">
-          <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-[var(--color-brand)]/30 bg-[var(--color-brand)]/10 px-4 py-1.5 text-xs font-medium tracking-widest text-[var(--color-brand-400)] uppercase">
-            <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-brand)] animate-pulse" />
-            {tx.badge}
-          </span>
-
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
             {tx.h1a}
             <br />
@@ -65,15 +107,7 @@ export function Hero() {
             {tx.desc}
           </p>
 
-          <ul className="mt-6 flex flex-col gap-2">
-            {tx.products.map((p) => (
-              <li key={p.name} className="flex items-baseline gap-2 text-sm">
-                <span aria-hidden="true" className="text-[var(--color-brand)]">▸</span>
-                <span className="font-semibold text-white/90">{p.name}</span>
-                <span className="text-white/50">— {p.tagline}</span>
-              </li>
-            ))}
-          </ul>
+          <PillarsBlueprint pillars={tx.pillars} label={tx.pillarLabel} result={tx.result} figure={tx.figure} />
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
@@ -119,19 +153,6 @@ export function Hero() {
                 <path d="m3 7 9 6 9-6" />
               </svg>
             </a>
-          </div>
-
-          <div className="mt-10 flex flex-wrap gap-2">
-            {["LangGraph", "Claude · Vertex AI", "Next.js", "Kubernetes", "GCP", "Python"].map(
-              (tech) => (
-                <span
-                  key={tech}
-                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/50"
-                >
-                  {tech}
-                </span>
-              )
-            )}
           </div>
         </div>
       </div>

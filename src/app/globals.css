@@ -59,3 +59,14 @@ body {
 ::-webkit-scrollbar-track  { background: var(--color-navy); }
 ::-webkit-scrollbar-thumb  { background: var(--color-navy-700); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--color-brand-600); }
+
+/* ── Blueprint: fluxo nas trilhas de circuito ──────────── */
+@keyframes bp-flow {
+  to { stroke-dashoffset: -80; }
+}
+.bp-flow {
+  animation: bp-flow 3s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bp-flow { animation: none; }
+}

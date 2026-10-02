@@ -10,7 +10,8 @@ import { t } from "@/lib/i18n";
    como a linha passa pela linha da timeline:
      "|" atravessa · "v" nasce no commit · "^" termina no commit · " " vazia
    `dots` = faixas com commit; `forks`/`merges` = curvas [de, para].
-   Faixas: 0 = main (carreira) · 1 = fohat / formação · 2 = advisory */
+   Faixas = pilares: 0 = corporativo · 1 = inovação · 2 = investimentos.
+   Todas convergem no HEAD (Novos Desafios). */
 const LANE_W = 18;
 const LANES = 3;
 const DOT_Y = 28;
@@ -32,18 +33,17 @@ const eventsBase: {
   role: string;
   photos: string[];
   highlight: boolean;
-  branch?: string;
-  branchLane?: number;
+  pillar?: number;
   tag?: string;
   g: Graph;
 }[] = [
-  { year: "2007",      flag: "🇨🇳", company: "Bosch · China",                 role: "International Internship",                 photos: ["/bosch-china.jpg"],                                          highlight: false, g: { lanes: "v  ", dots: [0] } },
-  { year: "2007",      flag: "🇩🇪", company: "Bosch · Germany",                role: "R&D Internship · Stuttgart",               photos: ["/bosch-alemanha.jpg"],                                       highlight: false, g: { lanes: "|  ", dots: [0] } },
-  { year: "2010–2017", flag: "🇧🇷", company: "Volvo do Brasil",                role: "Product Engineer → Quality & Reliability", photos: ["/volvo-igor.jpeg"],                                          highlight: false, g: { lanes: "|v ", dots: [0], forks: [[0, 1]] } },
-  { year: "2011",      flag: "🎓",  company: "Electrical Engineering",         role: "B.Sc. · Universidade",                     photos: ["/graduacao.jpg"],                                            highlight: false, branch: "education", branchLane: 1, g: { lanes: "|| ", dots: [1] } },
-  { year: "2017",      flag: "🇺🇸", company: "Silicon Valley",                 role: "The turning point",                        photos: ["/igor-san-francisco.jpeg", "/igor-stanford.jpeg"],           highlight: true,  tag: "v2017", g: { lanes: "|  ", dots: [0], merges: [[1, 0]] } },
-  { year: "2018–2026", flag: "🚀",  company: "Fohat Corporation",              role: "Founder · Product Manager · Tech Lead",    photos: ["/fohat-igor.jpeg", "/beenx-team.jpeg", "/fohat-evento.jpg", "/fohat-certificado-inpi.jpg"], highlight: false, branch: "fohat", branchLane: 1, g: { lanes: "|v ", dots: [1], forks: [[0, 1]] } },
-  { year: "2022–2024", flag: "🧭",  company: "OSINOVA",                        role: "Innovation Board Advisor",                 photos: ["/osinova-board.jpg", "/certificado-conselheiro-inovacao.jpeg"], highlight: false, branch: "advisory", branchLane: 2, g: { lanes: "||v", dots: [2], forks: [[1, 2]] } },
+  { year: "2007",      flag: "🇨🇳", company: "Bosch · China",                 role: "International Internship",                 photos: ["/bosch-china.jpg"],                                          highlight: false, pillar: 0, g: { lanes: "v  ", dots: [0] } },
+  { year: "2007",      flag: "🇩🇪", company: "Bosch · Germany",                role: "R&D Internship · Stuttgart",               photos: ["/bosch-alemanha.jpg"],                                       highlight: false, pillar: 0, g: { lanes: "|  ", dots: [0] } },
+  { year: "2010–2017", flag: "🇧🇷", company: "Volvo do Brasil",                role: "Product Engineer → Quality & Reliability", photos: ["/volvo-igor.jpeg"],                                          highlight: false, pillar: 0, g: { lanes: "|  ", dots: [0] } },
+  { year: "2011",      flag: "🎓",  company: "Electrical Engineering",         role: "B.Sc. · Universidade",                     photos: ["/graduacao.jpg"],                                            highlight: false, pillar: 0, g: { lanes: "|  ", dots: [0] } },
+  { year: "2017",      flag: "🇺🇸", company: "Silicon Valley",                 role: "The turning point",                        photos: ["/igor-san-francisco.jpeg", "/igor-stanford.jpeg"],           highlight: true,  pillar: 1, tag: "v2017", g: { lanes: "|v ", dots: [1], forks: [[0, 1]] } },
+  { year: "2018–2026", flag: "🚀",  company: "Fohat Corporation",              role: "Founder · Product Manager · Tech Lead",    photos: ["/fohat-igor.jpeg", "/beenx-team.jpeg", "/fohat-evento.jpg", "/fohat-certificado-inpi.jpg"], highlight: false, pillar: 1, g: { lanes: "|| ", dots: [1] } },
+  { year: "2022–2024", flag: "🧭",  company: "OSINOVA",                        role: "Innovation Board Advisor",                 photos: ["/osinova-board.jpg", "/certificado-conselheiro-inovacao.jpeg"], highlight: false, pillar: 2, g: { lanes: "||v", dots: [2], forks: [[1, 2]] } },
   { year: "2026",      flag: "🟢",  company: "Available",                      companyPt: "Novos Desafios",               role: "AI Product Manager · Technical PM",        photos: [],                                                            highlight: true,  tag: "HEAD", g: { lanes: "^  ", dots: [0], merges: [[1, 0], [2, 0]] } },
 ];
 
@@ -153,6 +153,18 @@ export function Timeline() {
         </h2>
         <p className="mt-4 text-white/50">{tx.subtitle}</p>
         <p className="mt-2 text-xs text-white/25">{tx.hint}</p>
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
+          {tx.pillars.map((name, i) => (
+            <span
+              key={name}
+              className="rounded-full border border-dashed px-3 py-1 font-mono text-[10px] tracking-widest uppercase"
+              style={{ color: LANE_COLORS[i], borderColor: `${LANE_COLORS[i]}66` }}
+            >
+              ⎇ {name}
+            </span>
+          ))}
+        </div>
+        <p className="mt-3 font-mono text-[9px] tracking-[0.2em] text-white/30">{tx.figure}</p>
       </div>
 
       <div className="flex flex-col">
@@ -191,17 +203,17 @@ export function Timeline() {
                       ▾
                     </span>
                   </div>
-                  {(event.branch || event.tag) && (
+                  {(event.pillar !== undefined || event.tag) && (
                     <div className="mt-1.5 flex flex-wrap gap-1.5">
-                      {event.branch && (
+                      {event.pillar !== undefined && (
                         <span
                           className="rounded-full border px-2 py-0.5 font-mono text-[10px]"
                           style={{
-                            color: LANE_COLORS[event.branchLane ?? 0],
-                            borderColor: `${LANE_COLORS[event.branchLane ?? 0]}55`,
+                            color: LANE_COLORS[event.pillar ?? 0],
+                            borderColor: `${LANE_COLORS[event.pillar ?? 0]}55`,
                           }}
                         >
-                          ⎇ {event.branch}
+                          ⎇ {tx.pillars[event.pillar ?? 0]}
                         </span>
                       )}
                       {event.tag && (
