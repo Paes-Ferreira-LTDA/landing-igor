@@ -48,11 +48,6 @@ export function Hero() {
 
         {/* Copy */}
         <div className="flex flex-col items-center text-center md:items-start md:text-left">
-          <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-[var(--color-brand)]/30 bg-[var(--color-brand)]/10 px-4 py-1.5 text-xs font-medium tracking-widest text-[var(--color-brand-400)] uppercase">
-            <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-brand)] animate-pulse" />
-            {tx.badge}
-          </span>
-
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
             {tx.h1a}
             <br />

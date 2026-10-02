@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import { AISystemsDiagram } from "./AISystemsDiagram";
 import { LogoSwarm } from "./LogoSwarm";
+import { BlueprintBackground } from "./BlueprintBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/i18n";
 
@@ -61,8 +62,9 @@ export function AIProjects() {
   const active = lightbox !== null ? platforms[lightbox] : null;
 
   return (
-    <section id="projects" className="bg-[var(--color-surface)] py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="projects" className="relative overflow-hidden bg-[var(--color-surface)] py-24 md:py-32">
+      <BlueprintBackground />
+      <div className="relative z-10 mx-auto max-w-6xl px-6">
 
         {/* AI Agents */}
         <div className="mb-16 text-center">

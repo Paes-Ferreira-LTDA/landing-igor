@@ -8,7 +8,6 @@ export const t = {
       cta: "Let's talk",
     },
     hero: {
-      badge: "Open to AI roles · Remote · Hybrid",
       h1a: "Corporate × Investments",
       h1b: "× Innovation.",
       desc: "A career built across three worlds: engineering at scale at Volvo, evaluating the portfolio of OSINOVA's corporate venture fund, and leading product and software development in startups. That mix lets me read a business from the engineering bench, the product roadmap and the investor's table at once. Electrical engineer, 7 years at Volvo, 8 as a founder in the energy sector.",
@@ -137,7 +136,6 @@ export const t = {
       cta: "Vamos conversar",
     },
     hero: {
-      badge: "Disponível para vagas em AI · Remoto · Híbrido",
       h1a: "Corporativo × Investimentos",
       h1b: "× Inovação.",
       desc: "Uma carreira construída entre três mundos: engenharia em escala na Volvo, avaliação do portfólio do fundo de venture capital corporativo da OSINOVA e liderança de desenvolvimento de produto e software em startups. Essa combinação me permite enxergar um negócio ao mesmo tempo da bancada de engenharia, do roadmap de produto e da mesa do investidor. Engenheiro eletricista, 7 anos na Volvo, 8 como founder no setor de energia.",
