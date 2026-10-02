@@ -19,14 +19,14 @@ const TRACES = [
   "M 1130 520 H 1020 L 990 490 V 440",
 ];
 
-function Drawing({ flip }: { flip: boolean }) {
+function Drawing() {
   return (
     <svg
-      className="block w-full"
+      className="absolute inset-0 h-full w-full"
       viewBox="0 0 1200 800"
+      preserveAspectRatio="xMidYMid slice"
       fill="none"
       style={{
-        transform: flip ? "scaleX(-1)" : undefined,
         maskImage: "radial-gradient(ellipse at 50% 45%, transparent 28%, #000 78%)",
         WebkitMaskImage: "radial-gradient(ellipse at 50% 45%, transparent 28%, #000 78%)",
         opacity: 0.55,
@@ -131,10 +131,10 @@ export function BlueprintBackground() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none absolute inset-0 overflow-hidden"
+      className="pointer-events-none fixed inset-0 -z-10 overflow-hidden"
       style={{
         background:
-          "radial-gradient(ellipse at 50% 0%, rgba(30,64,120,0.35), transparent 60%), #0c1a33",
+          "radial-gradient(ellipse at 50% 0%, rgba(30,64,120,0.35), transparent 60%), #0a1930",
       }}
     >
       {/* Grade fina + grade principal */}
@@ -150,18 +150,8 @@ export function BlueprintBackground() {
           backgroundSize: "16px 16px, 16px 16px, 96px 96px, 96px 96px",
         }}
       />
-
       {/* Desenho técnico — some no centro para não competir com o texto */}
-      {/* Desenho repetido na vertical para cobrir seções altas; cópias alternadas espelhadas */}
-      <div className="absolute left-1/2 top-0 w-full min-w-[900px] -translate-x-1/2">
-        {Array.from({ length: 8 }).map((_, i) => (
-          <Drawing key={i} flip={i % 2 === 1} />
-        ))}
-      </div>
-
-      {/* Fade nas bordas superior/inferior para emendar com as seções vizinhas */}
-      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[var(--color-navy)] to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[var(--color-navy)] to-transparent" />
+      <Drawing />
     </div>
   );
 }

@@ -11,15 +11,6 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen overflow-hidden pt-24">
-      {/* Background grid */}
-      <div
-        className="pointer-events-none absolute inset-0 opacity-20"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(59,130,246,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.15) 1px, transparent 1px)",
-          backgroundSize: "64px 64px",
-        }}
-      />
       {/* Glow blob */}
       <div className="pointer-events-none absolute -top-40 left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-[var(--color-brand)] opacity-[0.06] blur-3xl" />
 
