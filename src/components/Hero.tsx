@@ -5,6 +5,62 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/i18n";
 import { links } from "@/lib/links";
 
+/* Cores = faixas do grafo da Jornada: corporativo (azul), investimentos (verde), inovação (dourado) */
+const PILLAR_COLORS = ["#60A5FA", "#34D399", "#C9A227"];
+
+function PillarsBlueprint({
+  pillars,
+  label,
+  result,
+  figure,
+}: {
+  pillars: readonly { name: string; tagline: string }[];
+  label: string;
+  result: string;
+  figure: string;
+}) {
+  return (
+    <figure className="mt-8 w-full max-w-xl text-left">
+      <div className="grid grid-cols-3 gap-2">
+        {pillars.map((p, i) => (
+          <div
+            key={p.name}
+            className="relative rounded-md border border-dashed bg-[#0a1930]/70 p-3 backdrop-blur-sm"
+            style={{ borderColor: `${PILLAR_COLORS[i]}66` }}
+          >
+            <span className="absolute -top-[3px] -left-[3px] h-1.5 w-1.5 rounded-full" style={{ background: PILLAR_COLORS[i] }} />
+            <span className="absolute -top-[3px] -right-[3px] h-1.5 w-1.5 rounded-full" style={{ background: PILLAR_COLORS[i] }} />
+            <span className="font-mono text-[9px] tracking-widest" style={{ color: PILLAR_COLORS[i] }}>
+              {label} 0{i + 1}
+            </span>
+            <div className="mt-1 text-sm font-semibold text-white">{p.name}</div>
+            <div className="mt-0.5 text-[11px] leading-snug text-white/50">{p.tagline}</div>
+          </div>
+        ))}
+      </div>
+
+      {/* Conectores convergindo no resultado */}
+      <svg viewBox="0 0 300 48" className="h-12 w-full" fill="none" aria-hidden="true">
+        {[50, 150, 250].map((x, i) => {
+          const d = x === 150 ? "M 150 0 V 38" : `M ${x} 0 V 14 H 150 V 38`;
+          return (
+            <g key={x}>
+              <path d={d} stroke={PILLAR_COLORS[i]} strokeOpacity="0.5" strokeWidth="1.5" />
+              <path d={d} className="bp-flow" stroke={PILLAR_COLORS[i]} strokeWidth="2" strokeDasharray="4 30" strokeLinecap="round" />
+            </g>
+          );
+        })}
+        <circle cx="150" cy="40" r="4" fill="#0a1930" stroke="#60A5FA" strokeWidth="1.5" />
+      </svg>
+
+      <div className="mx-auto w-fit rounded-md border border-[var(--color-brand)]/40 bg-[var(--color-brand)]/10 px-4 py-2 text-center">
+        <span className="font-mono text-xs tracking-wide text-[var(--color-brand-400)]">{result}</span>
+      </div>
+      <figcaption className="mt-3 text-center font-mono text-[9px] tracking-[0.2em] text-white/30">{figure}</figcaption>
+    </figure>
+  );
+}
+
 export function Hero() {
   const { lang } = useLanguage();
   const tx = t[lang].hero;
@@ -51,15 +107,7 @@ export function Hero() {
             {tx.desc}
           </p>
 
-          <ul className="mt-6 flex flex-col gap-2">
-            {tx.pillars.map((p) => (
-              <li key={p.name} className="flex items-baseline gap-2 text-sm">
-                <span aria-hidden="true" className="text-[var(--color-brand)]">▸</span>
-                <span className="font-semibold text-white/90">{p.name}</span>
-                <span className="text-white/50">— {p.tagline}</span>
-              </li>
-            ))}
-          </ul>
+          <PillarsBlueprint pillars={tx.pillars} label={tx.pillarLabel} result={tx.result} figure={tx.figure} />
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
