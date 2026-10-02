@@ -9,13 +9,13 @@ export const t = {
     },
     hero: {
       badge: "Open to AI roles · Remote · Hybrid",
-      h1a: "I build AI products",
-      h1b: "that work in production.",
-      desc: "From discovery to deploy: I combine product vision, analytical depth and business sense to turn complex problems into software that delivers value. Electrical engineer, 7 years at Volvo, 8 as a founder in the energy sector.",
-      products: [
-        { name: "eXmesh", tagline: "MAS · agentic intelligence layer" },
-        { name: "eTradeflow", tagline: "ETRM · agile energy contracts" },
-        { name: "eFlowing", tagline: "CRM · faster free-market migrations" },
+      h1a: "Corporate × Investments",
+      h1b: "× Innovation.",
+      desc: "A career built across three worlds: engineering at scale at Volvo, evaluating the portfolio of OSINOVA's corporate venture fund, and leading product and software development in startups. That mix lets me read a business from the engineering bench, the product roadmap and the investor's table at once. Electrical engineer, 7 years at Volvo, 8 as a founder in the energy sector.",
+      pillars: [
+        { name: "Corporate", tagline: "engineering at scale at Volvo" },
+        { name: "Investments", tagline: "OSINOVA corporate VC portfolio" },
+        { name: "Innovation", tagline: "product and software in startups" },
       ],
       ctaPrimary: "Let's talk",
       ctaSecondary: "See my journey",
@@ -29,6 +29,16 @@ export const t = {
       lightboxClose: "Close",
     },
     projects: {
+      intro: {
+        h1a: "I build AI products",
+        h1b: "that work in production.",
+        desc: "From discovery to deploy: I combine product vision, analytical depth and business sense to turn complex problems into software that delivers value. Electrical engineer, 7 years at Volvo, 8 as a founder in the energy sector.",
+        products: [
+          { name: "eXmesh", tagline: "MAS · agentic intelligence layer" },
+          { name: "eTradeflow", tagline: "ETRM · agile energy contracts" },
+          { name: "eFlowing", tagline: "CRM · faster free-market migrations" },
+        ],
+      },
       eyebrow: "AI Systems · Production",
       title: "eXmesh — Multi-Agent System, a mesh of coordinated agents running in production on GCP.",
       subtitle: "MUTHUR orchestrates. Bishop strategizes. Walter executes. 4 Synthetics monitor. Human-in-the-loop preserved.",
@@ -128,13 +138,13 @@ export const t = {
     },
     hero: {
       badge: "Disponível para vagas em AI · Remoto · Híbrido",
-      h1a: "Construo produtos de AI",
-      h1b: "que funcionam em produção.",
-      desc: "Da descoberta ao deploy: uno visão de produto, capacidade analítica e negócios para transformar problemas complexos em software que gera valor. Engenheiro eletricista, 7 anos na Volvo, 8 como founder no setor de energia.",
-      products: [
-        { name: "eXmesh", tagline: "SMA · camada de inteligência agêntica" },
-        { name: "eTradeflow", tagline: "ETRM · agilidade em contratos de energia" },
-        { name: "eFlowing", tagline: "CRM · migração acelerada ao Mercado Livre" },
+      h1a: "Corporativo × Investimentos",
+      h1b: "× Inovação.",
+      desc: "Uma carreira construída entre três mundos: engenharia em escala na Volvo, avaliação do portfólio do fundo de venture capital corporativo da OSINOVA e liderança de desenvolvimento de produto e software em startups. Essa combinação me permite enxergar um negócio ao mesmo tempo da bancada de engenharia, do roadmap de produto e da mesa do investidor. Engenheiro eletricista, 7 anos na Volvo, 8 como founder no setor de energia.",
+      pillars: [
+        { name: "Corporativo", tagline: "engenharia em escala na Volvo" },
+        { name: "Investimentos", tagline: "portfólio CVC da OSINOVA" },
+        { name: "Inovação", tagline: "produto e software em startups" },
       ],
       ctaPrimary: "Vamos conversar",
       ctaSecondary: "Ver minha jornada",
@@ -148,6 +158,16 @@ export const t = {
       lightboxClose: "Fechar",
     },
     projects: {
+      intro: {
+        h1a: "Construo produtos de AI",
+        h1b: "que funcionam em produção.",
+        desc: "Da descoberta ao deploy: uno visão de produto, capacidade analítica e negócios para transformar problemas complexos em software que gera valor. Engenheiro eletricista, 7 anos na Volvo, 8 como founder no setor de energia.",
+        products: [
+          { name: "eXmesh", tagline: "SMA · camada de inteligência agêntica" },
+          { name: "eTradeflow", tagline: "ETRM · agilidade em contratos de energia" },
+          { name: "eFlowing", tagline: "CRM · migração acelerada ao Mercado Livre" },
+        ],
+      },
       eyebrow: "Sistemas de AI · Produção",
       title: "eXmesh — Sistema Multi-Agentes, uma malha de agentes coordenados rodando no GCP.",
       subtitle: "MUTHUR orquestra. Bishop planeja. Walter executa. 4 Synthetics monitoram. HITL preservado.",

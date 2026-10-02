@@ -66,7 +66,7 @@ export function Hero() {
           </p>
 
           <ul className="mt-6 flex flex-col gap-2">
-            {tx.products.map((p) => (
+            {tx.pillars.map((p) => (
               <li key={p.name} className="flex items-baseline gap-2 text-sm">
                 <span aria-hidden="true" className="text-[var(--color-brand)]">▸</span>
                 <span className="font-semibold text-white/90">{p.name}</span>
@@ -119,19 +119,6 @@ export function Hero() {
                 <path d="m3 7 9 6 9-6" />
               </svg>
             </a>
-          </div>
-
-          <div className="mt-10 flex flex-wrap gap-2">
-            {["LangGraph", "Claude · Vertex AI", "Next.js", "Kubernetes", "GCP", "Python"].map(
-              (tech) => (
-                <span
-                  key={tech}
-                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/50"
-                >
-                  {tech}
-                </span>
-              )
-            )}
           </div>
         </div>
       </div>

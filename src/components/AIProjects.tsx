@@ -69,9 +69,35 @@ export function AIProjects() {
           <span className="text-xs font-semibold uppercase tracking-widest text-[var(--color-brand-400)]">
             {tx.eyebrow}
           </span>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            {tx.title}
+          <h2 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            {tx.intro.h1a}
+            <br />
+            <span className="text-[var(--color-brand)]">{tx.intro.h1b}</span>
           </h2>
+          <div className="mx-auto mt-4 h-px w-12 bg-[var(--color-gold)]" />
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/60">
+            {tx.intro.desc}
+          </p>
+          <ul className="mx-auto mt-6 flex max-w-xl flex-col gap-2 text-left">
+            {tx.intro.products.map((p) => (
+              <li key={p.name} className="flex items-baseline gap-2 text-sm">
+                <span aria-hidden="true" className="text-[var(--color-brand)]">▸</span>
+                <span className="font-semibold text-white/90">{p.name}</span>
+                <span className="text-white/50">— {p.tagline}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-6 flex flex-wrap justify-center gap-2">
+            {["LangGraph", "Claude · Vertex AI", "Next.js", "Kubernetes", "GCP", "Python"].map((tech) => (
+              <span key={tech} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/50">
+                {tech}
+              </span>
+            ))}
+          </div>
+          <div className="mx-auto mt-12 h-px w-full max-w-md bg-white/10" />
+          <h3 className="mt-12 text-xl font-semibold tracking-tight text-white/90 sm:text-2xl">
+            {tx.title}
+          </h3>
           <p className="mt-4 text-white/50">{tx.subtitle}</p>
         </div>
 
