@@ -115,12 +115,8 @@ export const t = {
         context: "I served on the Board of Advisors of OSINOVA, a corporate venture capital fund focused on mobility, smart cities and ag-tech, bringing together traditional corporate-market experience and the startup builder's view.",
       },
       {
-        desc: "I lead eXmesh: a mesh of AI agents running autonomously and coordinated in production on GCP. I specify, architect and govern; the agents execute.",
-        context: "MUTHUR receives any demand and distributes work with no human intermediary. Bishop holds the organizational memory — it reads our documentation and historical decisions and detects drift before it becomes a problem. Walter runs engineering end-to-end and was the first to autonomously merge code into production. Each area has its own specialized sub-swarm, coordinated through the central mesh — and every action passes a Governance Gateway that validates OKRs, mandates and decisions, human in the loop. What we built internally is being shaped into a product.",
-      },
-      {
-        desc: "Bringing this rare combination — product passion, innovation, analytical depth and business sense, with AI at scale — to your company.",
-        context: "The companies I founded are in GTM and being prepared to become AI First. I'm now open to channeling everything I've built — the AI systems, the product sense, the execution discipline — into a role where I can make an immediate, measurable impact. Remote. Hybrid. Brazil and international.",
+        desc: "Big-corporate engineering, startup product leadership and corporate venture capital: three lenses on how technology businesses get built — and scaled.",
+        context: "My path covers three worlds. Large corporations, where I learned engineering at scale at Volvo — quality, reliability and process discipline. Startups, where I led product and software development from zero to production in regulated markets. And innovation, where I evaluated portfolio companies of OSINOVA, a corporate venture capital fund. That mix lets me read a business from the engineering bench, the product roadmap and the investor's table at once. I'm now open to bringing it to a role where I can make an immediate, measurable impact. Remote. Hybrid. Brazil and international.",
       },
     ],
   },
@@ -238,12 +234,8 @@ export const t = {
         context: "Fui membro do Board of Advisors da OSINOVA, fundo de venture capital corporativo focado em mobilidade, smart cities e ag-tech, unindo a experiência do mercado corporativo tradicional e a de startups.",
       },
       {
-        desc: "Lidero o eXmesh: malha de agentes de IA rodando de forma autônoma e coordenada em produção no GCP. Eu especifico, arquiteto e governo; os agentes executam.",
-        context: "A MUTHUR recebe qualquer demanda e distribui o trabalho sem intermediário humano. O Bishop guarda a memória organizacional — lê nossa documentação e decisões históricas e detecta desvios antes que virem problema. O Walter realiza engenharia de ponta a ponta e foi o primeiro a fazer merge autônomo de código em produção. Cada área tem seu sub-swarm especializado, coordenado pela malha central — e cada ação passa por um Governance Gateway que valida OKRs, mandatos e decisões, com humano no circuito. O que construímos internamente está sendo formatado como produto.",
-      },
-      {
-        desc: "Trazendo essa combinação rara — paixão por produto, inovação, capacidade analítica e visão de negócios, com AI em escala — para a sua empresa.",
-        context: "As empresas que fundei estão em GTM e sendo preparadas para serem \"AI First\". Agora estou aberto a canalizar tudo que construí — os sistemas de AI, o senso de produto, a disciplina de execução — em um papel onde posso ter impacto imediato e mensurável. Remoto. Híbrido. Brasil e mercado internacional.",
+        desc: "Engenharia em grandes corporações, liderança de produto em startups e venture capital corporativo: três lentes sobre como negócios de tecnologia são construídos — e escalados.",
+        context: "Minha trajetória passa por três mundos. Grandes corporações, onde aprendi engenharia em escala na Volvo — qualidade, confiabilidade e disciplina de processo. Startups, onde liderei desenvolvimento de produto e software do zero à produção em mercados regulados. E inovação, onde avaliei empresas do portfólio da OSINOVA, fundo de venture capital corporativo. Essa combinação me permite enxergar um negócio ao mesmo tempo da bancada de engenharia, do roadmap de produto e da mesa do investidor. Agora estou aberto a levá-la para um papel onde posso ter impacto imediato e mensurável. Remoto. Híbrido. Brasil e mercado internacional.",
       },
     ],
   },

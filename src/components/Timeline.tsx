@@ -28,6 +28,7 @@ const eventsBase: {
   year: string;
   flag: string;
   company: string;
+  companyPt?: string;
   role: string;
   photos: string[];
   highlight: boolean;
@@ -43,8 +44,7 @@ const eventsBase: {
   { year: "2017",      flag: "🇺🇸", company: "Silicon Valley",                 role: "The turning point",                        photos: ["/igor-san-francisco.jpeg", "/igor-stanford.jpeg"],           highlight: true,  tag: "v2017", g: { lanes: "|  ", dots: [0], merges: [[1, 0]] } },
   { year: "2018–2026", flag: "🚀",  company: "Fohat Corporation",              role: "Founder · Product Manager · Tech Lead",    photos: ["/fohat-igor.jpeg", "/beenx-team.jpeg", "/fohat-evento.jpg"], highlight: false, branch: "fohat", branchLane: 1, g: { lanes: "|v ", dots: [1], forks: [[0, 1]] } },
   { year: "2022–2024", flag: "🧭",  company: "OSINOVA",                        role: "Innovation Board Advisor",                 photos: ["/osinova-board.jpg", "/certificado-conselheiro-inovacao.jpeg"], highlight: false, branch: "advisory", branchLane: 2, g: { lanes: "||v", dots: [2], forks: [[1, 2]] } },
-  { year: "2024–2026", flag: "🤖",  company: "Fohat Corporation · eXmesh",     role: "AI Product Manager · Tech Lead",           photos: ["/igor-head-ai.jpeg"],                                        highlight: true,  branch: "fohat", branchLane: 1, g: { lanes: "|| ", dots: [1], merges: [[2, 1]] } },
-  { year: "2026",      flag: "🟢",  company: "Available",                      role: "AI Product Manager · Technical PM",        photos: [],                                                            highlight: true,  tag: "HEAD", g: { lanes: "^  ", dots: [0], merges: [[1, 0]] } },
+  { year: "2026",      flag: "🟢",  company: "Available",                      companyPt: "Novos Desafios",               role: "AI Product Manager · Technical PM",        photos: [],                                                            highlight: true,  tag: "HEAD", g: { lanes: "^  ", dots: [0], merges: [[1, 0], [2, 0]] } },
 ];
 
 function Graph({ g, open, highlight }: { g: Graph; open: boolean; highlight: boolean }) {
@@ -111,6 +111,7 @@ export function Timeline() {
 
   const events = eventsBase.map((base, i) => ({
     ...base,
+    company: (lang === "pt" && base.companyPt) || base.company,
     desc: eventTexts[i].desc,
     context: eventTexts[i].context,
   }));
