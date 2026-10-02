@@ -42,10 +42,27 @@ const eventsBase: {
   { year: "2010–2017", flag: "🇧🇷", company: "Volvo do Brasil",                role: "Product Engineer → Quality & Reliability", photos: ["/volvo-igor.jpeg"],                                          highlight: false, g: { lanes: "|v ", dots: [0], forks: [[0, 1]] } },
   { year: "2011",      flag: "🎓",  company: "Electrical Engineering",         role: "B.Sc. · Universidade",                     photos: ["/graduacao.jpg"],                                            highlight: false, branch: "education", branchLane: 1, g: { lanes: "|| ", dots: [1] } },
   { year: "2017",      flag: "🇺🇸", company: "Silicon Valley",                 role: "The turning point",                        photos: ["/igor-san-francisco.jpeg", "/igor-stanford.jpeg"],           highlight: true,  tag: "v2017", g: { lanes: "|  ", dots: [0], merges: [[1, 0]] } },
-  { year: "2018–2026", flag: "🚀",  company: "Fohat Corporation",              role: "Founder · Product Manager · Tech Lead",    photos: ["/fohat-igor.jpeg", "/beenx-team.jpeg", "/fohat-evento.jpg"], highlight: false, branch: "fohat", branchLane: 1, g: { lanes: "|v ", dots: [1], forks: [[0, 1]] } },
+  { year: "2018–2026", flag: "🚀",  company: "Fohat Corporation",              role: "Founder · Product Manager · Tech Lead",    photos: ["/fohat-igor.jpeg", "/beenx-team.jpeg", "/fohat-evento.jpg", "/fohat-certificado-inpi.jpg"], highlight: false, branch: "fohat", branchLane: 1, g: { lanes: "|v ", dots: [1], forks: [[0, 1]] } },
   { year: "2022–2024", flag: "🧭",  company: "OSINOVA",                        role: "Innovation Board Advisor",                 photos: ["/osinova-board.jpg", "/certificado-conselheiro-inovacao.jpeg"], highlight: false, branch: "advisory", branchLane: 2, g: { lanes: "||v", dots: [2], forks: [[1, 2]] } },
   { year: "2026",      flag: "🟢",  company: "Available",                      companyPt: "Novos Desafios",               role: "AI Product Manager · Technical PM",        photos: [],                                                            highlight: true,  tag: "HEAD", g: { lanes: "^  ", dots: [0], merges: [[1, 0], [2, 0]] } },
 ];
+
+function Context({ text }: { text: string }) {
+  return (
+    <div className="flex-1 space-y-2 text-sm leading-relaxed text-white/60 italic">
+      {text.split("\n").map((line, i) =>
+        line.startsWith("• ") ? (
+          <p key={i} className="flex gap-2 pl-1">
+            <span className="text-[var(--color-brand-400)]">•</span>
+            <span>{line.slice(2)}</span>
+          </p>
+        ) : (
+          <p key={i}>{line}</p>
+        )
+      )}
+    </div>
+  );
+}
 
 function Graph({ g, open, highlight }: { g: Graph; open: boolean; highlight: boolean }) {
   const width = LANES * LANE_W;
@@ -228,14 +245,10 @@ export function Timeline() {
                             </button>
                           ))}
                         </div>
-                        <p className="flex-1 text-sm leading-relaxed text-white/60 italic">
-                          &ldquo;{event.context}&rdquo;
-                        </p>
+                        <Context text={event.context} />
                       </div>
                     ) : (
-                      <p className="text-sm leading-relaxed text-white/60 italic">
-                        &ldquo;{event.context}&rdquo;
-                      </p>
+                      <Context text={event.context} />
                     )}
                   </div>
                 </div>

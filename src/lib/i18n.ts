@@ -116,7 +116,7 @@ export const t = {
       },
       {
         desc: "Big-corporate engineering, startup product leadership and corporate venture capital: three lenses on how technology businesses get built — and scaled.",
-        context: "My path covers three worlds. Large corporations, where I learned engineering at scale at Volvo — quality, reliability and process discipline. Startups, where I led product and software development from zero to production in regulated markets. And innovation, where I evaluated portfolio companies of OSINOVA, a corporate venture capital fund. That mix lets me read a business from the engineering bench, the product roadmap and the investor's table at once. I'm now open to bringing it to a role where I can make an immediate, measurable impact. Remote. Hybrid. Brazil and international.",
+        context: "My path covers three worlds.\n• Large corporations, where I learned engineering at scale at Volvo — quality, reliability and process discipline.\n• Startups, where I led product and software development from zero to production in regulated markets.\n• Innovation, where I evaluated portfolio companies of OSINOVA, a corporate venture capital fund.\nThat mix lets me read a business from the engineering bench, the product roadmap and the investor's table at once. I'm now open to bringing it to a role where I can make an immediate, measurable impact. Remote. Hybrid. Brazil and international.",
       },
     ],
   },
@@ -235,7 +235,7 @@ export const t = {
       },
       {
         desc: "Engenharia em grandes corporações, liderança de produto em startups e venture capital corporativo: três lentes sobre como negócios de tecnologia são construídos — e escalados.",
-        context: "Minha trajetória passa por três mundos. Grandes corporações, onde aprendi engenharia em escala na Volvo — qualidade, confiabilidade e disciplina de processo. Startups, onde liderei desenvolvimento de produto e software do zero à produção em mercados regulados. E inovação, onde avaliei empresas do portfólio da OSINOVA, fundo de venture capital corporativo. Essa combinação me permite enxergar um negócio ao mesmo tempo da bancada de engenharia, do roadmap de produto e da mesa do investidor. Agora estou aberto a levá-la para um papel onde posso ter impacto imediato e mensurável. Remoto. Híbrido. Brasil e mercado internacional.",
+        context: "Minha trajetória passa por três mundos.\n• Grandes corporações, onde aprendi engenharia em escala na Volvo — qualidade, confiabilidade e disciplina de processo.\n• Startups, onde liderei desenvolvimento de produto e software do zero à produção em mercados regulados.\n• Inovação, onde avaliei empresas do portfólio da OSINOVA, fundo de venture capital corporativo.\nEssa combinação me permite enxergar um negócio ao mesmo tempo da bancada de engenharia, do roadmap de produto e da mesa do investidor. Agora estou aberto a levá-la para um papel onde posso ter impacto imediato e mensurável. Remoto. Híbrido. Brasil e mercado internacional.",
       },
     ],
   },
