@@ -10,12 +10,13 @@ import { t } from "@/lib/i18n";
    como a linha passa pela linha da timeline:
      "|" atravessa · "v" nasce no commit · "^" termina no commit · " " vazia
    `dots` = faixas com commit; `forks`/`merges` = curvas [de, para].
-   Faixas = pilares: 0 = corporativo · 1 = inovação · 2 = investimentos.
-   Todas convergem no HEAD (Novos Desafios). */
+   Faixas = pilares: 0 = corporativo · 1 = inovação · 2 = investimentos · 3 = P&D.
+   P&D nasce na Fohat e volta a ela (merge) ao fim do último projeto;
+   as demais convergem no HEAD (Novos Desafios). */
 const LANE_W = 18;
-const LANES = 3;
+const LANES = 4;
 const DOT_Y = 28;
-const LANE_COLORS = ["#60A5FA", "#C9A227", "#34D399"];
+const LANE_COLORS = ["#60A5FA", "#C9A227", "#34D399", "#FB923C"];
 const laneX = (l: number) => l * LANE_W + LANE_W / 2;
 
 type Graph = {
@@ -37,14 +38,18 @@ const eventsBase: {
   tag?: string;
   g: Graph;
 }[] = [
-  { year: "2007",      flag: "🇨🇳", company: "Bosch · China",                 role: "International Internship",                 photos: ["/bosch-china.jpg"],                                          highlight: false, pillar: 0, g: { lanes: "v  ", dots: [0] } },
-  { year: "2007",      flag: "🇩🇪", company: "Bosch · Germany",                role: "R&D Internship · Stuttgart",               photos: ["/bosch-alemanha.jpg"],                                       highlight: false, pillar: 0, g: { lanes: "|  ", dots: [0] } },
-  { year: "2010–2017", flag: "🇧🇷", company: "Volvo do Brasil",                role: "Product Engineer → Quality & Reliability", photos: ["/volvo-igor.jpeg"],                                          highlight: false, pillar: 0, g: { lanes: "|  ", dots: [0] } },
-  { year: "2011",      flag: "🎓",  company: "Electrical Engineering",         role: "B.Sc. · Universidade",                     photos: ["/graduacao.jpg"],                                            highlight: false, pillar: 0, g: { lanes: "|  ", dots: [0] } },
-  { year: "2017",      flag: "🇺🇸", company: "Silicon Valley",                 role: "The turning point",                        photos: ["/igor-san-francisco.jpeg", "/igor-stanford.jpeg"],           highlight: true,  pillar: 1, tag: "v2017", g: { lanes: "|v ", dots: [1], forks: [[0, 1]] } },
-  { year: "2018–2026", flag: "🚀",  company: "Fohat Corporation",              role: "Founder · Product Manager · Tech Lead",    photos: ["/fohat-igor.jpeg", "/beenx-team.jpeg", "/fohat-evento.jpg", "/fohat-certificado-inpi.jpg"], highlight: false, pillar: 1, g: { lanes: "|| ", dots: [1] } },
-  { year: "2022–2024", flag: "🧭",  company: "OSINOVA",                        role: "Innovation Board Advisor",                 photos: ["/osinova-board.jpg", "/certificado-conselheiro-inovacao.jpeg"], highlight: false, pillar: 2, g: { lanes: "||v", dots: [2], forks: [[1, 2]] } },
-  { year: "2026",      flag: "🟢",  company: "Available",                      companyPt: "Novos Desafios",               role: "AI Product Manager · Technical PM",        photos: [],                                                            highlight: true,  tag: "HEAD", g: { lanes: "^  ", dots: [0], merges: [[1, 0], [2, 0]] } },
+  { year: "2007",      flag: "🇨🇳", company: "Bosch · China",                 role: "International Internship",                 photos: ["/bosch-china.jpg"],                                          highlight: false, pillar: 0, g: { lanes: "v   ", dots: [0] } },
+  { year: "2007",      flag: "🇩🇪", company: "Bosch · Germany",                role: "R&D Internship · Stuttgart",               photos: ["/bosch-alemanha.jpg"],                                       highlight: false, pillar: 0, g: { lanes: "|   ", dots: [0] } },
+  { year: "2010–2017", flag: "🇧🇷", company: "Volvo do Brasil",                role: "Product Engineer → Quality & Reliability", photos: ["/volvo-igor.jpeg"],                                          highlight: false, pillar: 0, g: { lanes: "|   ", dots: [0] } },
+  { year: "2011",      flag: "🎓",  company: "Electrical Engineering",         role: "B.Sc. · Universidade",                     photos: ["/graduacao.jpg"],                                            highlight: false, pillar: 0, g: { lanes: "|   ", dots: [0] } },
+  { year: "2017",      flag: "🇺🇸", company: "Silicon Valley",                 role: "The turning point",                        photos: ["/igor-san-francisco.jpeg", "/igor-stanford.jpeg"],           highlight: true,  pillar: 1, tag: "v2017", g: { lanes: "|v  ", dots: [1], forks: [[0, 1]] } },
+  { year: "2018–2026", flag: "🚀",  company: "Fohat Corporation",              role: "Founder · Product Manager · Tech Lead",    photos: ["/fohat-igor.jpeg", "/beenx-team.jpeg", "/fohat-evento.jpg", "/fohat-certificado-inpi.jpg"], highlight: false, pillar: 1, g: { lanes: "||  ", dots: [1] } },
+  { year: "10/2019–06/2021", flag: "🔬", company: "AES Tietê",  role: "R&D Project · ANEEL", photos: [],                  highlight: false, pillar: 3, tag: "branch", g: { lanes: "|| v", dots: [3], forks: [[1, 3]] } },
+  { year: "06/2020–08/2022", flag: "🔬", company: "Eneva",      role: "R&D Project · ANEEL", photos: [],                  highlight: false, pillar: 3,                g: { lanes: "|| |", dots: [3] } },
+  { year: "05/2022–12/2022", flag: "🔬", company: "ISA CTEEP",  role: "R&D Project · ANEEL", photos: ["/isa-cteep.jpg"],  highlight: false, pillar: 3,                 g: { lanes: "|| |", dots: [3] } },
+  { year: "05/2022–10/2023", flag: "🔬", company: "Comgás",     role: "R&D P272.5 · Interliga SP", photos: ["/comgas-pd.jpg"],         highlight: false, pillar: 3, tag: "merge",  g: { lanes: "||  ", dots: [1], merges: [[3, 1]] } },
+  { year: "2022–2024", flag: "🧭",  company: "OSINOVA",                        role: "Innovation Board Advisor",                 photos: ["/osinova-board.jpg", "/certificado-conselheiro-inovacao.jpeg"], highlight: false, pillar: 2, g: { lanes: "||v ", dots: [2], forks: [[1, 2]] } },
+  { year: "2026",      flag: "🟢",  company: "Available",                      companyPt: "Novos Desafios",               role: "AI Product Manager · Technical PM",        photos: [],                                                            highlight: true,  tag: "HEAD", g: { lanes: "^   ", dots: [0], merges: [[1, 0], [2, 0]] } },
 ];
 
 function Context({ text }: { text: string }) {
@@ -173,7 +178,7 @@ export function Timeline() {
           return (
             <div key={i} className="flex gap-3 pb-4 md:gap-5">
               {/* Year (desktop) */}
-              <div className="hidden w-20 flex-shrink-0 pt-[21px] text-right md:block">
+              <div className="hidden w-28 flex-shrink-0 pt-[21px] text-right md:block">
                 <span className="text-xs font-mono text-white/30">{event.year}</span>
               </div>
 
