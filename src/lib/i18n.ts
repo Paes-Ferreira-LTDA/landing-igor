@@ -125,16 +125,16 @@ export const t = {
         context: "Since 2018 I've owned the product vision, roadmap and portfolio strategy of Fohat's B2B platforms for the energy market. I led the build of eTradeflow — a trading environment with Terminal Broker and Home Broker, with integrated contracts and compliance — and ran two ANEEL R&D projects from kickoff to delivery. Today I lead Fohat OS (eXmesh + eFlowing): the company defines the process and what counts as done; teams of AI agents execute it on top of the systems already in place, with human approval at critical points and a full audit trail, and an independent verifier confirms the result against the external source. The unit we bill is one completed, verified process — not a seat, a token or a conversation.",
       },
       {
-        desc: "R&D project with AES Tietê, a Brazilian hydro generation company, under the ANEEL R&D program.",
-        context: "R&D project run under the ANEEL R&D program with AES Tietê, as part of the work built at Fohat.",
+        desc: "Home Broker: ANEEL R&D project with AES Tietê, a Brazilian hydro generation company.",
+        context: "Home Broker, an ANEEL R&D project with AES Tietê, run as part of the work built at Fohat.",
       },
       {
         desc: "Selected for ACCIONA's first Open Innovation program in Chile, to develop a pilot with the company.",
         context: "Fohat was selected for the first edition in Chile of ACCIONA's Open Innovation program, which brings external startups in to contribute to innovation at the company. The program ran as a pilot built with ACCIONA, with agile methodology training, sprints, mentoring and a final Demo Day.",
       },
       {
-        desc: "R&D project with Eneva, a Brazilian integrated power company, under the ANEEL R&D program.",
-        context: "R&D project run under the ANEEL R&D program with Eneva, as part of the work built at Fohat.",
+        desc: "Broker Back Office: an integrated platform for trading energy contracts and managing the back office, an ANEEL R&D project with Eneva.",
+        context: "ANEEL R&D project with Eneva, executed by Fohat and ACE. The goal was to build an integrated platform for trading energy contracts and managing the back office. The project created an electronic environment for bilateral contracting on the Organized Over-the-Counter Market, with potential to reduce back office work and financial risk. It raises trust between the parties, reduces contract informality and non-performance, and makes for a safer environment as the free energy market grows, in line with PLS 232/2016. Duration: 16 months, starting June 2020.",
       },
       {
         desc: "R&D project with ISA CTEEP, a Brazilian power transmission company, under the ANEEL R&D program.",
@@ -278,16 +278,16 @@ export const t = {
         context: "Desde 2018 sou responsável pela visão de produto, roadmap e estratégia de portfólio das plataformas B2B da Fohat para o mercado de energia. Liderei a construção da eTradeflow — ambiente de trading com Terminal Broker e Home Broker, com contratos e compliance integrados — e conduzi dois projetos de P&D ANEEL do início à entrega. Hoje lidero o Fohat OS (eXmesh + eFlowing): a companhia define o processo e o que conta como concluído; times de agentes de IA executam sobre os sistemas que já existem, com aprovação humana nos pontos críticos e trilha auditável, e um verificador independente confirma o resultado contra a fonte externa. A unidade que se cobra é um processo concluído e verificado — não assento, token ou conversa.",
       },
       {
-        desc: "Projeto de P&D com a AES Tietê, geradora de energia, no programa de P&D da ANEEL.",
-        context: "Projeto de P&D conduzido no programa de P&D da ANEEL com a AES Tietê, como parte do trabalho construído na Fohat.",
+        desc: "Home Broker: projeto de P&D ANEEL com a AES Tietê, geradora de energia.",
+        context: "Home Broker, projeto de P&D ANEEL com a AES Tietê, conduzido como parte do trabalho construído na Fohat.",
       },
       {
         desc: "Selecionada para a primeira edição no Chile do programa de Open Innovation da ACCIONA, para desenvolver um piloto com a companhia.",
         context: "A Fohat foi selecionada para a primeira edição no Chile do programa de Open Innovation da ACCIONA, que traz startups externas para contribuir com a inovação na companhia. O programa foi um piloto construído com a ACCIONA, com capacitação em metodologias ágeis, sprints, mentoria e um Demo Day final.",
       },
       {
-        desc: "Projeto de P&D com a Eneva, empresa integrada de energia, no programa de P&D da ANEEL.",
-        context: "Projeto de P&D conduzido no programa de P&D da ANEEL com a Eneva, como parte do trabalho construído na Fohat.",
+        desc: "Broker Back Office: plataforma integrada de comercialização de contratos de energia e gestão de backoffice, projeto de P&D ANEEL com a Eneva.",
+        context: "Projeto de P&D ANEEL com a Eneva, executado pela Fohat e ACE. O objetivo foi desenvolver uma plataforma integrada de comercialização de contratos de energia e gestão de backoffice. O projeto criou um ambiente eletrônico de contratação bilateral no Mercado de Balcão Organizado, com potencial de reduzir backoffice e riscos financeiros. Aumenta a confiança entre as partes, diminui a informalidade dos contratos e a inadimplência na execução, e cria um ambiente mais seguro para o crescimento do mercado livre, em linha com o PLS 232/2016. Prazo: 16 meses, com início em junho de 2020.",
       },
       {
         desc: "Projeto de P&D com a ISA CTEEP, transmissora de energia, no programa de P&D da ANEEL.",
