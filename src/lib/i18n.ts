@@ -133,8 +133,8 @@ export const t = {
         context: "Fohat was selected for the first edition in Chile of ACCIONA's Open Innovation program, which brings external startups in to contribute to innovation at the company. The program ran as a pilot built with ACCIONA, with agile methodology training, sprints, mentoring and a final Demo Day.",
       },
       {
-        desc: "R&D project with Eneva, a Brazilian integrated power company, under the ANEEL R&D program.",
-        context: "R&D project run under the ANEEL R&D program with Eneva, as part of the work built at Fohat.",
+        desc: "Broker Back Office: an integrated platform for trading energy contracts and managing the back office, an ANEEL R&D project with Eneva.",
+        context: "ANEEL R&D project with Eneva, executed by Fohat and ACE. The goal was to build an integrated platform for trading energy contracts and managing the back office. The project created an electronic environment for bilateral contracting on the Organized Over-the-Counter Market, with potential to reduce back office work and financial risk. It raises trust between the parties, reduces contract informality and non-performance, and makes for a safer environment as the free energy market grows, in line with PLS 232/2016. Duration: 16 months, starting June 2020.",
       },
       {
         desc: "R&D project with ISA CTEEP, a Brazilian power transmission company, under the ANEEL R&D program.",
@@ -286,8 +286,8 @@ export const t = {
         context: "A Fohat foi selecionada para a primeira edição no Chile do programa de Open Innovation da ACCIONA, que traz startups externas para contribuir com a inovação na companhia. O programa foi um piloto construído com a ACCIONA, com capacitação em metodologias ágeis, sprints, mentoria e um Demo Day final.",
       },
       {
-        desc: "Projeto de P&D com a Eneva, empresa integrada de energia, no programa de P&D da ANEEL.",
-        context: "Projeto de P&D conduzido no programa de P&D da ANEEL com a Eneva, como parte do trabalho construído na Fohat.",
+        desc: "Broker Back Office: plataforma integrada de comercialização de contratos de energia e gestão de backoffice, projeto de P&D ANEEL com a Eneva.",
+        context: "Projeto de P&D ANEEL com a Eneva, executado pela Fohat e ACE. O objetivo foi desenvolver uma plataforma integrada de comercialização de contratos de energia e gestão de backoffice. O projeto criou um ambiente eletrônico de contratação bilateral no Mercado de Balcão Organizado, com potencial de reduzir backoffice e riscos financeiros. Aumenta a confiança entre as partes, diminui a informalidade dos contratos e a inadimplência na execução, e cria um ambiente mais seguro para o crescimento do mercado livre, em linha com o PLS 232/2016. Prazo: 16 meses, com início em junho de 2020.",
       },
       {
         desc: "Projeto de P&D com a ISA CTEEP, transmissora de energia, no programa de P&D da ANEEL.",
