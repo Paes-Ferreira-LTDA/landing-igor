@@ -129,6 +129,10 @@ export const t = {
         context: "R&D project run under the ANEEL R&D program with AES Tietê, as part of the work built at Fohat.",
       },
       {
+        desc: "Selected for ACCIONA's first Open Innovation program in Chile, to develop a pilot with the company.",
+        context: "Fohat was selected for the first edition in Chile of ACCIONA's Open Innovation program, which brings external startups in to contribute to innovation at the company. The program ran as a pilot built with ACCIONA, with agile methodology training, sprints, mentoring and a final Demo Day.",
+      },
+      {
         desc: "R&D project with Eneva, a Brazilian integrated power company, under the ANEEL R&D program.",
         context: "R&D project run under the ANEEL R&D program with Eneva, as part of the work built at Fohat.",
       },
@@ -276,6 +280,10 @@ export const t = {
       {
         desc: "Projeto de P&D com a AES Tietê, geradora de energia, no programa de P&D da ANEEL.",
         context: "Projeto de P&D conduzido no programa de P&D da ANEEL com a AES Tietê, como parte do trabalho construído na Fohat.",
+      },
+      {
+        desc: "Selecionada para a primeira edição no Chile do programa de Open Innovation da ACCIONA, para desenvolver um piloto com a companhia.",
+        context: "A Fohat foi selecionada para a primeira edição no Chile do programa de Open Innovation da ACCIONA, que traz startups externas para contribuir com a inovação na companhia. O programa foi um piloto construído com a ACCIONA, com capacitação em metodologias ágeis, sprints, mentoria e um Demo Day final.",
       },
       {
         desc: "Projeto de P&D com a Eneva, empresa integrada de energia, no programa de P&D da ANEEL.",
