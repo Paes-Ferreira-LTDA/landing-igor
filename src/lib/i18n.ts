@@ -126,7 +126,7 @@ export const t = {
       },
       {
         desc: "Home Broker: ANEEL R&D project with AES Tietê, a Brazilian hydro generation company.",
-        context: "Home Broker, an ANEEL R&D project with AES Tietê, run as part of the work built at Fohat.",
+        context: "Home Broker, ANEEL R&D project PD 0064-1059/2019 with AES Tietê, run as part of the work built at Fohat.",
       },
       {
         desc: "Selected for ACCIONA's first Open Innovation program in Chile, to develop a pilot with the company.",
@@ -134,11 +134,11 @@ export const t = {
       },
       {
         desc: "Broker Back Office: an integrated platform for trading energy contracts and managing the back office, an ANEEL R&D project with Eneva.",
-        context: "ANEEL R&D project with Eneva, executed by Fohat and ACE. The goal was to build an integrated platform for trading energy contracts and managing the back office. The project created an electronic environment for bilateral contracting on the Organized Over-the-Counter Market, with potential to reduce back office work and financial risk. It raises trust between the parties, reduces contract informality and non-performance, and makes for a safer environment as the free energy market grows, in line with PLS 232/2016. Duration: 16 months, starting June 2020.",
+        context: "ANEEL R&D project PD 08601-0320/2020 with Eneva, executed by Fohat and ACE. The goal was to build an integrated platform for trading energy contracts and managing the back office. The project created an electronic environment for bilateral contracting on the Organized Over-the-Counter Market, with potential to reduce back office work and financial risk. It raises trust between the parties, reduces contract informality and non-performance, and makes for a safer environment as the free energy market grows, in line with PLS 232/2016. Duration: 16 months, starting June 2020.",
       },
       {
-        desc: "R&D project with ISA CTEEP, a Brazilian power transmission company, under the ANEEL R&D program.",
-        context: "R&D project run under the ANEEL R&D program with ISA CTEEP, as part of the work built at Fohat.",
+        desc: "ANEEL R&D project PD-00068-0056/2022 with ISA CTEEP, a Brazilian power transmission company.",
+        context: "ANEEL R&D project PD-00068-0056/2022 with ISA CTEEP, run as part of the work built at Fohat.",
       },
       {
         desc: "Interliga SP (P272.5): R&D project with Comgás to integrate the natural gas distributors of the state of São Paulo.",
@@ -279,7 +279,7 @@ export const t = {
       },
       {
         desc: "Home Broker: projeto de P&D ANEEL com a AES Tietê, geradora de energia.",
-        context: "Home Broker, projeto de P&D ANEEL com a AES Tietê, conduzido como parte do trabalho construído na Fohat.",
+        context: "Home Broker, projeto de P&D ANEEL PD 0064-1059/2019 com a AES Tietê, conduzido como parte do trabalho construído na Fohat.",
       },
       {
         desc: "Selecionada para a primeira edição no Chile do programa de Open Innovation da ACCIONA, para desenvolver um piloto com a companhia.",
@@ -287,11 +287,11 @@ export const t = {
       },
       {
         desc: "Broker Back Office: plataforma integrada de comercialização de contratos de energia e gestão de backoffice, projeto de P&D ANEEL com a Eneva.",
-        context: "Projeto de P&D ANEEL com a Eneva, executado pela Fohat e ACE. O objetivo foi desenvolver uma plataforma integrada de comercialização de contratos de energia e gestão de backoffice. O projeto criou um ambiente eletrônico de contratação bilateral no Mercado de Balcão Organizado, com potencial de reduzir backoffice e riscos financeiros. Aumenta a confiança entre as partes, diminui a informalidade dos contratos e a inadimplência na execução, e cria um ambiente mais seguro para o crescimento do mercado livre, em linha com o PLS 232/2016. Prazo: 16 meses, com início em junho de 2020.",
+        context: "Projeto de P&D ANEEL PD 08601-0320/2020 com a Eneva, executado pela Fohat e ACE. O objetivo foi desenvolver uma plataforma integrada de comercialização de contratos de energia e gestão de backoffice. O projeto criou um ambiente eletrônico de contratação bilateral no Mercado de Balcão Organizado, com potencial de reduzir backoffice e riscos financeiros. Aumenta a confiança entre as partes, diminui a informalidade dos contratos e a inadimplência na execução, e cria um ambiente mais seguro para o crescimento do mercado livre, em linha com o PLS 232/2016. Prazo: 16 meses, com início em junho de 2020.",
       },
       {
-        desc: "Projeto de P&D com a ISA CTEEP, transmissora de energia, no programa de P&D da ANEEL.",
-        context: "Projeto de P&D conduzido no programa de P&D da ANEEL com a ISA CTEEP, como parte do trabalho construído na Fohat.",
+        desc: "Projeto de P&D ANEEL PD-00068-0056/2022 com a ISA CTEEP, transmissora de energia.",
+        context: "Projeto de P&D ANEEL PD-00068-0056/2022 com a ISA CTEEP, conduzido como parte do trabalho construído na Fohat.",
       },
       {
         desc: "Interliga SP (P272.5): projeto de P&D com a Comgás para integrar as distribuidoras de gás natural do estado de São Paulo.",
